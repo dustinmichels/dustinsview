@@ -8,7 +8,7 @@ const tagNameBySlug = new Map(tagsJson.map((t) => [t.slug, t.name]));
 
 export default function (eleventyConfig) {
   // Passthrough copy
-  eleventyConfig.addPassthroughCopy({ "public": "/" });
+  eleventyConfig.addPassthroughCopy({ public: "/" });
   eleventyConfig.addPassthroughCopy({ "src/css": "css" });
 
   // Ignores
@@ -18,28 +18,48 @@ export default function (eleventyConfig) {
   eleventyConfig.ignores.add("backup/**");
   eleventyConfig.ignores.add("scripts/**");
 
+  // The first image in <main> is usually the LCP element: load it eagerly at high
+  // priority instead of the lazy loading WordPress applied to every image.
+  eleventyConfig.addTransform("eager-first-image", function (content) {
+    if (!this.page.outputPath?.endsWith(".html")) return content;
+    const mainAt = content.indexOf("<main");
+    if (mainAt === -1) return content;
+    const imgAt = content.indexOf("<img", mainAt);
+    if (imgAt === -1) return content;
+    const tagEnd = content.indexOf(">", imgAt);
+    const tag = content.slice(imgAt, tagEnd);
+    if (!/\sloading=["']lazy["']/.test(tag)) return content;
+    const eager = tag
+      .replace(/\sloading=["']lazy["']/, "")
+      .replace(/^<img/, '<img fetchpriority="high"');
+    return content.slice(0, imgAt) + eager + content.slice(tagEnd);
+  });
+
   // Date filters
   eleventyConfig.addFilter("readableDate", (dateObj, format = "LLLL d, yyyy") => {
     if (!dateObj) return "";
-    const dt = typeof dateObj === "string"
-      ? DateTime.fromISO(dateObj, { zone: "utc" })
-      : DateTime.fromJSDate(dateObj, { zone: "utc" });
+    const dt =
+      typeof dateObj === "string"
+        ? DateTime.fromISO(dateObj, { zone: "utc" })
+        : DateTime.fromJSDate(dateObj, { zone: "utc" });
     return dt.isValid ? dt.toFormat(format) : String(dateObj);
   });
 
   eleventyConfig.addFilter("isoDate", (dateObj) => {
     if (!dateObj) return "";
-    const dt = typeof dateObj === "string"
-      ? DateTime.fromISO(dateObj, { zone: "utc" })
-      : DateTime.fromJSDate(dateObj, { zone: "utc" });
+    const dt =
+      typeof dateObj === "string"
+        ? DateTime.fromISO(dateObj, { zone: "utc" })
+        : DateTime.fromJSDate(dateObj, { zone: "utc" });
     return dt.isValid ? dt.toISODate() : String(dateObj);
   });
 
   eleventyConfig.addFilter("dateToRfc822", (dateObj) => {
     if (!dateObj) return "";
-    const dt = typeof dateObj === "string"
-      ? DateTime.fromISO(dateObj, { zone: "utc" })
-      : DateTime.fromJSDate(dateObj, { zone: "utc" });
+    const dt =
+      typeof dateObj === "string"
+        ? DateTime.fromISO(dateObj, { zone: "utc" })
+        : DateTime.fromJSDate(dateObj, { zone: "utc" });
     return dt.isValid ? dt.toRFC2822() : new Date().toUTCString();
   });
 
@@ -105,14 +125,19 @@ export default function (eleventyConfig) {
       for (let i = 0; i < slugs.length; i++) {
         const slug = slugs[i];
         const rawCat = cats[i];
-        const name = categoryNameBySlug.get(slug) || (typeof rawCat === "object" && rawCat !== null ? rawCat.name : rawCat) || slug;
+        const name =
+          categoryNameBySlug.get(slug) ||
+          (typeof rawCat === "object" && rawCat !== null ? rawCat.name : rawCat) ||
+          slug;
         if (!catMap.has(slug)) {
           catMap.set(slug, { name, slug, posts: [] });
         }
         catMap.get(slug).posts.push(post);
       }
     }
-    return Array.from(catMap.values()).sort((a, b) => String(a.name || "").localeCompare(String(b.name || "")));
+    return Array.from(catMap.values()).sort((a, b) =>
+      String(a.name || "").localeCompare(String(b.name || "")),
+    );
   });
 
   // Tag list collection (filtering out tags with 0 posts): [{ name: "Carleton", slug: "carleton", posts: [...] }, ...]
@@ -127,7 +152,10 @@ export default function (eleventyConfig) {
       for (let i = 0; i < slugs.length; i++) {
         const slug = slugs[i];
         const rawTag = tags[i];
-        const name = tagNameBySlug.get(slug) || (typeof rawTag === "object" && rawTag !== null ? rawTag.name : rawTag) || slug;
+        const name =
+          tagNameBySlug.get(slug) ||
+          (typeof rawTag === "object" && rawTag !== null ? rawTag.name : rawTag) ||
+          slug;
         if (!tagMap.has(slug)) {
           tagMap.set(slug, { name, slug, posts: [] });
         }

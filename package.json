@@ -2,10 +2,14 @@
   "name": "dustinsview",
   "version": "1.0.0",
   "description": "I want to create a static site archive of my blog: https://dustinsview.com/",
+  "keywords": [],
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "build": "eleventy",
     "start": "eleventy --serve",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
     "import": "node scripts/import-wordpress.mjs",
     "audit": "node scripts/audit-links.mjs",
     "validate": "node scripts/validate.mjs",
@@ -15,12 +19,11 @@
     "redirects": "node scripts/generate-redirects.mjs",
     "import:comments": "node scripts/import-comments.mjs"
   },
-  "keywords": [],
-  "type": "module",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
     "html-minifier-terser": "^7.2.0",
     "luxon": "^3.7.2",
+    "oxfmt": "^0.72.0",
     "parse5": "^8.0.1",
     "vnu-jar": "^26.10.12"
   }

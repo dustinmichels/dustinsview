@@ -42,7 +42,9 @@ function walk(dir) {
 }
 
 const outputFiles = walk(SITE);
-const fileSet = new Set(outputFiles.map((f) => "/" + path.relative(SITE, f).split(path.sep).join("/")));
+const fileSet = new Set(
+  outputFiles.map((f) => "/" + path.relative(SITE, f).split(path.sep).join("/")),
+);
 
 /** Output file served for a URL path, or null. Mirrors static-host lookup. */
 function fileFor(urlPath) {
@@ -59,7 +61,17 @@ function frontMatter(file) {
   return { permalink };
 }
 
-const ENTITIES = { amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", "#038": "&", "#38": "&", "#039": "'", "#39": "'" };
+const ENTITIES = {
+  amp: "&",
+  lt: "<",
+  gt: ">",
+  quot: '"',
+  apos: "'",
+  "#038": "&",
+  "#38": "&",
+  "#039": "'",
+  "#39": "'",
+};
 const decodeEntities = (s) => s.replace(/&(#?\w+);/g, (m, e) => ENTITIES[e] ?? m);
 
 // -------------------------------------------------------- _redirects model
@@ -81,7 +93,13 @@ const redirectRules = fs
         decodeURIComponent(from)
           .replace(/\/$/, "")
           .split(/(\*|:[a-z]+)/)
-          .map((seg) => (seg === "*" ? "(?<splat>.*)" : seg.startsWith(":") ? `(?<${seg.slice(1)}>[^/]+)` : seg.replace(/[.?+()[\]{}|^$\\]/g, "\\$&")))
+          .map((seg) =>
+            seg === "*"
+              ? "(?<splat>.*)"
+              : seg.startsWith(":")
+                ? `(?<${seg.slice(1)}>[^/]+)`
+                : seg.replace(/[.?+()[\]{}|^$\\]/g, "\\$&"),
+          )
           .join("") +
         "/?$",
     );
@@ -96,33 +114,52 @@ function resolve(urlPath, search = "", depth = 0) {
     if (existing && !rule.forced) continue;
     const m = urlPath.match(rule.pattern);
     if (!m) continue;
-    if (!Object.entries(rule.query).every(([k, v]) => params.get(k) === v || (v.startsWith(":") && params.has(k)))) continue;
+    if (
+      !Object.entries(rule.query).every(
+        ([k, v]) => params.get(k) === v || (v.startsWith(":") && params.has(k)),
+      )
+    )
+      continue;
     const target = rule.to.replace(/:(\w+)/g, (_, k) => m.groups?.[k] ?? `:${k}`);
     if (rule.status === 404) return { status: 404, file: fileFor(target), chain: [rule.line] };
     if (depth > 5) return { status: 0, file: null, chain: [rule.line, "redirect loop"] };
     const next = resolve(new URL(target, ORIGIN).pathname, "", depth + 1);
-    return { status: rule.status, file: next.status === 200 ? next.file : null, chain: [rule.line, ...next.chain] };
+    return {
+      status: rule.status,
+      file: next.status === 200 ? next.file : null,
+      chain: [rule.line, ...next.chain],
+    };
   }
-  return existing ? { status: 200, file: existing, chain: [] } : { status: 404, file: null, chain: [] };
+  return existing
+    ? { status: 200, file: existing, chain: [] }
+    : { status: 404, file: null, chain: [] };
 }
 
 // ------------------------------------------------- 1. generated page counts
 
-for (const [kind, dir] of [["posts", "content/posts"], ["pages", "content/pages"]]) {
+for (const [kind, dir] of [
+  ["posts", "content/posts"],
+  ["pages", "content/pages"],
+]) {
   const sources = fs.readdirSync(dir).filter((f) => /\.(md|html|njk)$/.test(f));
   const built = sources.filter((f) => {
     const { permalink } = frontMatter(path.join(dir, f));
-    if (!permalink) return fail("page-count", `${dir}/${f} has no permalink`), false;
-    if (!fileFor(permalink)) return fail("page-count", `${dir}/${f} -> ${permalink} not generated`), false;
+    if (!permalink) return (fail("page-count", `${dir}/${f} has no permalink`), false);
+    if (!fileFor(permalink))
+      return (fail("page-count", `${dir}/${f} -> ${permalink} not generated`), false);
     return true;
   });
   if (sources.length !== EXPECTED[kind] || built.length !== EXPECTED[kind]) {
-    fail("page-count", `expected ${EXPECTED[kind]} ${kind}, found ${sources.length} sources / ${built.length} built`);
+    fail(
+      "page-count",
+      `expected ${EXPECTED[kind]} ${kind}, found ${sources.length} sources / ${built.length} built`,
+    );
   }
   console.log(`Generated ${kind}: ${built.length}/${EXPECTED[kind]}`);
 }
 const postHtml = [...fileSet].filter((f) => /^\/\d{4}\/(?!page\/)[^/]+\/index\.html$/.test(f));
-if (postHtml.length !== EXPECTED.posts) fail("page-count", `expected ${EXPECTED.posts} /YYYY/slug/ outputs, found ${postHtml.length}`);
+if (postHtml.length !== EXPECTED.posts)
+  fail("page-count", `expected ${EXPECTED.posts} /YYYY/slug/ outputs, found ${postHtml.length}`);
 
 // ------------------------------------------------ 2. inventory route parity
 
@@ -132,21 +169,34 @@ for (const route of inventory) {
   const url = new URL(route.path, ORIGIN);
   const r = resolve(decodeURIComponent(url.pathname), url.search);
   if (route.routeType === "admin_api") {
-    if (r.status !== 404 || r.file !== "/404.html") fail("inventory", `${route.path} should be 404 -> /404.html, got ${r.status}`);
+    if (r.status !== 404 || r.file !== "/404.html")
+      fail("inventory", `${route.path} should be 404 -> /404.html, got ${r.status}`);
   } else if (!r.file || (r.status !== 200 && r.status !== 301)) {
-    fail("inventory", `${route.path} (${route.routeType}) -> ${r.status} ${r.chain.join(" => ") || "no rule"}`);
+    fail(
+      "inventory",
+      `${route.path} (${route.routeType}) -> ${r.status} ${r.chain.join(" => ") || "no rule"}`,
+    );
   } else if (["post", "page"].includes(route.routeType) && r.status !== 200) {
-    fail("inventory", `${route.path} canonical ${route.routeType} is not served directly (${r.status})`);
+    fail(
+      "inventory",
+      `${route.path} canonical ${route.routeType} is not served directly (${r.status})`,
+    );
   } else if (route.routeType === "query_url" && r.status !== 301) {
     fail("inventory", `${route.path} query permalink is not redirected (${r.status} ${r.file})`);
   } else if (route.target) {
     // Crawl-derived attachment targets sometimes guessed the wrong year; only compare targets that exist.
     const expected = resolve(new URL(route.target, ORIGIN).pathname).file;
-    if (expected && r.file !== expected) fail("inventory", `${route.path} resolves to ${r.file}, expected ${expected} (via ${route.target})`);
+    if (expected && r.file !== expected)
+      fail(
+        "inventory",
+        `${route.path} resolves to ${r.file}, expected ${expected} (via ${route.target})`,
+      );
   }
   routeStats[r.status] = (routeStats[r.status] ?? 0) + 1;
 }
-console.log(`Inventory routes: ${inventory.length} (200: ${routeStats[200]}, 301: ${routeStats[301]}, 404: ${routeStats[404]})`);
+console.log(
+  `Inventory routes: ${inventory.length} (200: ${routeStats[200]}, 301: ${routeStats[301]}, 404: ${routeStats[404]})`,
+);
 
 // ------------------------------------------- 3-6. scan generated HTML files
 
@@ -159,7 +209,14 @@ const readHtml = (rel) => {
 const idCache = new Map();
 const idsIn = (rel) => {
   if (!idCache.has(rel)) {
-    idCache.set(rel, new Set([...readHtml(rel).matchAll(/<[a-zA-Z][^>]*?\s(?:id|name)\s*=\s*["']([^"']+)["']/g)].map((m) => decodeEntities(m[1]))));
+    idCache.set(
+      rel,
+      new Set(
+        [...readHtml(rel).matchAll(/<[a-zA-Z][^>]*?\s(?:id|name)\s*=\s*["']([^"']+)["']/g)].map(
+          (m) => decodeEntities(m[1]),
+        ),
+      ),
+    );
   }
   return idCache.get(rel);
 };
@@ -167,8 +224,20 @@ const idsIn = (rel) => {
 const TAG = /<([a-zA-Z][\w-]*)(\s[^>]*)?>/g;
 const ATTR = /([\w:-]+)\s*=\s*("([^"]*)"|'([^']*)')/g;
 const URL_ATTRS = new Set(["href", "src", "srcset", "poster", "data", "action", "content"]);
-const SUBRESOURCE_TAGS = new Set(["img", "script", "iframe", "source", "audio", "video", "embed", "object", "track", "input"]);
-const WP_LEFTOVER = /dustinsview\.com\/wp-|^\/wp-(?:content|includes|admin|json|login)|(?:^|dustinsview\.com)\/[^?#]*\.php\b|^(?:https?:\/\/(?:www\.)?dustinsview\.com)?\/?\?(?:p|page_id|attachment_id)=\d/;
+const SUBRESOURCE_TAGS = new Set([
+  "img",
+  "script",
+  "iframe",
+  "source",
+  "audio",
+  "video",
+  "embed",
+  "object",
+  "track",
+  "input",
+]);
+const WP_LEFTOVER =
+  /dustinsview\.com\/wp-|^\/wp-(?:content|includes|admin|json|login)|(?:^|dustinsview\.com)\/[^?#]*\.php\b|^(?:https?:\/\/(?:www\.)?dustinsview\.com)?\/?\?(?:p|page_id|attachment_id)=\d/;
 
 const stats = { internal: 0, media: 0, fragments: 0 };
 for (const file of htmlFiles) {
@@ -178,18 +247,31 @@ for (const file of htmlFiles) {
 
   for (const [, tagRaw, attrs = ""] of html.matchAll(TAG)) {
     const tag = tagRaw.toLowerCase();
-    const attrMap = Object.fromEntries([...attrs.matchAll(ATTR)].map((a) => [a[1].toLowerCase(), decodeEntities(a[3] ?? a[4])]));
+    const attrMap = Object.fromEntries(
+      [...attrs.matchAll(ATTR)].map((a) => [a[1].toLowerCase(), decodeEntities(a[3] ?? a[4])]),
+    );
     for (const [name, value] of Object.entries(attrMap)) {
       if (!URL_ATTRS.has(name) || !value) continue;
-      if (name === "content" && !/^(og:(url|image|audio|video)|twitter:image)/.test(attrMap.property ?? attrMap.name ?? "")) continue;
-      const refs = name === "srcset" ? value.split(",").map((c) => c.trim().split(/\s+/)[0]) : [value.trim()];
+      if (
+        name === "content" &&
+        !/^(og:(url|image|audio|video)|twitter:image)/.test(attrMap.property ?? attrMap.name ?? "")
+      )
+        continue;
+      const refs =
+        name === "srcset" ? value.split(",").map((c) => c.trim().split(/\s+/)[0]) : [value.trim()];
 
       for (const ref of refs) {
         if (WP_LEFTOVER.test(ref)) fail("wp-leftover", `${rel}: <${tag} ${name}="${ref}">`);
 
-        const isSubresource = SUBRESOURCE_TAGS.has(tag) || name === "srcset" || name === "poster" ||
+        const isSubresource =
+          SUBRESOURCE_TAGS.has(tag) ||
+          name === "srcset" ||
+          name === "poster" ||
           (tag === "link" && /stylesheet|icon|preload|manifest/.test(attrMap.rel ?? ""));
-        if (/^http:\/\//i.test(ref) && (isSubresource || /^http:\/\/(www\.)?dustinsview\.com/i.test(ref))) {
+        if (
+          /^http:\/\//i.test(ref) &&
+          (isSubresource || /^http:\/\/(www\.)?dustinsview\.com/i.test(ref))
+        ) {
           fail("mixed-content", `${rel}: <${tag} ${name}="${ref}">`);
         }
 
@@ -200,7 +282,8 @@ for (const file of htmlFiles) {
           fail("internal-link", `${rel}: unparseable URL "${ref}"`);
           continue;
         }
-        if (!/^https?:$/.test(url.protocol) || !/^(www\.)?dustinsview\.com$/.test(url.hostname)) continue;
+        if (!/^https?:$/.test(url.protocol) || !/^(www\.)?dustinsview\.com$/.test(url.hostname))
+          continue;
 
         let target = url.pathname;
         try {
@@ -224,10 +307,13 @@ for (const file of htmlFiles) {
 
   // Text-level scan for WordPress/PHP references outside attributes (e.g. inline styles, scripts).
   const text = html.replace(TAG, "");
-  for (const m of text.matchAll(/[^\s<>"']*dustinsview\.com\/wp-[^\s<>"']*|[^\s<>"']*\b(?:xmlrpc|wp-login|admin-ajax|wp-cron)\.php[^\s<>"']*/g)) {
+  for (const m of text.matchAll(
+    /[^\s<>"']*dustinsview\.com\/wp-[^\s<>"']*|[^\s<>"']*\b(?:xmlrpc|wp-login|admin-ajax|wp-cron)\.php[^\s<>"']*/g,
+  )) {
     fail("wp-leftover", `${rel}: text "${m[0]}"`);
   }
-  for (const m of html.matchAll(/url\(\s*["']?(http:\/\/[^)"']+)/gi)) fail("mixed-content", `${rel}: css url(${m[1]})`);
+  for (const m of html.matchAll(/url\(\s*["']?(http:\/\/[^)"']+)/gi))
+    fail("mixed-content", `${rel}: css url(${m[1]})`);
 }
 
 // Stylesheets can reference assets too.
@@ -243,12 +329,22 @@ for (const css of outputFiles.filter((f) => f.endsWith(".css"))) {
 }
 
 console.log(`HTML files scanned: ${htmlFiles.length}`);
-console.log(`Internal references: ${stats.internal}, media references: ${stats.media}, fragment links: ${stats.fragments}`);
+console.log(
+  `Internal references: ${stats.internal}, media references: ${stats.media}, fragment links: ${stats.fragments}`,
+);
 
 // ------------------------------------------------------------------ report
 
 const byCheck = Object.groupBy(failures, (f) => f.check);
-const checks = ["page-count", "inventory", "internal-link", "fragment", "media", "wp-leftover", "mixed-content"];
+const checks = [
+  "page-count",
+  "inventory",
+  "internal-link",
+  "fragment",
+  "media",
+  "wp-leftover",
+  "mixed-content",
+];
 for (const check of checks) {
   const list = byCheck[check] ?? [];
   console.log(`${list.length ? "FAIL" : "ok  "} ${check}: ${list.length} issue(s)`);

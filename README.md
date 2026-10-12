@@ -8,6 +8,8 @@ A static archive of [dustinsview.com](https://dustinsview.com/) built with [Elev
 
 - [Node.js](https://nodejs.org/) (v18+ recommended)
 - npm
+- Java runtime (only for `npm run validate`, which runs the bundled Nu HTML Checker)
+- `xmllint` (preinstalled on macOS; `libxml2-utils` on Debian/Ubuntu) for `npm run validate`
 
 ### Installation
 
@@ -42,6 +44,19 @@ npm install
 | `npm run export:wxr`     | Export WordPress content via WXR                                    |
 | `npm run redirects`      | Regenerate `public/_redirects` (historical WordPress URL mapping)   |
 | `npm run audit`          | Run route and link validation                                       |
+| `npm run validate`       | Nu HTML Checker on all pages, RSS feed and sitemap (XSD) checks     |
+
+## Design
+
+The stylesheet (`src/css/style.css`) recreates the original WordPress theme,
+[Libre](https://wordpress.org/themes/libre/) by Automattic, together with the
+site's own Additional CSS (`#99004d` links, 1.0875rem blockquotes). Libre
+Baskerville is self-hosted from `public/fonts/` under the SIL Open Font License
+(`public/fonts/OFL.txt`), so pages make no third-party font requests. Departures
+from the original: a light/dark scheme, a faint resting underline on in-text
+links (color alone fails WCAG 1.4.1), excerpts instead of full posts on index
+pages, and a static sidebar (Latest, Categories, Archives) in place of the
+dynamic tabbed/trending widgets.
 
 ## Project Structure
 

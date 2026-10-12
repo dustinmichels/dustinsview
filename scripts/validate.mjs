@@ -45,7 +45,9 @@ function fileForUrl(url) {
 }
 
 const tagText = (xml, tag) =>
-  [...xml.matchAll(new RegExp(`<${tag}(?:\\s[^>]*)?>([\\s\\S]*?)</${tag}>`, "g"))].map((m) => m[1].trim());
+  [...xml.matchAll(new RegExp(`<${tag}(?:\\s[^>]*)?>([\\s\\S]*?)</${tag}>`, "g"))].map((m) =>
+    m[1].trim(),
+  );
 
 function xmllint(args) {
   const r = spawnSync("xmllint", ["--noout", ...args], { encoding: "utf8" });
@@ -66,12 +68,16 @@ const pageUrls = fs
 {
   const require = createRequire(import.meta.url);
   const vnu = require("vnu-jar");
-  const r = spawnSync("java", ["-jar", vnu, "--skip-non-html", "--format", "json", "--exit-zero-always", SITE], {
-    encoding: "utf8",
-    maxBuffer: 64 * 1024 * 1024,
-  });
+  const r = spawnSync(
+    "java",
+    ["-jar", vnu, "--skip-non-html", "--format", "json", "--exit-zero-always", SITE],
+    {
+      encoding: "utf8",
+      maxBuffer: 64 * 1024 * 1024,
+    },
+  );
   if (r.error) throw new Error(`java unavailable (required by vnu-jar): ${r.error.message}`);
-  const messages = JSON.parse(r.stderr || "{\"messages\":[]}").messages;
+  const messages = JSON.parse(r.stderr || '{"messages":[]}').messages;
   const fmt = (m) => `${m.url.replace(/^.*?\/_site/, "")}:${m.lastLine ?? "?"} ${m.message}`;
   const errors = messages.filter((m) => m.type === "error" || m.type === "non-document-error");
   const warnings = messages.filter((m) => m.type === "info" && m.subType === "warning");
@@ -84,16 +90,18 @@ const pageUrls = fs
   const feedFile = path.join(SITE, "feed.xml");
   issues.push(...xmllint([feedFile]));
   const xml = fs.readFileSync(feedFile, "utf8");
-  if (!/<rss\s[^>]*version="2\.0"/.test(xml)) issues.push("root element is not <rss version=\"2.0\">");
+  if (!/<rss\s[^>]*version="2\.0"/.test(xml))
+    issues.push('root element is not <rss version="2.0">');
   const channel = xml.replace(/<item>[\s\S]*?<\/item>/g, "");
   for (const tag of ["title", "link", "description"]) {
     if (!tagText(channel, tag)[0]) issues.push(`channel is missing <${tag}>`);
   }
   if (!new RegExp(`<atom:link href="${ORIGIN}/feed.xml" rel="self"`).test(xml)) {
-    issues.push("missing atom:link rel=\"self\" pointing at the feed URL");
+    issues.push('missing atom:link rel="self" pointing at the feed URL');
   }
   const items = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].map((m) => m[1]);
-  if (items.length !== postSources.length) issues.push(`${items.length} items, expected ${postSources.length} posts`);
+  if (items.length !== postSources.length)
+    issues.push(`${items.length} items, expected ${postSources.length} posts`);
   const links = new Set();
   for (const item of items) {
     const [title] = tagText(item, "title");
@@ -105,7 +113,10 @@ const pageUrls = fs
     if (!link) issues.push(`${label}: missing <link>`);
     else if (!fileForUrl(link)) issues.push(`${label}: link does not resolve to a generated page`);
     if (guid !== link) issues.push(`${label}: permalink <guid> does not match <link>`);
-    if (!pubDate || !/^[A-Z][a-z]{2}, \d{2} [A-Z][a-z]{2} \d{4} \d{2}:\d{2}:\d{2} [+-]\d{4}$/.test(pubDate)) {
+    if (
+      !pubDate ||
+      !/^[A-Z][a-z]{2}, \d{2} [A-Z][a-z]{2} \d{4} \d{2}:\d{2}:\d{2} [+-]\d{4}$/.test(pubDate)
+    ) {
       issues.push(`${label}: <pubDate> "${pubDate}" is not RFC 822`);
     }
     if (links.has(link)) issues.push(`${label}: duplicate item`);
@@ -119,7 +130,11 @@ const pageUrls = fs
 {
   const issues = [];
   const sitemapFile = path.join(SITE, "sitemap.xml");
-  issues.push(...xmllint(["--schema", "scripts/schemas/sitemap-0.9.xsd", sitemapFile]).filter((l) => !/ validates$/.test(l)));
+  issues.push(
+    ...xmllint(["--schema", "scripts/schemas/sitemap-0.9.xsd", sitemapFile]).filter(
+      (l) => !/ validates$/.test(l),
+    ),
+  );
   const xml = fs.readFileSync(sitemapFile, "utf8");
   const locs = tagText(xml, "loc");
   const seen = new Set();
@@ -131,10 +146,13 @@ const pageUrls = fs
       issues.push(`<loc> does not resolve to a generated page: ${loc}`);
       continue;
     }
-    const canonical = fs.readFileSync(file, "utf8").match(/<link rel="canonical" href="([^"]+)">/)?.[1];
+    const canonical = fs
+      .readFileSync(file, "utf8")
+      .match(/<link rel="canonical" href="([^"]+)">/)?.[1];
     if (canonical !== loc) issues.push(`${loc}: canonical is ${canonical ?? "missing"}`);
   }
-  for (const url of [...postUrls, ...pageUrls]) if (!seen.has(url)) issues.push(`missing from sitemap: ${url}`);
+  for (const url of [...postUrls, ...pageUrls])
+    if (!seen.has(url)) issues.push(`missing from sitemap: ${url}`);
   report("sitemap", issues);
 }
 
@@ -142,7 +160,9 @@ let failed = false;
 for (const { name, issues, warnings } of results) {
   const bad = issues.length > 0 || (strict && warnings.length > 0);
   failed ||= bad;
-  console.log(`${bad ? "FAIL" : "ok  "} ${name}: ${issues.length} error(s), ${warnings.length} warning(s)`);
+  console.log(
+    `${bad ? "FAIL" : "ok  "} ${name}: ${issues.length} error(s), ${warnings.length} warning(s)`,
+  );
   for (const line of issues.slice(0, 50)) console.log(`       ${line}`);
   if (strict) for (const line of warnings.slice(0, 50)) console.log(`       warning: ${line}`);
 }

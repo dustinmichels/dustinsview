@@ -19,7 +19,11 @@ const OUTPUT = "public/_redirects";
 
 const snapshotDir = path.join(
   SNAPSHOT_ROOT,
-  fs.readdirSync(SNAPSHOT_ROOT).filter((d) => /^\d{4}-\d{2}-\d{2}$/.test(d)).sort().at(-1),
+  fs
+    .readdirSync(SNAPSHOT_ROOT)
+    .filter((d) => /^\d{4}-\d{2}-\d{2}$/.test(d))
+    .sort()
+    .at(-1),
 );
 const readJson = (file) => JSON.parse(fs.readFileSync(file, "utf8"));
 const posts = readJson(path.join(snapshotDir, "posts.json"));
@@ -69,8 +73,19 @@ section("Media uploads", [["/wp-content/uploads/*", "/media/:splat", 301]]);
 
 // 3. Feeds.
 section("Feeds", [
-  ...["/feed", "/feed/", "/feed/rss/", "/feed/rss2/", "/feed/atom/", "/rss", "/rss/", "/atom", "/atom/",
-    "/comments/feed", "/comments/feed/"].map((p) => [p, "/feed.xml", 301]),
+  ...[
+    "/feed",
+    "/feed/",
+    "/feed/rss/",
+    "/feed/rss2/",
+    "/feed/atom/",
+    "/rss",
+    "/rss/",
+    "/atom",
+    "/atom/",
+    "/comments/feed",
+    "/comments/feed/",
+  ].map((p) => [p, "/feed.xml", 301]),
   ["/category/:slug/feed/", "/feed.xml", 301],
   ["/tag/:slug/feed/", "/feed.xml", 301],
   ["/author/:slug/feed/", "/feed.xml", 301],
@@ -100,7 +115,9 @@ const usedTermIds = new Set(posts.flatMap((p) => [...p.categories, ...p.tags]));
 section(
   "Empty category/tag archives -> topics",
   inventory
-    .filter((r) => (r.routeType === "category" || r.routeType === "tag") && !usedTermIds.has(r.termId))
+    .filter(
+      (r) => (r.routeType === "category" || r.routeType === "tag") && !usedTermIds.has(r.termId),
+    )
     .map((r) => [r.path, "/topics/", 301]),
 );
 
@@ -115,14 +132,20 @@ section(
 // 9. Old permalink structure (/%category%/%postname%/) and attachment pages
 //    beneath it. Post segment resolves by current slug, else via an attachment's parent.
 const legacy = [];
-for (const r of inventory.filter((r) => r.routeType === "redirect" || r.routeType === "attachment")) {
+for (const r of inventory.filter(
+  (r) => r.routeType === "redirect" || r.routeType === "attachment",
+)) {
   const [prefix, postSegment, ...rest] = r.path.split("/").filter(Boolean);
   if (/^\d{4}$/.test(prefix)) continue; // year-based attachment pages handled from media.json
-  const attachment = rest[0] === "attachment" ? mediaBySlug.get(decodeURIComponent(rest[1]).toLowerCase()) ?? mediaBySlug.get(rest[1]) : null;
+  const attachment =
+    rest[0] === "attachment"
+      ? (mediaBySlug.get(decodeURIComponent(rest[1]).toLowerCase()) ?? mediaBySlug.get(rest[1]))
+      : null;
   const postPath = postBySlug.get(postSegment) ?? (attachment && postById.get(attachment.post));
   if (!postPath) throw new Error(`Cannot resolve legacy route ${r.path}`);
   legacy.push([`/${prefix}/${postSegment}/`, postPath, 301]);
-  if (rest[0] === "attachment") legacy.push([r.path, attachment ? attachmentTarget(attachment) : postPath, 301]);
+  if (rest[0] === "attachment")
+    legacy.push([r.path, attachment ? attachmentTarget(attachment) : postPath, 301]);
 }
 section("Legacy category-prefixed permalinks", legacy);
 

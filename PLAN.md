@@ -182,13 +182,14 @@ dustinsview/
 
 ## Phase 6: Eleventy Templates & Archive UI
 
-- [x] **6.1 Base Layout & Styling**
+- [x] **6.1 Base Layout & Styling** - Restyled after the original WordPress theme, Libre by Automattic, plus the site's Additional CSS: Libre Baskerville self-hosted in `public/fonts/` (SIL OFL), `#404040` text, `#99004d`/`#e60074` links, Libre's breakpoints and widths, title/meta column beside the excerpt on index pages, content + sidebar on posts and pages, italic meta lines with short rules, large-quote-mark blockquotes, bordered previous/next navigation. Topics dropdown from the original menu, CSS-only.
   - [x] Create `src/_includes/layouts/base.njk` with semantic HTML5 structure.
   - [x] Implement responsive, typography-first CSS in `src/css/style.css`.
   - [x] Ensure readable layout works completely with zero JavaScript.
   - [x] Support system dark/light color schemes via CSS media queries.
   - [x] Add header partial with site title and navigation.
   - [x] Add footer partial with archive notice, copyright, and RSS feed link.
+  - [x] Add static sidebar partial (`partials/sidebar.njk`: Latest, Categories, Archives) replacing the dynamic tabbed/trending widgets.
 
 - [x] **6.2 Post & Page Layouts**
   - [x] Create `src/_includes/layouts/post.njk`:
@@ -286,13 +287,13 @@ dustinsview/
   - [x] Spot-check poetry/lyric posts for correct stanza line-breaks and formatting. - `<br>` and `<p>` counts match the raw WordPress `content.rendered` for all 46 posts; visually checked "Ode to HD 40307g" (verse/chorus stanzas and italic section labels intact).
   - [x] Spot-check YouTube video and audio embeds. - All 6 source embeds render as 16:9 `youtube-nocookie` iframes with a visible "Watch on YouTube" link (343px wide, no overflow at 375px). `Zza3GqEL5B0` (Dr. Pepper post) is deleted on YouTube (oEmbed 404) → importer now replaces it with a visible "[Video no longer available …]" notice, leaving 5 iframes. Removed the `<noscript>` duplicate of the visible link. 7 other YouTube references are plain links. No audio files or audio embeds exist in the source. "Ode to HD 40307g" mentions a video that is already absent from the WordPress source (WXR).
   - [x] Spot-check downloadable PDF links. - `/media/2016/08/From-London-With-Love.pdf` serves 200 `application/pdf`, SHA-256 matches `mediaManifest.json`. The meiosis-song chord sheet linked to `dustinmichels.com/lyrics/make_new_humans_chords.pdf` (now 404); recovered from Wayback capture `20220805205010` (SHA-1 matches CDX digest) into `public/media/lyrics/` and the importer rewrites the link. 3 third-party PDF links remain external: `wfp.org` OK, `rgs.org` 404, `apps.carleton.edu` now returns an HTML page (dead-link marking belongs to Phase 5.3).
-  - [x] Spot-check longest post for typography and readability. - Longest is the Beyond Vegetarian interview (3,173 words + 212 comments): 18px Georgia, 1.75 line-height, ~70 characters per line, 11 `h3` questions, 9 blockquote answers, 5 images loaded. Fixed in `src/css/style.css`: `.wp-caption` came after `.alignleft/.alignright` and overrode their margins, so floated captioned images had 0 gap to the text (moved it above them; floats now have a 24px gutter). Long bare URLs in comments and footnotes overflowed at 375px (`overflow-wrap` added to `.post-content` and `.comment-body`). Now 0 horizontal overflow at 375px across all 46 posts, About, Topics, and home. Checked light and dark schemes.
+  - [x] Spot-check longest post for typography and readability. - Longest is the Beyond Vegetarian interview (3,173 words + 212 comments): 18px Georgia, 1.75 line-height, ~70 characters per line, 11 `h3` questions, 9 blockquote answers, 5 images loaded. Fixed in `src/css/style.css`: `.wp-caption` came after `.alignleft/.alignright` and overrode their margins, so floated captioned images had 0 gap to the text (moved it above them; floats now have a 24px gutter). Long bare URLs in comments and footnotes overflowed at 375px (`overflow-wrap` added to `.post-content` and `.comment-body`). Now 0 horizontal overflow at 375px across all 46 posts, About, Topics, and home. Checked light and dark schemes. (Later superseded by the Libre restyle in 6.1: body is 16px Libre Baskerville, content class is `.entry-content`; both fixes carried over and overflow re-verified in 9.3.)
 
-- [ ] **9.3 Validation & Performance Checks**
-  - [ ] Validate HTML syntax across key layouts (Nu HTML Checker / W3C validator).
-  - [ ] Validate RSS/Atom feed XML syntax.
-  - [ ] Validate `sitemap.xml` structure and canonical URLs.
-  - [ ] Test complete site functionality with JavaScript disabled in browser.
-  - [ ] Run Lighthouse accessibility and performance audits.
+- [x] **9.3 Validation & Performance Checks** - Run via `npm run validate` (`scripts/validate.mjs`; `--no-build` to reuse `_site/`, `--strict` to fail on warnings); exits non-zero on any error. Last run: html, feed, sitemap all 0 errors / 0 warnings. Each check was confirmed to fail on an injected defect.
+  - [x] Validate HTML syntax across key layouts (Nu HTML Checker / W3C validator). - All 201 generated HTML pages, via the `vnu-jar` dev dependency. Fixed: `deploy.md` was being rendered to `/deploy/` as a page with no doctype (now in Eleventy ignores); heading-level skips on Archives ("Jump to Year") and Topics (card headings `h3` → `h2`, importer updated too); redundant `banner`/`contentinfo` roles; comments used heading-less `<article>`s (now `<div>`).
+  - [x] Validate RSS/Atom feed XML syntax. - Well-formed (xmllint), RSS 2.0 required elements, `atom:link rel="self"`, 46 items, RFC 822 `pubDate`s, permalink `guid`s, every link resolves. Cross-checked once with the W3C Feed Validator: valid.
+  - [x] Validate `sitemap.xml` structure and canonical URLs. - Validates against the sitemaps.org 0.9 XSD (`scripts/schemas/sitemap-0.9.xsd`); no duplicates; all 46 posts + 2 pages present; every `<loc>` resolves to a generated page whose `<link rel="canonical">` equals it.
+  - [x] Test complete site functionality with JavaScript disabled in browser. - Headless Chromium with JS off: home, page 2, longest post, About, Topics, Archives, category, tag, year, 404 all 200 with 0 `<script>`s, fonts load, 0 broken images. Topics dropdown opens via keyboard focus (`:focus-within`); skip link shows on focus. 0 horizontal overflow at 375px on all 200 `index.html` pages.
+  - [x] Run Lighthouse accessibility and performance audits. - Lighthouse 12, mobile + desktop, on home, longest post, About, Archives, tag: accessibility 100, SEO 100 on all; performance 100 on all except the longest post on mobile (84 over uncompressed `http-server`; 96 with gzip, LCP 2.7 s; 334 KB of HTML from 212 comments). Fixed: first image in `<main>` is now eager with `fetchpriority="high"` (Eleventy transform; was lazy and the LCP element); About photo link had no accessible name (alt added via importer `ALT_OVERRIDES`); in-text links relied on color alone (faint resting underline). Remaining: About mobile best-practices 96 (`image-size-responsive`: the 225×300 thumbnail is shown at 1:1 on high-DPR screens, since Phase 4.3 stripped `srcset`). `bf-cache` failures come from the local server's `no-store` header.
 
 ---

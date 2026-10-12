@@ -14,7 +14,9 @@
   font-weight: 400 700;
   font-display: swap;
   src: url("/fonts/libre-baskerville-latin.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Libre Baskerville";
@@ -22,7 +24,10 @@
   font-weight: 400 700;
   font-display: swap;
   src: url("/fonts/libre-baskerville-latin-ext.woff2") format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329,
+    U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F,
+    U+A720-A7FF;
 }
 @font-face {
   font-family: "Libre Baskerville";
@@ -30,7 +35,9 @@
   font-weight: 400;
   font-display: swap;
   src: url("/fonts/libre-baskerville-italic-latin.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Libre Baskerville";
@@ -38,7 +45,10 @@
   font-weight: 400;
   font-display: swap;
   src: url("/fonts/libre-baskerville-italic-latin-ext.woff2") format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329,
+    U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F,
+    U+A720-A7FF;
 }
 
 :root {
@@ -69,7 +79,9 @@
 /* --------------------------------------------------------------------------
    Base
    -------------------------------------------------------------------------- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -87,18 +99,37 @@ body {
   overflow-wrap: break-word;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   clear: both;
   font-family: var(--font-serif);
   font-weight: bold;
   margin: 0 0 0.875em;
 }
-h1 { font-size: 1.8125rem; line-height: 1.3; }
-h2 { font-size: 1.4375rem; line-height: 1.3; }
-h3 { font-size: 1rem; }
-h4 { font-size: 0.875rem; }
-h5 { font-size: 0.8125rem; }
-h6 { font-size: 0.75rem; }
+h1 {
+  font-size: 1.8125rem;
+  line-height: 1.3;
+}
+h2 {
+  font-size: 1.4375rem;
+  line-height: 1.3;
+}
+h3 {
+  font-size: 1rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+h5 {
+  font-size: 0.8125rem;
+}
+h6 {
+  font-size: 0.75rem;
+}
 
 p {
   margin: 0 0 1.75em;
@@ -134,7 +165,11 @@ pre {
   background: var(--code-bg);
   line-height: 1.5;
 }
-code, kbd, tt, var, pre {
+code,
+kbd,
+tt,
+var,
+pre {
   font-family: var(--font-mono);
   font-size: 0.875rem;
 }
@@ -145,7 +180,8 @@ abbr[title] {
   cursor: help;
 }
 
-mark, ins {
+mark,
+ins {
   background: var(--mark-bg);
   color: inherit;
   text-decoration: none;
@@ -158,24 +194,33 @@ hr {
   background-color: currentColor;
 }
 
-ul, ol {
+ul,
+ol {
   margin: 0 0 1.75em;
   padding-left: 1.75em;
 }
-li > ul, li > ol {
+li > ul,
+li > ol {
   margin-bottom: 0;
   margin-left: 0.4375em;
 }
 
-dt { font-weight: bold; }
-dd { margin: 0 1.75em 1.75em; }
+dt {
+  font-weight: bold;
+}
+dd {
+  margin: 0 1.75em 1.75em;
+}
 
 img {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
 }
-embed, iframe, object, video {
+embed,
+iframe,
+object,
+video {
   max-width: 100%;
 }
 figure {
@@ -187,7 +232,9 @@ table {
   margin: 0 0 1.75em;
   border-collapse: collapse;
 }
-td { padding: 3px; }
+td {
+  padding: 3px;
+}
 caption {
   padding: 0.4375em 0;
   font-weight: bold;
@@ -206,11 +253,17 @@ a:focus-visible {
   outline-offset: 2px;
 }
 
-/* Site Additional CSS: colored body links, no underline until hover. */
+/* Site Additional CSS: colored body links, strong underline on hover. A faint
+   resting underline is added because color alone does not distinguish these
+   links from the text (WCAG 1.4.1). */
 .entry-content a,
 .comment-body a,
 .page-content a {
   color: var(--link);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
 }
 .entry-content a:hover,
 .entry-content a:focus,
@@ -219,7 +272,7 @@ a:focus-visible {
 .page-content a:hover,
 .page-content a:focus {
   color: var(--link-hover);
-  text-decoration: underline;
+  text-decoration-color: currentColor;
 }
 
 .entry-meta a:hover,
@@ -257,6 +310,60 @@ a:focus-visible {
   font-size: 0.875rem;
   font-weight: bold;
   line-height: normal;
+}
+
+/* --------------------------------------------------------------------------
+   Archive Corner Ribbon
+   -------------------------------------------------------------------------- */
+.archive-ribbon {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.archive-ribbon a {
+  position: absolute;
+  display: block;
+  width: 170px;
+  top: 28px;
+  right: -42px;
+  transform: rotate(45deg);
+  background: var(--text);
+  color: var(--bg);
+  text-align: center;
+  font-family: var(--font-serif);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 6px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  pointer-events: auto;
+  user-select: none;
+  text-decoration: none;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+}
+
+.archive-ribbon a:hover,
+.archive-ribbon a:focus-visible {
+  background: var(--link);
+  color: #fff;
+  outline: 1px dotted currentColor;
+  outline-offset: 2px;
+}
+
+@media print {
+  .archive-ribbon {
+    display: none;
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -556,8 +663,12 @@ a:focus-visible {
   font-style: italic;
   font-weight: normal;
 }
-.comment-author-badge::before { content: "("; }
-.comment-author-badge::after { content: ")"; }
+.comment-author-badge::before {
+  content: "(";
+}
+.comment-author-badge::after {
+  content: ")";
+}
 .comment-reply-to {
   margin: 0 0 0.875em;
   font-size: 0.875rem;
@@ -683,11 +794,21 @@ a:focus-visible {
   gap: 0.875em;
   margin: 0 0 1.75em;
 }
-.gallery-columns-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.gallery-columns-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.gallery-columns-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-.gallery-columns-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
-.gallery-columns-6 { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.gallery-columns-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.gallery-columns-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.gallery-columns-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.gallery-columns-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+.gallery-columns-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
 .gallery-item {
   margin: 0;
   text-align: center;
@@ -757,22 +878,46 @@ a:focus-visible {
 }
 
 @media screen and (min-width: 45em) {
-  .site { margin-top: 5.25em; }
-  .site-header { margin-bottom: 5.35em; }
+  .site {
+    margin-top: 5.25em;
+  }
+  .site-header {
+    margin-bottom: 5.35em;
+  }
 
-  h1, .singular .entry-title {
+  h1,
+  .singular .entry-title {
     margin: 0 0 0.4375em;
     font-size: 2.9375rem;
   }
-  .blog .site-title { font-size: 2.9375rem; }
-  h2 { margin: 0 0 0.4375em; font-size: 1.8125rem; }
-  h3 { font-size: 1.4375rem; }
-  h4 { font-size: 1rem; }
-  h5 { font-size: 0.875rem; }
-  h6 { font-size: 0.8125rem; }
-  .comments-title { font-size: 1.8125rem; }
-  .widget-title { font-size: 1rem; }
-  .page-title { font-size: 1.8125rem; }
+  .blog .site-title {
+    font-size: 2.9375rem;
+  }
+  h2 {
+    margin: 0 0 0.4375em;
+    font-size: 1.8125rem;
+  }
+  h3 {
+    font-size: 1.4375rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  h5 {
+    font-size: 0.875rem;
+  }
+  h6 {
+    font-size: 0.8125rem;
+  }
+  .comments-title {
+    font-size: 1.8125rem;
+  }
+  .widget-title {
+    font-size: 1rem;
+  }
+  .page-title {
+    font-size: 1.8125rem;
+  }
 
   .main-navigation > .menu {
     padding-bottom: 0;
@@ -865,7 +1010,9 @@ a:focus-visible {
 }
 
 @media screen and (min-width: 70em) {
-  .site { width: 62em; }
+  .site {
+    width: 62em;
+  }
 
   .site-header {
     display: flex;
@@ -902,5 +1049,7 @@ a:focus-visible {
 }
 
 @media screen and (min-width: 80em) {
-  .site { width: 68em; }
+  .site {
+    width: 68em;
+  }
 }
