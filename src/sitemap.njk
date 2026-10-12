@@ -24,6 +24,11 @@ eleventyExcludeFromCollections: true
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>{{ site.url }}/archive/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
   {% for post in collections.postsReverse %}
   <url>
     <loc>{{ site.url }}{{ post.url }}</loc>

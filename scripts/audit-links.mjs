@@ -21,7 +21,7 @@ import path from "node:path";
 
 const SITE = "_site";
 const ORIGIN = "https://dustinsview.com";
-const EXPECTED = { posts: 46, pages: 2 };
+const EXPECTED = { posts: 46, pages: 3 };
 
 if (!process.argv.includes("--no-build")) {
   console.log("Building site (npm run build)...");

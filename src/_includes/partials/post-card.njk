@@ -4,14 +4,11 @@
     <h2 class="entry-title"><a href="{{ post.url }}" rel="bookmark">{{ post.data.title }}</a></h2>
     <div class="entry-meta">
       <span class="posted-on"><a href="{{ post.url }}" rel="bookmark"><time datetime="{{ post.data.date | isoDate }}">{{ post.data.date | readableDate }}</time></a></span>
-      {% if post.data.categorySlugs and post.data.categorySlugs.length > 0 %}
-      <span class="cat-links">{% for cat in post.data.categorySlugs %}<a href="/category/{{ cat }}/">{{ cat | categoryName }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</span>
-      {% endif %}
-      <span class="comments-link"><a href="{{ post.url }}#comments">{% if postComments %}{{ postComments.count }} {% if postComments.count == 1 %}Comment{% else %}Comments{% endif %}{% else %}No Comments{% endif %}</a></span>
+      <span class="byline"><span class="author vcard"><a class="url fn n" href="/author/admin/">{{ post.data.author }}</a></span></span>
+      <span class="comments-link"><a href="{{ post.url }}#comments">{% if postComments and postComments.count > 0 %}{{ postComments.count }} {% if postComments.count == 1 %}Comment{% else %}Comments{% endif %}{% else %}Leave a comment{% endif %}</a></span>
     </div>
   </header>
   <div class="entry-content">
-    {% if post.data.excerpt %}<p>{{ post.data.excerpt | striptags | truncate(280) }}</p>{% endif %}
-    <p class="more-link"><a href="{{ post.url }}" aria-label="Continue reading {{ post.data.title }}">Continue reading &rarr;</a></p>
+    {{ post | postTeaser | safe }}
   </div>
 </article>

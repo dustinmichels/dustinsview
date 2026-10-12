@@ -1,3 +1,4 @@
+import { parseFragment, serialize } from "parse5";
 import fs from "fs";
 import { DateTime } from "luxon";
 
@@ -76,6 +77,26 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter("tagName", (slug) => {
     return tagNameBySlug.get(slug) || slug;
+  });
+
+  // Post teaser filter: renders content up to <!--more--> with a "Continue reading..." link,
+  // or renders the full content if no <!--more--> tag is present.
+  eleventyConfig.addFilter("postTeaser", (post) => {
+    if (!post) return "";
+    const rawHtml = post.templateContent || "";
+    const postUrl = post.url || "";
+    const postTitle = post.data?.title || "";
+    // Scope intra-post fragments (e.g. footnotes) so clicking them on index/archive pages navigates to the post
+    const html = postUrl ? rawHtml.replace(/href="#([^"]+)"/g, `href="${postUrl}#$1"`) : rawHtml;
+    const match = /<!--more(.*?)?-->/.exec(html);
+    if (!match) {
+      return html;
+    }
+    const teaser = html.slice(0, match.index);
+    const link = `<a href="${postUrl}" class="more-link">Continue reading <span class="screen-reader-text">&ldquo;${postTitle}&rdquo;</span> <span class="meta-nav">&rarr;</span></a>`;
+    const glue = teaser.endsWith("<p>") || teaser.endsWith(" ") ? "" : " ";
+    const frag = parseFragment(teaser + glue + link);
+    return serialize(frag);
   });
 
   // Collections

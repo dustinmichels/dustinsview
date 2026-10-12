@@ -484,6 +484,10 @@ a:focus-visible {
 }
 .more-link {
   font-style: italic;
+  white-space: nowrap;
+}
+.more-link .meta-nav {
+  display: inline;
 }
 .post-thumbnail {
   display: block;
@@ -530,7 +534,8 @@ a:focus-visible {
 .post-navigation {
   font-size: 1.4375rem;
 }
-.meta-nav {
+.post-navigation .meta-nav,
+.posts-navigation .meta-nav {
   display: block;
   margin: 0 0 0.4375em;
   font-size: 0.875rem;
@@ -1007,24 +1012,88 @@ a:focus-visible {
   .post-card .entry-title {
     font-size: 1.8125rem;
   }
+
+  /* Sticky header at >= 55em with smooth transition */
+  .site-header-sentinel {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: var(--bg);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1.75em;
+    padding-top: 1.75em;
+    padding-bottom: 0;
+    transition: padding 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  .site-branding {
+    margin-bottom: 0;
+  }
+
+  .site-title {
+    transition:
+      font-size 0.3s cubic-bezier(0.25, 0.1, 0.25, 1),
+      margin 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  .site-description {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: baseline;
+    max-width: 30em;
+    opacity: 1;
+    transition:
+      opacity 0.2s cubic-bezier(0.25, 0.1, 0.25, 1),
+      max-width 0.3s cubic-bezier(0.25, 0.1, 0.25, 1),
+      margin 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  .main-navigation > .menu {
+    justify-content: flex-end;
+  }
+
+  /* Compact sticking header state */
+  .sticking .site-header {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+
+  .sticking .site-title,
+  .blog.sticking .site-title {
+    font-size: 1.125rem;
+    margin-right: 0;
+  }
+
+  .sticking .site-description {
+    opacity: 0;
+    max-width: 0;
+    margin: 0;
+    pointer-events: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-header,
+  .site-title,
+  .site-description {
+    transition: none !important;
+  }
 }
 
 @media screen and (min-width: 70em) {
   .site {
     width: 62em;
-  }
-
-  .site-header {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 1.75em;
-  }
-  .site-branding {
-    margin-bottom: 0;
-  }
-  .main-navigation > .menu {
-    justify-content: flex-end;
   }
 
   /* Libre's comment layout: meta column beside the comment text. */

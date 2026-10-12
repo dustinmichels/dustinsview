@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-12T15:41:40.191Z",
+  "generatedAt": "2026-10-12T20:20:52.177Z",
   "totalAssets": 625,
-  "totalBytes": 219390415,
+  "totalBytes": 115441305,
   "missingCount": 0,
   "missing": [],
   "assets": [
@@ -928,8 +928,8 @@
       "localPath": "/media/2015/09/guitar.jpg",
       "filePath": "public/media/2015/09/guitar.jpg",
       "mimeType": "image/jpeg",
-      "fileSize": 4142043,
-      "sha256": "b9b431e26050a80fd62fdf7f7b3b2ac06eb065991b3f57b3cd0325111383d7a7",
+      "fileSize": 1087210,
+      "sha256": "cb35c4d8a34e4eb666323cb2ba5eb72dcb7382768bbfb2236ad2a501a0e7dab3",
       "status": 200
     },
     {
@@ -973,8 +973,8 @@
       "localPath": "/media/2015/09/IMG_20160730_152131.jpg",
       "filePath": "public/media/2015/09/IMG_20160730_152131.jpg",
       "mimeType": "image/jpeg",
-      "fileSize": 4374336,
-      "sha256": "336eeb490a35d39e5d4b6a98dce90c030d4b3c605c41134a129bccd8df053bd9",
+      "fileSize": 921264,
+      "sha256": "3698d2ee6c085e92e006a37f3d41cd70b53f79d503127e006623f59348fe7364",
       "status": 200
     },
     {
@@ -1027,8 +1027,8 @@
       "localPath": "/media/2015/09/IMG_2777-3.jpg",
       "filePath": "public/media/2015/09/IMG_2777-3.jpg",
       "mimeType": "image/jpeg",
-      "fileSize": 5230393,
-      "sha256": "5a2bfff09c05252f0d8c12030f80cf4385be158d058acb9e96e54b5c8aa25d31",
+      "fileSize": 319836,
+      "sha256": "3f52c25558023463234aca6500d75e43181f822b111f94bfc16ce8f7b6cfde2a",
       "status": 200
     },
     {
@@ -1288,8 +1288,8 @@
       "localPath": "/media/2015/10/P1020091.jpg",
       "filePath": "public/media/2015/10/P1020091.jpg",
       "mimeType": "image/jpeg",
-      "fileSize": 2605568,
-      "sha256": "515686cd137f0241fec75f95fdbac6e9bf669a80fae949fcaf3fd5151f55b75d",
+      "fileSize": 357934,
+      "sha256": "780e164c14c27f5b86245d7e3f26e6a05a53c56df9e6186635dc791c49e8c6b4",
       "status": 200
     },
     {
@@ -1657,8 +1657,8 @@
       "localPath": "/media/2016/01/hobart.jpg",
       "filePath": "public/media/2016/01/hobart.jpg",
       "mimeType": "image/jpeg",
-      "fileSize": 516831,
-      "sha256": "6691530d14adf0793481787e8012ef51e332542e10cafd7554b703624790a9ac",
+      "fileSize": 265744,
+      "sha256": "2490d193b9317e397e44b03384e91f4681bcf263b027ec120cf18cd89c919ae7",
       "status": 200
     },
     {
@@ -1711,8 +1711,8 @@
       "localPath": "/media/2016/01/IMG_0188.jpg",
       "filePath": "public/media/2016/01/IMG_0188.jpg",
       "mimeType": "image/jpeg",
-      "fileSize": 6306258,
-      "sha256": "3cf9e5733d2096a6b424b4174fa2f3728822e7c65acd32c2ec04e95ad77a893c",
+      "fileSize": 408046,
+      "sha256": "bb3e8a9894298f1fa627b0b0e2afae9329ff5bc8b248013b62de9d1b13749086",
       "status": 200
     },
     {
@@ -1945,8 +1945,8 @@
       "localPath": "/media/2016/04/fart.jpg",
       "filePath": "public/media/2016/04/fart.jpg",
       "mimeType": "image/jpeg",
-      "fileSize": 507741,
-      "sha256": "a2c2ed6299ab600431700fa9df1c13fbbc0aa6973219e42ecef9375ea5100e60",
+      "fileSize": 242287,
+      "sha256": "e5ccbf7acc737398cd095ae4515fbed4f3adac6607565a6990ea9ecc41b25ea8",
       "status": 200
     },
     {
@@ -1999,8 +1999,8 @@
       "localPath": "/media/2016/06/20160618_180149.jpg",
       "filePath": "public/media/2016/06/20160618_180149.jpg",
       "mimeType": "image/jpeg",
-      "fileSize": 1967791,
-      "sha256": "9329b16aa29637d226256be7000cd59f01a67e985ed764f2fd6ca0e4e025f414",
+      "fileSize": 421948,
+      "sha256": "d1005de42a368b1988a739a6234058936b0fbddf2ce933b65f5ff2bef423fd95",
       "status": 200
     },
     {
@@ -2143,8 +2143,8 @@
       "localPath": "/media/2016/06/Bernie-Sanders-The-President-We-Need.mp4",
       "filePath": "public/media/2016/06/Bernie-Sanders-The-President-We-Need.mp4",
       "mimeType": "video/mp4",
-      "fileSize": 69934449,
-      "sha256": "2b17dbc58aa8de7942c06858f6c1f52e6a3501a9ee68fecb3285c579ad1f33fc",
+      "fileSize": 52578050,
+      "sha256": "8f6f0bce8979e7af6184c6de20ee7f8cc9679982047df484a28e678b61eeb36e",
       "status": 200
     },
     {
@@ -2152,8 +2152,8 @@
       "localPath": "/media/2016/06/bernie.jpg",
       "filePath": "public/media/2016/06/bernie.jpg",
       "mimeType": "image/jpeg",
-      "fileSize": 1791916,
-      "sha256": "3e7ed4c86e1847f86b7ce8a7aefe4e05bf1c5089f27969941309e18164438588",
+      "fileSize": 435125,
+      "sha256": "a75eecb6899dc319e314fa49fa9c6cca657426bb31b616c2a4f5d557c81713ea",
       "status": 200
     },
     {
@@ -2566,8 +2566,8 @@
       "localPath": "/media/2016/06/houses_on_canal.jpg",
       "filePath": "public/media/2016/06/houses_on_canal.jpg",
       "mimeType": "image/jpeg",
-      "fileSize": 1897599,
-      "sha256": "daa1c017c6c7bc9c5693085defc815f47bb94b72f7ff4a5c09ea54017aabe0f3",
+      "fileSize": 459048,
+      "sha256": "33b20b7975227a81667f8c6b6f8c59469e6f8da6498cb59c8ec91ac632646848",
       "status": 200
     },
     {
@@ -2890,8 +2890,8 @@
       "localPath": "/media/2016/07/food.jpg",
       "filePath": "public/media/2016/07/food.jpg",
       "mimeType": "image/jpeg",
-      "fileSize": 7223600,
-      "sha256": "86c3d7b58d52e1b514e2418813d35a6a3781a891d03dc3649a7a3514f8a41ed7",
+      "fileSize": 1355233,
+      "sha256": "fe239d6475b757757dd04f0626f6fc0bc46e1fd1462c19b67fcdb640e799a9f3",
       "status": 200
     },
     {
@@ -2971,8 +2971,8 @@
       "localPath": "/media/2016/08/Amsterdam_Gay_Pride_2004_Canal_parade_-009.jpg",
       "filePath": "public/media/2016/08/Amsterdam_Gay_Pride_2004_Canal_parade_-009.jpg",
       "mimeType": "image/jpeg",
-      "fileSize": 1443085,
-      "sha256": "382662f574ee9336bf202abeb5ebad485713fd55ff6873220c23e830a008573a",
+      "fileSize": 869360,
+      "sha256": "27cd23663a519e1856ec601aeecc764b545a1756068f9ae3b600cd113ad68b4a",
       "status": 200
     },
     {
@@ -3025,8 +3025,8 @@
       "localPath": "/media/2016/08/appeal_to_tourists.jpg",
       "filePath": "public/media/2016/08/appeal_to_tourists.jpg",
       "mimeType": "image/jpeg",
-      "fileSize": 1050602,
-      "sha256": "043823156cc3983420413a43f5ed31d9361cf3cf2a2d6a2455eae4a6c257d9c8",
+      "fileSize": 495543,
+      "sha256": "4e69aecb235945e5a30dbd49901acc6592b20620e55fbadd14977cc6d62a9a67",
       "status": 200
     },
     {
@@ -3142,8 +3142,8 @@
       "localPath": "/media/2016/08/london_pic.jpg",
       "filePath": "public/media/2016/08/london_pic.jpg",
       "mimeType": "image/jpeg",
-      "fileSize": 1140529,
-      "sha256": "6e8752b573033ae922707f9919c4456e6063a4785870fe02d1f1dbc789a12082",
+      "fileSize": 318345,
+      "sha256": "656f88b8c980846c9be1e2a08df333a822ee2fbe0f18f93770165882f1a7a69b",
       "status": 200
     },
     {
@@ -3376,8 +3376,8 @@
       "localPath": "/media/2016/09/walking.jpg",
       "filePath": "public/media/2016/09/walking.jpg",
       "mimeType": "image/jpeg",
-      "fileSize": 5091889,
-      "sha256": "8391ef5fe425fcfe1f6f5f7292c1e784a336a14373dadc36bee88e2475dd6ac7",
+      "fileSize": 315189,
+      "sha256": "8c9a0cc74ed59effd3e0ee9d46284d6be2ee6c856d332bb14b734b16013539bf",
       "status": 200
     },
     {
@@ -3538,8 +3538,8 @@
       "localPath": "/media/2016/11/bike-1.jpg",
       "filePath": "public/media/2016/11/bike-1.jpg",
       "mimeType": "image/jpeg",
-      "fileSize": 2945272,
-      "sha256": "da964ee6a53f9ca30fa30681497b6fbfbe602feaed3f0b2514973e7da99fa21d",
+      "fileSize": 857961,
+      "sha256": "7ae0a26d6c5b590896d006335b4177b54fdf60313de08353577320fbf68516d2",
       "status": 200
     },
     {
@@ -3808,8 +3808,8 @@
       "localPath": "/media/2016/11/IMG_2599.jpg",
       "filePath": "public/media/2016/11/IMG_2599.jpg",
       "mimeType": "image/jpeg",
-      "fileSize": 8482127,
-      "sha256": "3782b18ce209dbc3758320f49ea844ae6590a9f5c4645b722c649d05351defc9",
+      "fileSize": 483099,
+      "sha256": "95ca9924e769239efa9760eaf47d17e54d16c0f19e24082ecbb8876c8c316264",
       "status": 200
     },
     {
@@ -4915,8 +4915,8 @@
       "localPath": "/media/2017/03/16005864174_3f50481d81_k.jpg",
       "filePath": "public/media/2017/03/16005864174_3f50481d81_k.jpg",
       "mimeType": "image/jpeg",
-      "fileSize": 822595,
-      "sha256": "f7b6d09b4d96bdee04044f95b75131447e278c135657a89686b7231f366ff468",
+      "fileSize": 787280,
+      "sha256": "a316fb9e4bd2d56d9a20174d31aa49aeec5ad2d1eac6981706007637e1c1f4ba",
       "status": 200
     },
     {
@@ -5158,8 +5158,8 @@
       "localPath": "/media/2017/04/web-scraping.mp4",
       "filePath": "public/media/2017/04/web-scraping.mp4",
       "mimeType": "video/mp4",
-      "fileSize": 10128068,
-      "sha256": "5b0f51d52e7dee83b800017354bd268f3d4a74995c53985cd2f800a8a6402e16",
+      "fileSize": 1175095,
+      "sha256": "44cfe895c7d846783dab5f0b47f95c806959a7c4bcfb8739241c99707a96aaa2",
       "status": 200
     },
     {
@@ -5239,8 +5239,8 @@
       "localPath": "/media/2017/05/dylan-web-scraping.m4v",
       "filePath": "public/media/2017/05/dylan-web-scraping.m4v",
       "mimeType": "video/mp4",
-      "fileSize": 21413645,
-      "sha256": "5eabd229f7a323eb294b87c2f3369c461f2a360cf8fe91844a8374b856b05dd0",
+      "fileSize": 4311199,
+      "sha256": "6e49afe134acc30c89f27bc0a6dd369a66f72bcac25de3d64522051913963d4a",
       "status": 200
     },
     {
@@ -5338,8 +5338,8 @@
       "localPath": "/media/2017/05/web-scraping.m4v",
       "filePath": "public/media/2017/05/web-scraping.m4v",
       "mimeType": "video/mp4",
-      "fileSize": 15450312,
-      "sha256": "3c5c977fe26763ce84914fdfed890b26a14a520770ea38de68f7affa5971c73d",
+      "fileSize": 2434098,
+      "sha256": "a0690904b8e582a476fa8b58763f3a62c74f9682887de35cb27a672b87f393a9",
       "status": 200
     },
     {
@@ -5347,8 +5347,8 @@
       "localPath": "/media/2017/06/clock.jpg",
       "filePath": "public/media/2017/06/clock.jpg",
       "mimeType": "image/jpeg",
-      "fileSize": 978681,
-      "sha256": "67e0817e33fc93b4d2434c79e0bb937e869c51c39d1e1747e46a2114a8b239e8",
+      "fileSize": 597326,
+      "sha256": "4e1188bee25108b4253f1e65c218361a6255996b4dd71bd3e79472050b000c9b",
       "status": 200
     },
     {
