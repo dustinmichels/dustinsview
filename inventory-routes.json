@@ -1,0 +1,5805 @@
+{
+  "generatedAt": "2026-10-12T14:34:27.020Z",
+  "totalRoutes": 615,
+  "countsByType": {
+    "home": 1,
+    "pagination": 14,
+    "page": 2,
+    "query_url": 48,
+    "post": 46,
+    "category": 8,
+    "feed": 221,
+    "tag": 205,
+    "author": 1,
+    "year_archive": 9,
+    "month_archive": 31,
+    "attachment": 17,
+    "redirect": 2,
+    "sitemap": 6,
+    "admin_api": 4
+  },
+  "routes": [
+    {
+      "path": "/",
+      "routeType": "home",
+      "statusCode": 200,
+      "source": "sitemap",
+      "notes": "Home page / recent posts index",
+      "url": "https://dustinsview.com/"
+    },
+    {
+      "path": "/page/2/",
+      "routeType": "pagination",
+      "statusCode": 200,
+      "source": "crawl",
+      "notes": "Home paginated archive page 2",
+      "url": "https://dustinsview.com/page/2/"
+    },
+    {
+      "path": "/page/3/",
+      "routeType": "pagination",
+      "statusCode": 200,
+      "source": "crawl",
+      "notes": "Home paginated archive page 3",
+      "url": "https://dustinsview.com/page/3/"
+    },
+    {
+      "path": "/page/4/",
+      "routeType": "pagination",
+      "statusCode": 200,
+      "source": "crawl",
+      "notes": "Home paginated archive page 4",
+      "url": "https://dustinsview.com/page/4/"
+    },
+    {
+      "path": "/page/5/",
+      "routeType": "pagination",
+      "statusCode": 200,
+      "source": "crawl",
+      "notes": "Home paginated archive page 5",
+      "url": "https://dustinsview.com/page/5/"
+    },
+    {
+      "path": "/page/1/",
+      "routeType": "pagination",
+      "statusCode": 301,
+      "target": "/",
+      "source": "crawl",
+      "notes": "Home page 1 redirects to /",
+      "url": "https://dustinsview.com/page/1/"
+    },
+    {
+      "path": "/topics/",
+      "routeType": "page",
+      "statusCode": 200,
+      "target": "/topics/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 982,
+      "slug": "topics",
+      "title": "Topics",
+      "url": "https://dustinsview.com/topics/"
+    },
+    {
+      "path": "/?page_id=982",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/topics/",
+      "source": "historical_query",
+      "wordpressId": 982,
+      "url": "https://dustinsview.com/?page_id=982"
+    },
+    {
+      "path": "/about/",
+      "routeType": "page",
+      "statusCode": 200,
+      "target": "/about/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 2,
+      "slug": "about",
+      "title": "About",
+      "url": "https://dustinsview.com/about/"
+    },
+    {
+      "path": "/?page_id=2",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/about/",
+      "source": "historical_query",
+      "wordpressId": 2,
+      "url": "https://dustinsview.com/?page_id=2"
+    },
+    {
+      "path": "/2018/the-meditative-joy-of-cleaning-a-community-kitchen/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2018/the-meditative-joy-of-cleaning-a-community-kitchen/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 1329,
+      "slug": "the-meditative-joy-of-cleaning-a-community-kitchen",
+      "title": "The Meditative Joy of Cleaning a Community Kitchen",
+      "date": "2018-04-23T17:49:54",
+      "url": "https://dustinsview.com/2018/the-meditative-joy-of-cleaning-a-community-kitchen/"
+    },
+    {
+      "path": "/?p=1329",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2018/the-meditative-joy-of-cleaning-a-community-kitchen/",
+      "source": "historical_query",
+      "wordpressId": 1329,
+      "url": "https://dustinsview.com/?p=1329"
+    },
+    {
+      "path": "/2017/dylan-mama-on-my-mind/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2017/dylan-mama-on-my-mind/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 1272,
+      "slug": "dylan-mama-on-my-mind",
+      "title": "On Dylan&#8217;s &#8220;Mama You Been On My Mind&#8221;",
+      "date": "2017-06-19T03:12:24",
+      "url": "https://dustinsview.com/2017/dylan-mama-on-my-mind/"
+    },
+    {
+      "path": "/?p=1272",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2017/dylan-mama-on-my-mind/",
+      "source": "historical_query",
+      "wordpressId": 1272,
+      "url": "https://dustinsview.com/?p=1272"
+    },
+    {
+      "path": "/2017/notes-forming-bandana/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2017/notes-forming-bandana/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 1112,
+      "slug": "notes-forming-bandana",
+      "title": "Notes on Forming a Bandana in College",
+      "date": "2017-03-28T23:22:35",
+      "url": "https://dustinsview.com/2017/notes-forming-bandana/"
+    },
+    {
+      "path": "/?p=1112",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2017/notes-forming-bandana/",
+      "source": "historical_query",
+      "wordpressId": 1112,
+      "url": "https://dustinsview.com/?p=1112"
+    },
+    {
+      "path": "/2017/love-is-poem/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2017/love-is-poem/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 1043,
+      "slug": "love-is-poem",
+      "title": "Love Is [Poem]",
+      "date": "2017-03-25T23:03:56",
+      "url": "https://dustinsview.com/2017/love-is-poem/"
+    },
+    {
+      "path": "/?p=1043",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2017/love-is-poem/",
+      "source": "historical_query",
+      "wordpressId": 1043,
+      "url": "https://dustinsview.com/?p=1043"
+    },
+    {
+      "path": "/2017/insult-absurdity-make-america-great/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2017/insult-absurdity-make-america-great/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 938,
+      "slug": "insult-absurdity-make-america-great",
+      "title": "The Insult and Absurdity of &#8216;Make America Great Again&#8217;",
+      "date": "2017-01-21T04:11:57",
+      "url": "https://dustinsview.com/2017/insult-absurdity-make-america-great/"
+    },
+    {
+      "path": "/?p=938",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2017/insult-absurdity-make-america-great/",
+      "source": "historical_query",
+      "wordpressId": 938,
+      "url": "https://dustinsview.com/?p=938"
+    },
+    {
+      "path": "/2017/make-new-humans-meiosis-song/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2017/make-new-humans-meiosis-song/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 919,
+      "slug": "make-new-humans-meiosis-song",
+      "title": "Make New Humans (A Meiosis Song)",
+      "date": "2017-01-13T05:27:44",
+      "url": "https://dustinsview.com/2017/make-new-humans-meiosis-song/"
+    },
+    {
+      "path": "/?p=919",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2017/make-new-humans-meiosis-song/",
+      "source": "historical_query",
+      "wordpressId": 919,
+      "url": "https://dustinsview.com/?p=919"
+    },
+    {
+      "path": "/2016/little-differences-observations-europe/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2016/little-differences-observations-europe/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 692,
+      "slug": "little-differences-observations-europe",
+      "title": "Little Differences: Some Observations from Europe",
+      "date": "2016-11-06T15:54:26",
+      "url": "https://dustinsview.com/2016/little-differences-observations-europe/"
+    },
+    {
+      "path": "/?p=692",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2016/little-differences-observations-europe/",
+      "source": "historical_query",
+      "wordpressId": 692,
+      "url": "https://dustinsview.com/?p=692"
+    },
+    {
+      "path": "/2016/travel_update/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2016/travel_update/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 793,
+      "slug": "travel_update",
+      "title": "Travel Update",
+      "date": "2016-09-21T16:36:03",
+      "url": "https://dustinsview.com/2016/travel_update/"
+    },
+    {
+      "path": "/?p=793",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2016/travel_update/",
+      "source": "historical_query",
+      "wordpressId": 793,
+      "url": "https://dustinsview.com/?p=793"
+    },
+    {
+      "path": "/2016/from-london-with-love/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2016/from-london-with-love/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 650,
+      "slug": "from-london-with-love",
+      "title": "From London, With Love [Poem]",
+      "date": "2016-08-14T08:03:18",
+      "url": "https://dustinsview.com/2016/from-london-with-love/"
+    },
+    {
+      "path": "/?p=650",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2016/from-london-with-love/",
+      "source": "historical_query",
+      "wordpressId": 650,
+      "url": "https://dustinsview.com/?p=650"
+    },
+    {
+      "path": "/2016/suggested-grammatical-conventions-leftists-progressives-radicals/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2016/suggested-grammatical-conventions-leftists-progressives-radicals/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 584,
+      "slug": "suggested-grammatical-conventions-leftists-progressives-radicals",
+      "title": "Suggested Grammatical Conventions for Leftists, Progressives, and Radicals",
+      "date": "2016-08-03T13:10:05",
+      "url": "https://dustinsview.com/2016/suggested-grammatical-conventions-leftists-progressives-radicals/"
+    },
+    {
+      "path": "/?p=584",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2016/suggested-grammatical-conventions-leftists-progressives-radicals/",
+      "source": "historical_query",
+      "wordpressId": 584,
+      "url": "https://dustinsview.com/?p=584"
+    },
+    {
+      "path": "/2016/on-permanent-revolution/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2016/on-permanent-revolution/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 513,
+      "slug": "on-permanent-revolution",
+      "title": "On &#8220;Permanent Revolution&#8221;",
+      "date": "2016-07-12T11:27:22",
+      "url": "https://dustinsview.com/2016/on-permanent-revolution/"
+    },
+    {
+      "path": "/?p=513",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2016/on-permanent-revolution/",
+      "source": "historical_query",
+      "wordpressId": 513,
+      "url": "https://dustinsview.com/?p=513"
+    },
+    {
+      "path": "/2016/unpacking-dutch-tolerance/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2016/unpacking-dutch-tolerance/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 601,
+      "slug": "unpacking-dutch-tolerance",
+      "title": "Unpacking Dutch Tolerance",
+      "date": "2016-07-05T16:03:53",
+      "url": "https://dustinsview.com/2016/unpacking-dutch-tolerance/"
+    },
+    {
+      "path": "/?p=601",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2016/unpacking-dutch-tolerance/",
+      "source": "historical_query",
+      "wordpressId": 601,
+      "url": "https://dustinsview.com/?p=601"
+    },
+    {
+      "path": "/2016/encountering-amsterdam-first-impressions-people-bikes/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2016/encountering-amsterdam-first-impressions-people-bikes/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 608,
+      "slug": "encountering-amsterdam-first-impressions-people-bikes",
+      "title": "Encountering Amsterdam: First Impressions, People, and Bikes",
+      "date": "2016-06-25T16:23:56",
+      "url": "https://dustinsview.com/2016/encountering-amsterdam-first-impressions-people-bikes/"
+    },
+    {
+      "path": "/?p=608",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2016/encountering-amsterdam-first-impressions-people-bikes/",
+      "source": "historical_query",
+      "wordpressId": 608,
+      "url": "https://dustinsview.com/?p=608"
+    },
+    {
+      "path": "/2016/dear-bernie/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2016/dear-bernie/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 474,
+      "slug": "dear-bernie",
+      "title": "Dear Bernie",
+      "date": "2016-06-12T18:32:51",
+      "url": "https://dustinsview.com/2016/dear-bernie/"
+    },
+    {
+      "path": "/?p=474",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2016/dear-bernie/",
+      "source": "historical_query",
+      "wordpressId": 474,
+      "url": "https://dustinsview.com/?p=474"
+    },
+    {
+      "path": "/2016/my-first-time-reading-about-sex/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2016/my-first-time-reading-about-sex/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 432,
+      "slug": "my-first-time-reading-about-sex",
+      "title": "A Novel Encounter: My First Time Reading About Sex",
+      "date": "2016-04-15T15:37:59",
+      "url": "https://dustinsview.com/2016/my-first-time-reading-about-sex/"
+    },
+    {
+      "path": "/?p=432",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2016/my-first-time-reading-about-sex/",
+      "source": "historical_query",
+      "wordpressId": 432,
+      "url": "https://dustinsview.com/?p=432"
+    },
+    {
+      "path": "/2016/pooping-with-java/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2016/pooping-with-java/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 928,
+      "slug": "pooping-with-java",
+      "title": "Pooping with Java",
+      "date": "2016-04-03T21:27:40",
+      "url": "https://dustinsview.com/2016/pooping-with-java/"
+    },
+    {
+      "path": "/?p=928",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2016/pooping-with-java/",
+      "source": "historical_query",
+      "wordpressId": 928,
+      "url": "https://dustinsview.com/?p=928"
+    },
+    {
+      "path": "/2016/myth-conscientious-consumption/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2016/myth-conscientious-consumption/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 400,
+      "slug": "myth-conscientious-consumption",
+      "title": "The Myth of Conscientious Consumption",
+      "date": "2016-03-06T19:14:59",
+      "url": "https://dustinsview.com/2016/myth-conscientious-consumption/"
+    },
+    {
+      "path": "/?p=400",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2016/myth-conscientious-consumption/",
+      "source": "historical_query",
+      "wordpressId": 400,
+      "url": "https://dustinsview.com/?p=400"
+    },
+    {
+      "path": "/2016/beyond-vegetarian-one-mans-journey-from-tofu-to-tallow-in-search-of-the-moral-meal-interview/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2016/beyond-vegetarian-one-mans-journey-from-tofu-to-tallow-in-search-of-the-moral-meal-interview/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 237,
+      "slug": "beyond-vegetarian-one-mans-journey-from-tofu-to-tallow-in-search-of-the-moral-meal-interview",
+      "title": "Beyond Vegetarian: One Man&#8217;s Journey from Tofu to Tallow in Search of the Moral Meal [Interview]",
+      "date": "2016-01-31T07:34:49",
+      "url": "https://dustinsview.com/2016/beyond-vegetarian-one-mans-journey-from-tofu-to-tallow-in-search-of-the-moral-meal-interview/"
+    },
+    {
+      "path": "/?p=237",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2016/beyond-vegetarian-one-mans-journey-from-tofu-to-tallow-in-search-of-the-moral-meal-interview/",
+      "source": "historical_query",
+      "wordpressId": 237,
+      "url": "https://dustinsview.com/?p=237"
+    },
+    {
+      "path": "/2016/bernie-things/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2016/bernie-things/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 798,
+      "slug": "bernie-things",
+      "title": "I Made Some Bernie Things!",
+      "date": "2016-01-29T16:49:53",
+      "url": "https://dustinsview.com/2016/bernie-things/"
+    },
+    {
+      "path": "/?p=798",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2016/bernie-things/",
+      "source": "historical_query",
+      "wordpressId": 798,
+      "url": "https://dustinsview.com/?p=798"
+    },
+    {
+      "path": "/2016/in-defense-of-divestment/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2016/in-defense-of-divestment/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 268,
+      "slug": "in-defense-of-divestment",
+      "title": "In Defense of Divestment",
+      "date": "2016-01-23T21:36:27",
+      "url": "https://dustinsview.com/2016/in-defense-of-divestment/"
+    },
+    {
+      "path": "/?p=268",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2016/in-defense-of-divestment/",
+      "source": "historical_query",
+      "wordpressId": 268,
+      "url": "https://dustinsview.com/?p=268"
+    },
+    {
+      "path": "/2015/the-poop-map-i-made/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2015/the-poop-map-i-made/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 77,
+      "slug": "the-poop-map-i-made",
+      "title": "The Poop Map I Made",
+      "date": "2015-11-21T22:47:22",
+      "url": "https://dustinsview.com/2015/the-poop-map-i-made/"
+    },
+    {
+      "path": "/?p=77",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2015/the-poop-map-i-made/",
+      "source": "historical_query",
+      "wordpressId": 77,
+      "url": "https://dustinsview.com/?p=77"
+    },
+    {
+      "path": "/2014/wit-and-wisdom-in-the-monkey-wrench-gang/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2014/wit-and-wisdom-in-the-monkey-wrench-gang/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 7,
+      "slug": "wit-and-wisdom-in-the-monkey-wrench-gang",
+      "title": "Wit and Wisdom in &#8216;The Monkey Wrench Gang&#8217;",
+      "date": "2014-06-28T03:38:00",
+      "url": "https://dustinsview.com/2014/wit-and-wisdom-in-the-monkey-wrench-gang/"
+    },
+    {
+      "path": "/?p=7",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2014/wit-and-wisdom-in-the-monkey-wrench-gang/",
+      "source": "historical_query",
+      "wordpressId": 7,
+      "url": "https://dustinsview.com/?p=7"
+    },
+    {
+      "path": "/2014/daily-camera-stop-propagating-climate-change-denial/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2014/daily-camera-stop-propagating-climate-change-denial/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 1179,
+      "slug": "daily-camera-stop-propagating-climate-change-denial",
+      "title": "To the Daily Camera: Stop propagating climate change denial",
+      "date": "2014-04-06T16:11:42",
+      "url": "https://dustinsview.com/2014/daily-camera-stop-propagating-climate-change-denial/"
+    },
+    {
+      "path": "/?p=1179",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2014/daily-camera-stop-propagating-climate-change-denial/",
+      "source": "historical_query",
+      "wordpressId": 1179,
+      "url": "https://dustinsview.com/?p=1179"
+    },
+    {
+      "path": "/2014/the-joy-of-cycling/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2014/the-joy-of-cycling/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 809,
+      "slug": "the-joy-of-cycling",
+      "title": "The Joy of Cycling",
+      "date": "2014-01-19T17:12:52",
+      "url": "https://dustinsview.com/2014/the-joy-of-cycling/"
+    },
+    {
+      "path": "/?p=809",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2014/the-joy-of-cycling/",
+      "source": "historical_query",
+      "wordpressId": 809,
+      "url": "https://dustinsview.com/?p=809"
+    },
+    {
+      "path": "/2014/a-humble-appeal-to-students-of-the-world/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2014/a-humble-appeal-to-students-of-the-world/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 9,
+      "slug": "a-humble-appeal-to-students-of-the-world",
+      "title": "A Humble Appeal to Students of the World",
+      "date": "2014-01-18T00:36:00",
+      "url": "https://dustinsview.com/2014/a-humble-appeal-to-students-of-the-world/"
+    },
+    {
+      "path": "/?p=9",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2014/a-humble-appeal-to-students-of-the-world/",
+      "source": "historical_query",
+      "wordpressId": 9,
+      "url": "https://dustinsview.com/?p=9"
+    },
+    {
+      "path": "/2013/quotes-of-the-week/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2013/quotes-of-the-week/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 10,
+      "slug": "quotes-of-the-week",
+      "title": "Quotes of the Week",
+      "date": "2013-06-09T02:15:00",
+      "url": "https://dustinsview.com/2013/quotes-of-the-week/"
+    },
+    {
+      "path": "/?p=10",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2013/quotes-of-the-week/",
+      "source": "historical_query",
+      "wordpressId": 10,
+      "url": "https://dustinsview.com/?p=10"
+    },
+    {
+      "path": "/2013/songs-of-peaceful-resignation/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2013/songs-of-peaceful-resignation/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 11,
+      "slug": "songs-of-peaceful-resignation",
+      "title": "Songs of Peaceful Resignation",
+      "date": "2013-04-20T03:43:00",
+      "url": "https://dustinsview.com/2013/songs-of-peaceful-resignation/"
+    },
+    {
+      "path": "/?p=11",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2013/songs-of-peaceful-resignation/",
+      "source": "historical_query",
+      "wordpressId": 11,
+      "url": "https://dustinsview.com/?p=11"
+    },
+    {
+      "path": "/2013/after-the-emperor/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2013/after-the-emperor/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 151,
+      "slug": "after-the-emperor",
+      "title": "After the Emperor!",
+      "date": "2013-04-09T01:54:00",
+      "url": "https://dustinsview.com/2013/after-the-emperor/"
+    },
+    {
+      "path": "/?p=151",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2013/after-the-emperor/",
+      "source": "historical_query",
+      "wordpressId": 151,
+      "url": "https://dustinsview.com/?p=151"
+    },
+    {
+      "path": "/2013/the-origins-of-words-attendance/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2013/the-origins-of-words-attendance/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 152,
+      "slug": "the-origins-of-words-attendance",
+      "title": "The Origins of Words: Attendance",
+      "date": "2013-03-30T01:53:00",
+      "url": "https://dustinsview.com/2013/the-origins-of-words-attendance/"
+    },
+    {
+      "path": "/?p=152",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2013/the-origins-of-words-attendance/",
+      "source": "historical_query",
+      "wordpressId": 152,
+      "url": "https://dustinsview.com/?p=152"
+    },
+    {
+      "path": "/2013/slaughterhouse-five-and-reflections-on-destiny/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2013/slaughterhouse-five-and-reflections-on-destiny/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 14,
+      "slug": "slaughterhouse-five-and-reflections-on-destiny",
+      "title": "Slaughterhouse-Five and Reflections on Destiny",
+      "date": "2013-01-10T05:46:00",
+      "url": "https://dustinsview.com/2013/slaughterhouse-five-and-reflections-on-destiny/"
+    },
+    {
+      "path": "/?p=14",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2013/slaughterhouse-five-and-reflections-on-destiny/",
+      "source": "historical_query",
+      "wordpressId": 14,
+      "url": "https://dustinsview.com/?p=14"
+    },
+    {
+      "path": "/2013/original-song-ode-to-hd-40307g/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2013/original-song-ode-to-hd-40307g/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 15,
+      "slug": "original-song-ode-to-hd-40307g",
+      "title": "[Original Song] Ode to HD 40307g",
+      "date": "2013-01-09T01:12:00",
+      "url": "https://dustinsview.com/2013/original-song-ode-to-hd-40307g/"
+    },
+    {
+      "path": "/?p=15",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2013/original-song-ode-to-hd-40307g/",
+      "source": "historical_query",
+      "wordpressId": 15,
+      "url": "https://dustinsview.com/?p=15"
+    },
+    {
+      "path": "/2012/the-problem-with-bowling/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2012/the-problem-with-bowling/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 17,
+      "slug": "the-problem-with-bowling",
+      "title": "The Problem with Bowling",
+      "date": "2012-10-30T01:12:00",
+      "url": "https://dustinsview.com/2012/the-problem-with-bowling/"
+    },
+    {
+      "path": "/?p=17",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2012/the-problem-with-bowling/",
+      "source": "historical_query",
+      "wordpressId": 17,
+      "url": "https://dustinsview.com/?p=17"
+    },
+    {
+      "path": "/2012/inside-out/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2012/inside-out/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 19,
+      "slug": "inside-out",
+      "title": "[Original Song] Inside Out",
+      "date": "2012-06-13T03:13:00",
+      "url": "https://dustinsview.com/2012/inside-out/"
+    },
+    {
+      "path": "/?p=19",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2012/inside-out/",
+      "source": "historical_query",
+      "wordpressId": 19,
+      "url": "https://dustinsview.com/?p=19"
+    },
+    {
+      "path": "/2012/biology-a-quick-lesson-on-cells-cartoon/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2012/biology-a-quick-lesson-on-cells-cartoon/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 21,
+      "slug": "biology-a-quick-lesson-on-cells-cartoon",
+      "title": "Biology: A quick lesson on cells (Cartoon)",
+      "date": "2012-01-13T23:25:00",
+      "url": "https://dustinsview.com/2012/biology-a-quick-lesson-on-cells-cartoon/"
+    },
+    {
+      "path": "/?p=21",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2012/biology-a-quick-lesson-on-cells-cartoon/",
+      "source": "historical_query",
+      "wordpressId": 21,
+      "url": "https://dustinsview.com/?p=21"
+    },
+    {
+      "path": "/2011/carnival-style-urination-games-what-america-needs-to-get-back-on-track/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2011/carnival-style-urination-games-what-america-needs-to-get-back-on-track/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 23,
+      "slug": "carnival-style-urination-games-what-america-needs-to-get-back-on-track",
+      "title": "Carnival-Style Urination Games: What America Needs to Get Back on Track",
+      "date": "2011-08-13T17:29:00",
+      "url": "https://dustinsview.com/2011/carnival-style-urination-games-what-america-needs-to-get-back-on-track/"
+    },
+    {
+      "path": "/?p=23",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2011/carnival-style-urination-games-what-america-needs-to-get-back-on-track/",
+      "source": "historical_query",
+      "wordpressId": 23,
+      "url": "https://dustinsview.com/?p=23"
+    },
+    {
+      "path": "/2011/the-importance-of-travel/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2011/the-importance-of-travel/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 25,
+      "slug": "the-importance-of-travel",
+      "title": "The Importance of Travel",
+      "date": "2011-06-26T17:37:00",
+      "url": "https://dustinsview.com/2011/the-importance-of-travel/"
+    },
+    {
+      "path": "/?p=25",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2011/the-importance-of-travel/",
+      "source": "historical_query",
+      "wordpressId": 25,
+      "url": "https://dustinsview.com/?p=25"
+    },
+    {
+      "path": "/2011/my-new-old-guitar/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2011/my-new-old-guitar/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 27,
+      "slug": "my-new-old-guitar",
+      "title": "My new, old guitar",
+      "date": "2011-05-16T02:54:00",
+      "url": "https://dustinsview.com/2011/my-new-old-guitar/"
+    },
+    {
+      "path": "/?p=27",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2011/my-new-old-guitar/",
+      "source": "historical_query",
+      "wordpressId": 27,
+      "url": "https://dustinsview.com/?p=27"
+    },
+    {
+      "path": "/2011/words-to-live-by-1/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2011/words-to-live-by-1/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 28,
+      "slug": "words-to-live-by-1",
+      "title": "Words to Live By #1",
+      "date": "2011-05-14T01:57:00",
+      "url": "https://dustinsview.com/2011/words-to-live-by-1/"
+    },
+    {
+      "path": "/?p=28",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2011/words-to-live-by-1/",
+      "source": "historical_query",
+      "wordpressId": 28,
+      "url": "https://dustinsview.com/?p=28"
+    },
+    {
+      "path": "/2011/a-drink-for-the-manly-not-the-mathly/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2011/a-drink-for-the-manly-not-the-mathly/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 29,
+      "slug": "a-drink-for-the-manly-not-the-mathly",
+      "title": "A Drink for the Manly (not the Mathly)",
+      "date": "2011-04-27T22:41:00",
+      "url": "https://dustinsview.com/2011/a-drink-for-the-manly-not-the-mathly/"
+    },
+    {
+      "path": "/?p=29",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2011/a-drink-for-the-manly-not-the-mathly/",
+      "source": "historical_query",
+      "wordpressId": 29,
+      "url": "https://dustinsview.com/?p=29"
+    },
+    {
+      "path": "/2011/the-joy-of-insignifigance/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2011/the-joy-of-insignifigance/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 30,
+      "slug": "the-joy-of-insignifigance",
+      "title": "The Joy of Insignifigance",
+      "date": "2011-04-25T03:34:00",
+      "url": "https://dustinsview.com/2011/the-joy-of-insignifigance/"
+    },
+    {
+      "path": "/?p=30",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2011/the-joy-of-insignifigance/",
+      "source": "historical_query",
+      "wordpressId": 30,
+      "url": "https://dustinsview.com/?p=30"
+    },
+    {
+      "path": "/2011/all-this-knowledge/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2011/all-this-knowledge/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 31,
+      "slug": "all-this-knowledge",
+      "title": "All this Knowledge",
+      "date": "2011-04-09T05:09:00",
+      "url": "https://dustinsview.com/2011/all-this-knowledge/"
+    },
+    {
+      "path": "/?p=31",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2011/all-this-knowledge/",
+      "source": "historical_query",
+      "wordpressId": 31,
+      "url": "https://dustinsview.com/?p=31"
+    },
+    {
+      "path": "/2011/barrels-to-bottles/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2011/barrels-to-bottles/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 820,
+      "slug": "barrels-to-bottles",
+      "title": "Barrels to Bottles",
+      "date": "2011-03-09T17:45:09",
+      "url": "https://dustinsview.com/2011/barrels-to-bottles/"
+    },
+    {
+      "path": "/?p=820",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2011/barrels-to-bottles/",
+      "source": "historical_query",
+      "wordpressId": 820,
+      "url": "https://dustinsview.com/?p=820"
+    },
+    {
+      "path": "/2010/the-magnetic-house-of-cards/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2010/the-magnetic-house-of-cards/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 32,
+      "slug": "the-magnetic-house-of-cards",
+      "title": "The Magnetic House of Cards",
+      "date": "2010-10-24T20:12:00",
+      "url": "https://dustinsview.com/2010/the-magnetic-house-of-cards/"
+    },
+    {
+      "path": "/?p=32",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2010/the-magnetic-house-of-cards/",
+      "source": "historical_query",
+      "wordpressId": 32,
+      "url": "https://dustinsview.com/?p=32"
+    },
+    {
+      "path": "/2010/cool-blues-progression/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2010/cool-blues-progression/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 33,
+      "slug": "cool-blues-progression",
+      "title": "Cool Blues Progression",
+      "date": "2010-08-25T03:20:00",
+      "url": "https://dustinsview.com/2010/cool-blues-progression/"
+    },
+    {
+      "path": "/?p=33",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2010/cool-blues-progression/",
+      "source": "historical_query",
+      "wordpressId": 33,
+      "url": "https://dustinsview.com/?p=33"
+    },
+    {
+      "path": "/2010/pandora-cool-stuff-you-might-not-know/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2010/pandora-cool-stuff-you-might-not-know/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 35,
+      "slug": "pandora-cool-stuff-you-might-not-know",
+      "title": "Pandora: Cool Stuff you Might not Know",
+      "date": "2010-08-06T16:58:00",
+      "url": "https://dustinsview.com/2010/pandora-cool-stuff-you-might-not-know/"
+    },
+    {
+      "path": "/?p=35",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2010/pandora-cool-stuff-you-might-not-know/",
+      "source": "historical_query",
+      "wordpressId": 35,
+      "url": "https://dustinsview.com/?p=35"
+    },
+    {
+      "path": "/2010/science-and-religion/",
+      "routeType": "post",
+      "statusCode": 200,
+      "target": "/2010/science-and-religion/",
+      "source": "rest_api & sitemap",
+      "wordpressId": 36,
+      "slug": "science-and-religion",
+      "title": "Science and Religion",
+      "date": "2010-07-31T15:47:00",
+      "url": "https://dustinsview.com/2010/science-and-religion/"
+    },
+    {
+      "path": "/?p=36",
+      "routeType": "query_url",
+      "statusCode": 301,
+      "target": "/2010/science-and-religion/",
+      "source": "historical_query",
+      "wordpressId": 36,
+      "url": "https://dustinsview.com/?p=36"
+    },
+    {
+      "path": "/category/all/",
+      "routeType": "category",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 68,
+      "slug": "all",
+      "name": "All",
+      "postCount": 35,
+      "url": "https://dustinsview.com/category/all/"
+    },
+    {
+      "path": "/category/all/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for category All",
+      "url": "https://dustinsview.com/category/all/feed/"
+    },
+    {
+      "path": "/category/all/page/2/",
+      "routeType": "pagination",
+      "statusCode": 200,
+      "source": "crawl",
+      "notes": "Category all paginated archive page 2",
+      "url": "https://dustinsview.com/category/all/page/2/"
+    },
+    {
+      "path": "/category/all/page/3/",
+      "routeType": "pagination",
+      "statusCode": 200,
+      "source": "crawl",
+      "notes": "Category all paginated archive page 3",
+      "url": "https://dustinsview.com/category/all/page/3/"
+    },
+    {
+      "path": "/category/all/page/4/",
+      "routeType": "pagination",
+      "statusCode": 200,
+      "source": "crawl",
+      "notes": "Category all paginated archive page 4",
+      "url": "https://dustinsview.com/category/all/page/4/"
+    },
+    {
+      "path": "/category/audio/",
+      "routeType": "category",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 97,
+      "slug": "audio",
+      "name": "Audio",
+      "postCount": 1,
+      "url": "https://dustinsview.com/category/audio/"
+    },
+    {
+      "path": "/category/audio/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for category Audio",
+      "url": "https://dustinsview.com/category/audio/feed/"
+    },
+    {
+      "path": "/category/blurbs/",
+      "routeType": "category",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 183,
+      "slug": "blurbs",
+      "name": "Blurbs",
+      "postCount": 1,
+      "url": "https://dustinsview.com/category/blurbs/"
+    },
+    {
+      "path": "/category/blurbs/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for category Blurbs",
+      "url": "https://dustinsview.com/category/blurbs/feed/"
+    },
+    {
+      "path": "/category/code/",
+      "routeType": "category",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 249,
+      "slug": "code",
+      "name": "code",
+      "postCount": 0,
+      "url": "https://dustinsview.com/category/code/"
+    },
+    {
+      "path": "/category/code/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for category code",
+      "url": "https://dustinsview.com/category/code/feed/"
+    },
+    {
+      "path": "/category/eurotrip2016/",
+      "routeType": "category",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 165,
+      "slug": "eurotrip2016",
+      "name": "EuroTrip2016",
+      "postCount": 4,
+      "url": "https://dustinsview.com/category/eurotrip2016/"
+    },
+    {
+      "path": "/category/eurotrip2016/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for category EuroTrip2016",
+      "url": "https://dustinsview.com/category/eurotrip2016/feed/"
+    },
+    {
+      "path": "/category/notes/",
+      "routeType": "category",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 146,
+      "slug": "notes",
+      "name": "Notes",
+      "postCount": 0,
+      "url": "https://dustinsview.com/category/notes/"
+    },
+    {
+      "path": "/category/notes/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for category Notes",
+      "url": "https://dustinsview.com/category/notes/feed/"
+    },
+    {
+      "path": "/category/poems/",
+      "routeType": "category",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 175,
+      "slug": "poems",
+      "name": "Poems",
+      "postCount": 3,
+      "url": "https://dustinsview.com/category/poems/"
+    },
+    {
+      "path": "/category/poems/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for category Poems",
+      "url": "https://dustinsview.com/category/poems/feed/"
+    },
+    {
+      "path": "/category/songs/",
+      "routeType": "category",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 206,
+      "slug": "songs",
+      "name": "Songs",
+      "postCount": 4,
+      "url": "https://dustinsview.com/category/songs/"
+    },
+    {
+      "path": "/category/songs/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for category Songs",
+      "url": "https://dustinsview.com/category/songs/feed/"
+    },
+    {
+      "path": "/tag/blacklivesmatter/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 170,
+      "slug": "blacklivesmatter",
+      "name": "#blacklivesmatter",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/blacklivesmatter/"
+    },
+    {
+      "path": "/tag/blacklivesmatter/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag #blacklivesmatter",
+      "url": "https://dustinsview.com/tag/blacklivesmatter/feed/"
+    },
+    {
+      "path": "/tag/2016-election/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 212,
+      "slug": "2016-election",
+      "name": "2016 election",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/2016-election/"
+    },
+    {
+      "path": "/tag/2016-election/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag 2016 election",
+      "url": "https://dustinsview.com/tag/2016-election/feed/"
+    },
+    {
+      "path": "/tag/academia/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 114,
+      "slug": "academia",
+      "name": "academia",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/academia/"
+    },
+    {
+      "path": "/tag/academia/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag academia",
+      "url": "https://dustinsview.com/tag/academia/feed/"
+    },
+    {
+      "path": "/tag/activism/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 172,
+      "slug": "activism",
+      "name": "activism",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/activism/"
+    },
+    {
+      "path": "/tag/activism/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag activism",
+      "url": "https://dustinsview.com/tag/activism/feed/"
+    },
+    {
+      "path": "/tag/adorno-and-horkheimer/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 258,
+      "slug": "adorno-and-horkheimer",
+      "name": "Adorno and Horkheimer",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/adorno-and-horkheimer/"
+    },
+    {
+      "path": "/tag/adorno-and-horkheimer/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag Adorno and Horkheimer",
+      "url": "https://dustinsview.com/tag/adorno-and-horkheimer/feed/"
+    },
+    {
+      "path": "/tag/advertising/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 221,
+      "slug": "advertising",
+      "name": "advertising",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/advertising/"
+    },
+    {
+      "path": "/tag/advertising/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag advertising",
+      "url": "https://dustinsview.com/tag/advertising/feed/"
+    },
+    {
+      "path": "/tag/alacarte/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 191,
+      "slug": "alacarte",
+      "name": "Àlacarte",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/alacarte/"
+    },
+    {
+      "path": "/tag/alacarte/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag Àlacarte",
+      "url": "https://dustinsview.com/tag/alacarte/feed/"
+    },
+    {
+      "path": "/tag/amsterdam/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 132,
+      "slug": "amsterdam",
+      "name": "Amsterdam",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/amsterdam/"
+    },
+    {
+      "path": "/tag/amsterdam/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag Amsterdam",
+      "url": "https://dustinsview.com/tag/amsterdam/feed/"
+    },
+    {
+      "path": "/tag/anarchism/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 143,
+      "slug": "anarchism",
+      "name": "anarchism",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/anarchism/"
+    },
+    {
+      "path": "/tag/anarchism/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag anarchism",
+      "url": "https://dustinsview.com/tag/anarchism/feed/"
+    },
+    {
+      "path": "/tag/app/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 89,
+      "slug": "app",
+      "name": "app",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/app/"
+    },
+    {
+      "path": "/tag/app/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag app",
+      "url": "https://dustinsview.com/tag/app/feed/"
+    },
+    {
+      "path": "/tag/art/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 199,
+      "slug": "art",
+      "name": "art",
+      "postCount": 2,
+      "url": "https://dustinsview.com/tag/art/"
+    },
+    {
+      "path": "/tag/art/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag art",
+      "url": "https://dustinsview.com/tag/art/feed/"
+    },
+    {
+      "path": "/tag/balance/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 70,
+      "slug": "balance",
+      "name": "balance",
+      "postCount": 2,
+      "url": "https://dustinsview.com/tag/balance/"
+    },
+    {
+      "path": "/tag/balance/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag balance",
+      "url": "https://dustinsview.com/tag/balance/feed/"
+    },
+    {
+      "path": "/tag/beer/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 219,
+      "slug": "beer",
+      "name": "beer",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/beer/"
+    },
+    {
+      "path": "/tag/beer/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag beer",
+      "url": "https://dustinsview.com/tag/beer/feed/"
+    },
+    {
+      "path": "/tag/bernie-sanders/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 122,
+      "slug": "bernie-sanders",
+      "name": "Bernie Sanders",
+      "postCount": 2,
+      "url": "https://dustinsview.com/tag/bernie-sanders/"
+    },
+    {
+      "path": "/tag/bernie-sanders/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag Bernie Sanders",
+      "url": "https://dustinsview.com/tag/bernie-sanders/feed/"
+    },
+    {
+      "path": "/tag/bike/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 134,
+      "slug": "bike",
+      "name": "bike",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/bike/"
+    },
+    {
+      "path": "/tag/bike/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag bike",
+      "url": "https://dustinsview.com/tag/bike/feed/"
+    },
+    {
+      "path": "/tag/biology/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 222,
+      "slug": "biology",
+      "name": "biology",
+      "postCount": 2,
+      "url": "https://dustinsview.com/tag/biology/"
+    },
+    {
+      "path": "/tag/biology/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag biology",
+      "url": "https://dustinsview.com/tag/biology/feed/"
+    },
+    {
+      "path": "/tag/bitcoin/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 273,
+      "slug": "bitcoin",
+      "name": "bitcoin",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/bitcoin/"
+    },
+    {
+      "path": "/tag/bitcoin/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag bitcoin",
+      "url": "https://dustinsview.com/tag/bitcoin/feed/"
+    },
+    {
+      "path": "/tag/black-lives-matter/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 154,
+      "slug": "black-lives-matter",
+      "name": "black lives matter",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/black-lives-matter/"
+    },
+    {
+      "path": "/tag/black-lives-matter/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag black lives matter",
+      "url": "https://dustinsview.com/tag/black-lives-matter/feed/"
+    },
+    {
+      "path": "/tag/black-pete/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 167,
+      "slug": "black-pete",
+      "name": "black pete",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/black-pete/"
+    },
+    {
+      "path": "/tag/black-pete/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag black pete",
+      "url": "https://dustinsview.com/tag/black-pete/feed/"
+    },
+    {
+      "path": "/tag/blm/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 171,
+      "slug": "blm",
+      "name": "BLM",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/blm/"
+    },
+    {
+      "path": "/tag/blm/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag BLM",
+      "url": "https://dustinsview.com/tag/blm/feed/"
+    },
+    {
+      "path": "/tag/blockchain/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 271,
+      "slug": "blockchain",
+      "name": "blockchain",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/blockchain/"
+    },
+    {
+      "path": "/tag/blockchain/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag blockchain",
+      "url": "https://dustinsview.com/tag/blockchain/feed/"
+    },
+    {
+      "path": "/tag/blues/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 207,
+      "slug": "blues",
+      "name": "blues",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/blues/"
+    },
+    {
+      "path": "/tag/blues/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag blues",
+      "url": "https://dustinsview.com/tag/blues/feed/"
+    },
+    {
+      "path": "/tag/bob-dylan/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 245,
+      "slug": "bob-dylan",
+      "name": "Bob Dylan",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/bob-dylan/"
+    },
+    {
+      "path": "/tag/bob-dylan/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag Bob Dylan",
+      "url": "https://dustinsview.com/tag/bob-dylan/feed/"
+    },
+    {
+      "path": "/tag/book/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 55,
+      "slug": "book",
+      "name": "book",
+      "postCount": 2,
+      "url": "https://dustinsview.com/tag/book/"
+    },
+    {
+      "path": "/tag/book/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag book",
+      "url": "https://dustinsview.com/tag/book/feed/"
+    },
+    {
+      "path": "/tag/boulder/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 244,
+      "slug": "boulder",
+      "name": "Boulder",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/boulder/"
+    },
+    {
+      "path": "/tag/boulder/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag Boulder",
+      "url": "https://dustinsview.com/tag/boulder/feed/"
+    },
+    {
+      "path": "/tag/cafo/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 100,
+      "slug": "cafo",
+      "name": "CAFO",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/cafo/"
+    },
+    {
+      "path": "/tag/cafo/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag CAFO",
+      "url": "https://dustinsview.com/tag/cafo/feed/"
+    },
+    {
+      "path": "/tag/capitalism/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 63,
+      "slug": "capitalism",
+      "name": "capitalism",
+      "postCount": 7,
+      "url": "https://dustinsview.com/tag/capitalism/"
+    },
+    {
+      "path": "/tag/capitalism/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag capitalism",
+      "url": "https://dustinsview.com/tag/capitalism/feed/"
+    },
+    {
+      "path": "/tag/carleton/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 95,
+      "slug": "carleton",
+      "name": "Carleton",
+      "postCount": 5,
+      "url": "https://dustinsview.com/tag/carleton/"
+    },
+    {
+      "path": "/tag/carleton/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag Carleton",
+      "url": "https://dustinsview.com/tag/carleton/feed/"
+    },
+    {
+      "path": "/tag/cartoon/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 85,
+      "slug": "cartoon",
+      "name": "cartoon",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/cartoon/"
+    },
+    {
+      "path": "/tag/cartoon/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag cartoon",
+      "url": "https://dustinsview.com/tag/cartoon/feed/"
+    },
+    {
+      "path": "/tag/cells/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 223,
+      "slug": "cells",
+      "name": "cells",
+      "postCount": 2,
+      "url": "https://dustinsview.com/tag/cells/"
+    },
+    {
+      "path": "/tag/cells/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag cells",
+      "url": "https://dustinsview.com/tag/cells/feed/"
+    },
+    {
+      "path": "/tag/chomsky/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 162,
+      "slug": "chomsky",
+      "name": "chomsky",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/chomsky/"
+    },
+    {
+      "path": "/tag/chomsky/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag chomsky",
+      "url": "https://dustinsview.com/tag/chomsky/feed/"
+    },
+    {
+      "path": "/tag/city-planning/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 135,
+      "slug": "city-planning",
+      "name": "city planning",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/city-planning/"
+    },
+    {
+      "path": "/tag/city-planning/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag city planning",
+      "url": "https://dustinsview.com/tag/city-planning/feed/"
+    },
+    {
+      "path": "/tag/civil-rights/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 173,
+      "slug": "civil-rights",
+      "name": "civil rights",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/civil-rights/"
+    },
+    {
+      "path": "/tag/civil-rights/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag civil rights",
+      "url": "https://dustinsview.com/tag/civil-rights/feed/"
+    },
+    {
+      "path": "/tag/class/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 112,
+      "slug": "class",
+      "name": "class",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/class/"
+    },
+    {
+      "path": "/tag/class/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag class",
+      "url": "https://dustinsview.com/tag/class/feed/"
+    },
+    {
+      "path": "/tag/climate-change/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 126,
+      "slug": "climate-change",
+      "name": "climate change",
+      "postCount": 3,
+      "url": "https://dustinsview.com/tag/climate-change/"
+    },
+    {
+      "path": "/tag/climate-change/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag climate change",
+      "url": "https://dustinsview.com/tag/climate-change/feed/"
+    },
+    {
+      "path": "/tag/college/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 230,
+      "slug": "college",
+      "name": "college",
+      "postCount": 2,
+      "url": "https://dustinsview.com/tag/college/"
+    },
+    {
+      "path": "/tag/college/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag college",
+      "url": "https://dustinsview.com/tag/college/feed/"
+    },
+    {
+      "path": "/tag/college-application/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 229,
+      "slug": "college-application",
+      "name": "college application",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/college-application/"
+    },
+    {
+      "path": "/tag/college-application/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag college application",
+      "url": "https://dustinsview.com/tag/college-application/feed/"
+    },
+    {
+      "path": "/tag/common-app/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 231,
+      "slug": "common-app",
+      "name": "common app",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/common-app/"
+    },
+    {
+      "path": "/tag/common-app/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag common app",
+      "url": "https://dustinsview.com/tag/common-app/feed/"
+    },
+    {
+      "path": "/tag/communal-living/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 264,
+      "slug": "communal-living",
+      "name": "communal living",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/communal-living/"
+    },
+    {
+      "path": "/tag/communal-living/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag communal living",
+      "url": "https://dustinsview.com/tag/communal-living/feed/"
+    },
+    {
+      "path": "/tag/computer-science/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 228,
+      "slug": "computer-science",
+      "name": "computer science",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/computer-science/"
+    },
+    {
+      "path": "/tag/computer-science/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag computer science",
+      "url": "https://dustinsview.com/tag/computer-science/feed/"
+    },
+    {
+      "path": "/tag/conference/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 275,
+      "slug": "conference",
+      "name": "conference",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/conference/"
+    },
+    {
+      "path": "/tag/conference/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag conference",
+      "url": "https://dustinsview.com/tag/conference/feed/"
+    },
+    {
+      "path": "/tag/conflict/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 59,
+      "slug": "conflict",
+      "name": "conflict",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/conflict/"
+    },
+    {
+      "path": "/tag/conflict/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag conflict",
+      "url": "https://dustinsview.com/tag/conflict/feed/"
+    },
+    {
+      "path": "/tag/consumer/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 106,
+      "slug": "consumer",
+      "name": "consumer",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/consumer/"
+    },
+    {
+      "path": "/tag/consumer/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag consumer",
+      "url": "https://dustinsview.com/tag/consumer/feed/"
+    },
+    {
+      "path": "/tag/consumption/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 108,
+      "slug": "consumption",
+      "name": "consumption",
+      "postCount": 3,
+      "url": "https://dustinsview.com/tag/consumption/"
+    },
+    {
+      "path": "/tag/consumption/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag consumption",
+      "url": "https://dustinsview.com/tag/consumption/feed/"
+    },
+    {
+      "path": "/tag/crime/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 124,
+      "slug": "crime",
+      "name": "crime",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/crime/"
+    },
+    {
+      "path": "/tag/crime/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag crime",
+      "url": "https://dustinsview.com/tag/crime/feed/"
+    },
+    {
+      "path": "/tag/cryptocurrency/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 272,
+      "slug": "cryptocurrency",
+      "name": "cryptocurrency",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/cryptocurrency/"
+    },
+    {
+      "path": "/tag/cryptocurrency/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag cryptocurrency",
+      "url": "https://dustinsview.com/tag/cryptocurrency/feed/"
+    },
+    {
+      "path": "/tag/cycling/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 200,
+      "slug": "cycling",
+      "name": "cycling",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/cycling/"
+    },
+    {
+      "path": "/tag/cycling/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag cycling",
+      "url": "https://dustinsview.com/tag/cycling/feed/"
+    },
+    {
+      "path": "/tag/data-science/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 250,
+      "slug": "data-science",
+      "name": "data science",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/data-science/"
+    },
+    {
+      "path": "/tag/data-science/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag data science",
+      "url": "https://dustinsview.com/tag/data-science/feed/"
+    },
+    {
+      "path": "/tag/data-visualization/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 268,
+      "slug": "data-visualization",
+      "name": "data visualization",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/data-visualization/"
+    },
+    {
+      "path": "/tag/data-visualization/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag data visualization",
+      "url": "https://dustinsview.com/tag/data-visualization/feed/"
+    },
+    {
+      "path": "/tag/decentralization/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 274,
+      "slug": "decentralization",
+      "name": "decentralization",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/decentralization/"
+    },
+    {
+      "path": "/tag/decentralization/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag decentralization",
+      "url": "https://dustinsview.com/tag/decentralization/feed/"
+    },
+    {
+      "path": "/tag/democracy/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 130,
+      "slug": "democracy",
+      "name": "democracy",
+      "postCount": 3,
+      "url": "https://dustinsview.com/tag/democracy/"
+    },
+    {
+      "path": "/tag/democracy/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag democracy",
+      "url": "https://dustinsview.com/tag/democracy/feed/"
+    },
+    {
+      "path": "/tag/democrat/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 213,
+      "slug": "democrat",
+      "name": "democrat",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/democrat/"
+    },
+    {
+      "path": "/tag/democrat/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag democrat",
+      "url": "https://dustinsview.com/tag/democrat/feed/"
+    },
+    {
+      "path": "/tag/diet/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 104,
+      "slug": "diet",
+      "name": "diet",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/diet/"
+    },
+    {
+      "path": "/tag/diet/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag diet",
+      "url": "https://dustinsview.com/tag/diet/feed/"
+    },
+    {
+      "path": "/tag/digital-humanities/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 253,
+      "slug": "digital-humanities",
+      "name": "digital humanities",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/digital-humanities/"
+    },
+    {
+      "path": "/tag/digital-humanities/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag digital humanities",
+      "url": "https://dustinsview.com/tag/digital-humanities/feed/"
+    },
+    {
+      "path": "/tag/disposable-water/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 204,
+      "slug": "disposable-water",
+      "name": "disposable water",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/disposable-water/"
+    },
+    {
+      "path": "/tag/disposable-water/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag disposable water",
+      "url": "https://dustinsview.com/tag/disposable-water/feed/"
+    },
+    {
+      "path": "/tag/divestment/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 96,
+      "slug": "divestment",
+      "name": "Divestment",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/divestment/"
+    },
+    {
+      "path": "/tag/divestment/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag Divestment",
+      "url": "https://dustinsview.com/tag/divestment/feed/"
+    },
+    {
+      "path": "/tag/dna/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 224,
+      "slug": "dna",
+      "name": "DNA",
+      "postCount": 2,
+      "url": "https://dustinsview.com/tag/dna/"
+    },
+    {
+      "path": "/tag/dna/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag DNA",
+      "url": "https://dustinsview.com/tag/dna/feed/"
+    },
+    {
+      "path": "/tag/dr-pepper/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 156,
+      "slug": "dr-pepper",
+      "name": "Dr. Pepper",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/dr-pepper/"
+    },
+    {
+      "path": "/tag/dr-pepper/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag Dr. Pepper",
+      "url": "https://dustinsview.com/tag/dr-pepper/feed/"
+    },
+    {
+      "path": "/tag/dreaming/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 209,
+      "slug": "dreaming",
+      "name": "dreaming",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/dreaming/"
+    },
+    {
+      "path": "/tag/dreaming/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag dreaming",
+      "url": "https://dustinsview.com/tag/dreaming/feed/"
+    },
+    {
+      "path": "/tag/e-waste/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 257,
+      "slug": "e-waste",
+      "name": "e-waste",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/e-waste/"
+    },
+    {
+      "path": "/tag/e-waste/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag e-waste",
+      "url": "https://dustinsview.com/tag/e-waste/feed/"
+    },
+    {
+      "path": "/tag/earth/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 211,
+      "slug": "earth",
+      "name": "earth",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/earth/"
+    },
+    {
+      "path": "/tag/earth/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag earth",
+      "url": "https://dustinsview.com/tag/earth/feed/"
+    },
+    {
+      "path": "/tag/eating-animals/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 103,
+      "slug": "eating-animals",
+      "name": "eating animals",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/eating-animals/"
+    },
+    {
+      "path": "/tag/eating-animals/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag eating animals",
+      "url": "https://dustinsview.com/tag/eating-animals/feed/"
+    },
+    {
+      "path": "/tag/eco-friendly/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 109,
+      "slug": "eco-friendly",
+      "name": "eco-friendly",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/eco-friendly/"
+    },
+    {
+      "path": "/tag/eco-friendly/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag eco-friendly",
+      "url": "https://dustinsview.com/tag/eco-friendly/feed/"
+    },
+    {
+      "path": "/tag/eco-terrorism/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 144,
+      "slug": "eco-terrorism",
+      "name": "eco-terrorism",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/eco-terrorism/"
+    },
+    {
+      "path": "/tag/eco-terrorism/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag eco-terrorism",
+      "url": "https://dustinsview.com/tag/eco-terrorism/feed/"
+    },
+    {
+      "path": "/tag/economics/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 153,
+      "slug": "economics",
+      "name": "economics",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/economics/"
+    },
+    {
+      "path": "/tag/economics/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag economics",
+      "url": "https://dustinsview.com/tag/economics/feed/"
+    },
+    {
+      "path": "/tag/education/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 56,
+      "slug": "education",
+      "name": "education",
+      "postCount": 5,
+      "url": "https://dustinsview.com/tag/education/"
+    },
+    {
+      "path": "/tag/education/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag education",
+      "url": "https://dustinsview.com/tag/education/feed/"
+    },
+    {
+      "path": "/tag/edward-abbey/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 142,
+      "slug": "edward-abbey",
+      "name": "edward abbey",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/edward-abbey/"
+    },
+    {
+      "path": "/tag/edward-abbey/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag edward abbey",
+      "url": "https://dustinsview.com/tag/edward-abbey/feed/"
+    },
+    {
+      "path": "/tag/encryption/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 234,
+      "slug": "encryption",
+      "name": "encryption",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/encryption/"
+    },
+    {
+      "path": "/tag/encryption/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag encryption",
+      "url": "https://dustinsview.com/tag/encryption/feed/"
+    },
+    {
+      "path": "/tag/energy/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 72,
+      "slug": "energy",
+      "name": "energy",
+      "postCount": 8,
+      "url": "https://dustinsview.com/tag/energy/"
+    },
+    {
+      "path": "/tag/energy/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag energy",
+      "url": "https://dustinsview.com/tag/energy/feed/"
+    },
+    {
+      "path": "/tag/england/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 180,
+      "slug": "england",
+      "name": "england",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/england/"
+    },
+    {
+      "path": "/tag/england/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag england",
+      "url": "https://dustinsview.com/tag/england/feed/"
+    },
+    {
+      "path": "/tag/environment/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 52,
+      "slug": "environment",
+      "name": "environment",
+      "postCount": 12,
+      "url": "https://dustinsview.com/tag/environment/"
+    },
+    {
+      "path": "/tag/environment/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag environment",
+      "url": "https://dustinsview.com/tag/environment/feed/"
+    },
+    {
+      "path": "/tag/environment/page/2/",
+      "routeType": "pagination",
+      "statusCode": 200,
+      "source": "crawl",
+      "notes": "Tag environment paginated archive page 2",
+      "url": "https://dustinsview.com/tag/environment/page/2/"
+    },
+    {
+      "path": "/tag/ethnicity/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 215,
+      "slug": "ethnicity",
+      "name": "ethnicity",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/ethnicity/"
+    },
+    {
+      "path": "/tag/ethnicity/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag ethnicity",
+      "url": "https://dustinsview.com/tag/ethnicity/feed/"
+    },
+    {
+      "path": "/tag/europe/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 133,
+      "slug": "europe",
+      "name": "Europe",
+      "postCount": 2,
+      "url": "https://dustinsview.com/tag/europe/"
+    },
+    {
+      "path": "/tag/europe/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag Europe",
+      "url": "https://dustinsview.com/tag/europe/feed/"
+    },
+    {
+      "path": "/tag/eurotrip2016/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 195,
+      "slug": "eurotrip2016",
+      "name": "EuroTrip2016",
+      "postCount": 5,
+      "url": "https://dustinsview.com/tag/eurotrip2016/"
+    },
+    {
+      "path": "/tag/eurotrip2016/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag EuroTrip2016",
+      "url": "https://dustinsview.com/tag/eurotrip2016/feed/"
+    },
+    {
+      "path": "/tag/evil/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 187,
+      "slug": "evil",
+      "name": "evil",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/evil/"
+    },
+    {
+      "path": "/tag/evil/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag evil",
+      "url": "https://dustinsview.com/tag/evil/feed/"
+    },
+    {
+      "path": "/tag/exploitation/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 152,
+      "slug": "exploitation",
+      "name": "exploitation",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/exploitation/"
+    },
+    {
+      "path": "/tag/exploitation/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag exploitation",
+      "url": "https://dustinsview.com/tag/exploitation/feed/"
+    },
+    {
+      "path": "/tag/farm-house/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 265,
+      "slug": "farm-house",
+      "name": "Farm House",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/farm-house/"
+    },
+    {
+      "path": "/tag/farm-house/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag Farm House",
+      "url": "https://dustinsview.com/tag/farm-house/feed/"
+    },
+    {
+      "path": "/tag/farming/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 102,
+      "slug": "farming",
+      "name": "farming",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/farming/"
+    },
+    {
+      "path": "/tag/farming/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag farming",
+      "url": "https://dustinsview.com/tag/farming/feed/"
+    },
+    {
+      "path": "/tag/farting/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 117,
+      "slug": "farting",
+      "name": "farting",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/farting/"
+    },
+    {
+      "path": "/tag/farting/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag farting",
+      "url": "https://dustinsview.com/tag/farting/feed/"
+    },
+    {
+      "path": "/tag/feminism/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 116,
+      "slug": "feminism",
+      "name": "feminism",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/feminism/"
+    },
+    {
+      "path": "/tag/feminism/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag feminism",
+      "url": "https://dustinsview.com/tag/feminism/feed/"
+    },
+    {
+      "path": "/tag/fiction/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 239,
+      "slug": "fiction",
+      "name": "fiction",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/fiction/"
+    },
+    {
+      "path": "/tag/fiction/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag fiction",
+      "url": "https://dustinsview.com/tag/fiction/feed/"
+    },
+    {
+      "path": "/tag/film/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 182,
+      "slug": "film",
+      "name": "film",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/film/"
+    },
+    {
+      "path": "/tag/film/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag film",
+      "url": "https://dustinsview.com/tag/film/feed/"
+    },
+    {
+      "path": "/tag/fitness/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 201,
+      "slug": "fitness",
+      "name": "fitness",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/fitness/"
+    },
+    {
+      "path": "/tag/fitness/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag fitness",
+      "url": "https://dustinsview.com/tag/fitness/feed/"
+    },
+    {
+      "path": "/tag/food/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 98,
+      "slug": "food",
+      "name": "food",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/food/"
+    },
+    {
+      "path": "/tag/food/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag food",
+      "url": "https://dustinsview.com/tag/food/feed/"
+    },
+    {
+      "path": "/tag/free-market/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 147,
+      "slug": "free-market",
+      "name": "free market",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/free-market/"
+    },
+    {
+      "path": "/tag/free-market/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag free market",
+      "url": "https://dustinsview.com/tag/free-market/feed/"
+    },
+    {
+      "path": "/tag/free-trade/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 148,
+      "slug": "free-trade",
+      "name": "free trade",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/free-trade/"
+    },
+    {
+      "path": "/tag/free-trade/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag free trade",
+      "url": "https://dustinsview.com/tag/free-trade/feed/"
+    },
+    {
+      "path": "/tag/frisbee/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 260,
+      "slug": "frisbee",
+      "name": "Frisbee",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/frisbee/"
+    },
+    {
+      "path": "/tag/frisbee/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag Frisbee",
+      "url": "https://dustinsview.com/tag/frisbee/feed/"
+    },
+    {
+      "path": "/tag/gedogen/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 169,
+      "slug": "gedogen",
+      "name": "gedogen",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/gedogen/"
+    },
+    {
+      "path": "/tag/gedogen/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag gedogen",
+      "url": "https://dustinsview.com/tag/gedogen/feed/"
+    },
+    {
+      "path": "/tag/gender/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 194,
+      "slug": "gender",
+      "name": "gender",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/gender/"
+    },
+    {
+      "path": "/tag/gender/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag gender",
+      "url": "https://dustinsview.com/tag/gender/feed/"
+    },
+    {
+      "path": "/tag/germany/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 179,
+      "slug": "germany",
+      "name": "germany",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/germany/"
+    },
+    {
+      "path": "/tag/germany/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag germany",
+      "url": "https://dustinsview.com/tag/germany/feed/"
+    },
+    {
+      "path": "/tag/global-apartheid/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 164,
+      "slug": "global-apartheid",
+      "name": "global apartheid",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/global-apartheid/"
+    },
+    {
+      "path": "/tag/global-apartheid/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag global apartheid",
+      "url": "https://dustinsview.com/tag/global-apartheid/feed/"
+    },
+    {
+      "path": "/tag/grateful-dead/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 246,
+      "slug": "grateful-dead",
+      "name": "Grateful Dead",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/grateful-dead/"
+    },
+    {
+      "path": "/tag/grateful-dead/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag Grateful Dead",
+      "url": "https://dustinsview.com/tag/grateful-dead/feed/"
+    },
+    {
+      "path": "/tag/gregory-schlossberger/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 240,
+      "slug": "gregory-schlossberger",
+      "name": "Gregory Schlossberger",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/gregory-schlossberger/"
+    },
+    {
+      "path": "/tag/gregory-schlossberger/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag Gregory Schlossberger",
+      "url": "https://dustinsview.com/tag/gregory-schlossberger/feed/"
+    },
+    {
+      "path": "/tag/guest-author/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 118,
+      "slug": "guest-author",
+      "name": "guest author",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/guest-author/"
+    },
+    {
+      "path": "/tag/guest-author/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag guest author",
+      "url": "https://dustinsview.com/tag/guest-author/feed/"
+    },
+    {
+      "path": "/tag/guitar/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 73,
+      "slug": "guitar",
+      "name": "guitar",
+      "postCount": 7,
+      "url": "https://dustinsview.com/tag/guitar/"
+    },
+    {
+      "path": "/tag/guitar/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag guitar",
+      "url": "https://dustinsview.com/tag/guitar/feed/"
+    },
+    {
+      "path": "/tag/gun-violence/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 61,
+      "slug": "gun-violence",
+      "name": "gun violence",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/gun-violence/"
+    },
+    {
+      "path": "/tag/gun-violence/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag gun violence",
+      "url": "https://dustinsview.com/tag/gun-violence/feed/"
+    },
+    {
+      "path": "/tag/happiness/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 58,
+      "slug": "happiness",
+      "name": "happiness",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/happiness/"
+    },
+    {
+      "path": "/tag/happiness/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag happiness",
+      "url": "https://dustinsview.com/tag/happiness/feed/"
+    },
+    {
+      "path": "/tag/health/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 57,
+      "slug": "health",
+      "name": "health",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/health/"
+    },
+    {
+      "path": "/tag/health/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag health",
+      "url": "https://dustinsview.com/tag/health/feed/"
+    },
+    {
+      "path": "/tag/healthhappiness/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 90,
+      "slug": "healthhappiness",
+      "name": "health/happiness",
+      "postCount": 8,
+      "url": "https://dustinsview.com/tag/healthhappiness/"
+    },
+    {
+      "path": "/tag/healthhappiness/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag health/happiness",
+      "url": "https://dustinsview.com/tag/healthhappiness/feed/"
+    },
+    {
+      "path": "/tag/hillary/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 216,
+      "slug": "hillary",
+      "name": "Hillary",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/hillary/"
+    },
+    {
+      "path": "/tag/hillary/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag Hillary",
+      "url": "https://dustinsview.com/tag/hillary/feed/"
+    },
+    {
+      "path": "/tag/history/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 217,
+      "slug": "history",
+      "name": "history",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/history/"
+    },
+    {
+      "path": "/tag/history/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag history",
+      "url": "https://dustinsview.com/tag/history/feed/"
+    },
+    {
+      "path": "/tag/hitchhiking/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 196,
+      "slug": "hitchhiking",
+      "name": "hitchhiking",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/hitchhiking/"
+    },
+    {
+      "path": "/tag/hitchhiking/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag hitchhiking",
+      "url": "https://dustinsview.com/tag/hitchhiking/feed/"
+    },
+    {
+      "path": "/tag/homelessness/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 177,
+      "slug": "homelessness",
+      "name": "homelessness",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/homelessness/"
+    },
+    {
+      "path": "/tag/homelessness/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag homelessness",
+      "url": "https://dustinsview.com/tag/homelessness/feed/"
+    },
+    {
+      "path": "/tag/humor/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 64,
+      "slug": "humor",
+      "name": "humor",
+      "postCount": 8,
+      "url": "https://dustinsview.com/tag/humor/"
+    },
+    {
+      "path": "/tag/humor/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag humor",
+      "url": "https://dustinsview.com/tag/humor/feed/"
+    },
+    {
+      "path": "/tag/interview/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 99,
+      "slug": "interview",
+      "name": "interview",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/interview/"
+    },
+    {
+      "path": "/tag/interview/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag interview",
+      "url": "https://dustinsview.com/tag/interview/feed/"
+    },
+    {
+      "path": "/tag/issues/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 60,
+      "slug": "issues",
+      "name": "issues",
+      "postCount": 3,
+      "url": "https://dustinsview.com/tag/issues/"
+    },
+    {
+      "path": "/tag/issues/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag issues",
+      "url": "https://dustinsview.com/tag/issues/feed/"
+    },
+    {
+      "path": "/tag/java/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 226,
+      "slug": "java",
+      "name": "java",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/java/"
+    },
+    {
+      "path": "/tag/java/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag java",
+      "url": "https://dustinsview.com/tag/java/feed/"
+    },
+    {
+      "path": "/tag/jokes/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 205,
+      "slug": "jokes",
+      "name": "jokes/",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/jokes/"
+    },
+    {
+      "path": "/tag/jokes/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag jokes/",
+      "url": "https://dustinsview.com/tag/jokes/feed/"
+    },
+    {
+      "path": "/tag/satire/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 80,
+      "slug": "satire",
+      "name": "jokes/satire",
+      "postCount": 9,
+      "url": "https://dustinsview.com/tag/satire/"
+    },
+    {
+      "path": "/tag/satire/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag jokes/satire",
+      "url": "https://dustinsview.com/tag/satire/feed/"
+    },
+    {
+      "path": "/tag/journalism/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 241,
+      "slug": "journalism",
+      "name": "journalism",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/journalism/"
+    },
+    {
+      "path": "/tag/journalism/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag journalism",
+      "url": "https://dustinsview.com/tag/journalism/feed/"
+    },
+    {
+      "path": "/tag/jupyter/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 270,
+      "slug": "jupyter",
+      "name": "Jupyter",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/jupyter/"
+    },
+    {
+      "path": "/tag/jupyter/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag Jupyter",
+      "url": "https://dustinsview.com/tag/jupyter/feed/"
+    },
+    {
+      "path": "/tag/kindness/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 137,
+      "slug": "kindness",
+      "name": "kindness",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/kindness/"
+    },
+    {
+      "path": "/tag/kindness/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag kindness",
+      "url": "https://dustinsview.com/tag/kindness/feed/"
+    },
+    {
+      "path": "/tag/language/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 139,
+      "slug": "language",
+      "name": "language",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/language/"
+    },
+    {
+      "path": "/tag/language/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag language",
+      "url": "https://dustinsview.com/tag/language/feed/"
+    },
+    {
+      "path": "/tag/left/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 256,
+      "slug": "left",
+      "name": "left",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/left/"
+    },
+    {
+      "path": "/tag/left/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag left",
+      "url": "https://dustinsview.com/tag/left/feed/"
+    },
+    {
+      "path": "/tag/leftist/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 159,
+      "slug": "leftist",
+      "name": "leftist",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/leftist/"
+    },
+    {
+      "path": "/tag/leftist/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag leftist",
+      "url": "https://dustinsview.com/tag/leftist/feed/"
+    },
+    {
+      "path": "/tag/liberal/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 254,
+      "slug": "liberal",
+      "name": "liberal",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/liberal/"
+    },
+    {
+      "path": "/tag/liberal/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag liberal",
+      "url": "https://dustinsview.com/tag/liberal/feed/"
+    },
+    {
+      "path": "/tag/london/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 176,
+      "slug": "london",
+      "name": "london",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/london/"
+    },
+    {
+      "path": "/tag/london/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag london",
+      "url": "https://dustinsview.com/tag/london/feed/"
+    },
+    {
+      "path": "/tag/longitudinal-study/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 184,
+      "slug": "longitudinal-study",
+      "name": "longitudinal study",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/longitudinal-study/"
+    },
+    {
+      "path": "/tag/longitudinal-study/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag longitudinal study",
+      "url": "https://dustinsview.com/tag/longitudinal-study/feed/"
+    },
+    {
+      "path": "/tag/love/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 236,
+      "slug": "love",
+      "name": "love",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/love/"
+    },
+    {
+      "path": "/tag/love/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag love",
+      "url": "https://dustinsview.com/tag/love/feed/"
+    },
+    {
+      "path": "/tag/mapping/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 87,
+      "slug": "mapping",
+      "name": "mapping",
+      "postCount": 2,
+      "url": "https://dustinsview.com/tag/mapping/"
+    },
+    {
+      "path": "/tag/mapping/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag mapping",
+      "url": "https://dustinsview.com/tag/mapping/feed/"
+    },
+    {
+      "path": "/tag/mass-incarceration/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 125,
+      "slug": "mass-incarceration",
+      "name": "mass incarceration",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/mass-incarceration/"
+    },
+    {
+      "path": "/tag/mass-incarceration/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag mass incarceration",
+      "url": "https://dustinsview.com/tag/mass-incarceration/feed/"
+    },
+    {
+      "path": "/tag/math/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 157,
+      "slug": "math",
+      "name": "math",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/math/"
+    },
+    {
+      "path": "/tag/math/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag math",
+      "url": "https://dustinsview.com/tag/math/feed/"
+    },
+    {
+      "path": "/tag/mathematics/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 193,
+      "slug": "mathematics",
+      "name": "mathematics",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/mathematics/"
+    },
+    {
+      "path": "/tag/mathematics/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag mathematics",
+      "url": "https://dustinsview.com/tag/mathematics/feed/"
+    },
+    {
+      "path": "/tag/media/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 242,
+      "slug": "media",
+      "name": "media",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/media/"
+    },
+    {
+      "path": "/tag/media/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag media",
+      "url": "https://dustinsview.com/tag/media/feed/"
+    },
+    {
+      "path": "/tag/motto/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 210,
+      "slug": "motto",
+      "name": "motto",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/motto/"
+    },
+    {
+      "path": "/tag/motto/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag motto",
+      "url": "https://dustinsview.com/tag/motto/feed/"
+    },
+    {
+      "path": "/tag/music/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 69,
+      "slug": "music",
+      "name": "music",
+      "postCount": 9,
+      "url": "https://dustinsview.com/tag/music/"
+    },
+    {
+      "path": "/tag/music/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag music",
+      "url": "https://dustinsview.com/tag/music/feed/"
+    },
+    {
+      "path": "/tag/naming/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 155,
+      "slug": "naming",
+      "name": "naming",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/naming/"
+    },
+    {
+      "path": "/tag/naming/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag naming",
+      "url": "https://dustinsview.com/tag/naming/feed/"
+    },
+    {
+      "path": "/tag/narrative/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 248,
+      "slug": "narrative",
+      "name": "narrative",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/narrative/"
+    },
+    {
+      "path": "/tag/narrative/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag narrative",
+      "url": "https://dustinsview.com/tag/narrative/feed/"
+    },
+    {
+      "path": "/tag/nationalism/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 161,
+      "slug": "nationalism",
+      "name": "nationalism",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/nationalism/"
+    },
+    {
+      "path": "/tag/nationalism/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag nationalism",
+      "url": "https://dustinsview.com/tag/nationalism/feed/"
+    },
+    {
+      "path": "/tag/neoliberalism/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 189,
+      "slug": "neoliberalism",
+      "name": "neoliberalism",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/neoliberalism/"
+    },
+    {
+      "path": "/tag/neoliberalism/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag neoliberalism",
+      "url": "https://dustinsview.com/tag/neoliberalism/feed/"
+    },
+    {
+      "path": "/tag/netherlands/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 166,
+      "slug": "netherlands",
+      "name": "netherlands",
+      "postCount": 2,
+      "url": "https://dustinsview.com/tag/netherlands/"
+    },
+    {
+      "path": "/tag/netherlands/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag netherlands",
+      "url": "https://dustinsview.com/tag/netherlands/feed/"
+    },
+    {
+      "path": "/tag/nltk/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 267,
+      "slug": "nltk",
+      "name": "nltk",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/nltk/"
+    },
+    {
+      "path": "/tag/nltk/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag nltk",
+      "url": "https://dustinsview.com/tag/nltk/feed/"
+    },
+    {
+      "path": "/tag/oil/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 75,
+      "slug": "oil",
+      "name": "oil",
+      "postCount": 5,
+      "url": "https://dustinsview.com/tag/oil/"
+    },
+    {
+      "path": "/tag/oil/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag oil",
+      "url": "https://dustinsview.com/tag/oil/feed/"
+    },
+    {
+      "path": "/tag/op-ed/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 243,
+      "slug": "op-ed",
+      "name": "op-ed",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/op-ed/"
+    },
+    {
+      "path": "/tag/op-ed/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag op-ed",
+      "url": "https://dustinsview.com/tag/op-ed/feed/"
+    },
+    {
+      "path": "/tag/optimism/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 237,
+      "slug": "optimism",
+      "name": "optimism",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/optimism/"
+    },
+    {
+      "path": "/tag/optimism/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag optimism",
+      "url": "https://dustinsview.com/tag/optimism/feed/"
+    },
+    {
+      "path": "/tag/organic/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 107,
+      "slug": "organic",
+      "name": "organic",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/organic/"
+    },
+    {
+      "path": "/tag/organic/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag organic",
+      "url": "https://dustinsview.com/tag/organic/feed/"
+    },
+    {
+      "path": "/tag/original-music/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 74,
+      "slug": "original-music",
+      "name": "original music",
+      "postCount": 4,
+      "url": "https://dustinsview.com/tag/original-music/"
+    },
+    {
+      "path": "/tag/original-music/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag original music",
+      "url": "https://dustinsview.com/tag/original-music/feed/"
+    },
+    {
+      "path": "/tag/patriarchy/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 120,
+      "slug": "patriarchy",
+      "name": "patriarchy",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/patriarchy/"
+    },
+    {
+      "path": "/tag/patriarchy/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag patriarchy",
+      "url": "https://dustinsview.com/tag/patriarchy/feed/"
+    },
+    {
+      "path": "/tag/peace/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 76,
+      "slug": "peace",
+      "name": "peace",
+      "postCount": 3,
+      "url": "https://dustinsview.com/tag/peace/"
+    },
+    {
+      "path": "/tag/peace/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag peace",
+      "url": "https://dustinsview.com/tag/peace/feed/"
+    },
+    {
+      "path": "/tag/permaculture/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 101,
+      "slug": "permaculture",
+      "name": "permaculture",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/permaculture/"
+    },
+    {
+      "path": "/tag/permaculture/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag permaculture",
+      "url": "https://dustinsview.com/tag/permaculture/feed/"
+    },
+    {
+      "path": "/tag/personal/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 202,
+      "slug": "personal",
+      "name": "personal",
+      "postCount": 3,
+      "url": "https://dustinsview.com/tag/personal/"
+    },
+    {
+      "path": "/tag/personal/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag personal",
+      "url": "https://dustinsview.com/tag/personal/feed/"
+    },
+    {
+      "path": "/tag/philosophy/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 192,
+      "slug": "philosophy",
+      "name": "philosophy",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/philosophy/"
+    },
+    {
+      "path": "/tag/philosophy/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag philosophy",
+      "url": "https://dustinsview.com/tag/philosophy/feed/"
+    },
+    {
+      "path": "/tag/photoshop/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 198,
+      "slug": "photoshop",
+      "name": "photoshop",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/photoshop/"
+    },
+    {
+      "path": "/tag/photoshop/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag photoshop",
+      "url": "https://dustinsview.com/tag/photoshop/feed/"
+    },
+    {
+      "path": "/tag/plastic/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 203,
+      "slug": "plastic",
+      "name": "plastic",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/plastic/"
+    },
+    {
+      "path": "/tag/plastic/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag plastic",
+      "url": "https://dustinsview.com/tag/plastic/feed/"
+    },
+    {
+      "path": "/tag/poetry/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 178,
+      "slug": "poetry",
+      "name": "poetry",
+      "postCount": 2,
+      "url": "https://dustinsview.com/tag/poetry/"
+    },
+    {
+      "path": "/tag/poetry/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag poetry",
+      "url": "https://dustinsview.com/tag/poetry/feed/"
+    },
+    {
+      "path": "/tag/police-brutality/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 174,
+      "slug": "police-brutality",
+      "name": "police brutality",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/police-brutality/"
+    },
+    {
+      "path": "/tag/police-brutality/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag police brutality",
+      "url": "https://dustinsview.com/tag/police-brutality/feed/"
+    },
+    {
+      "path": "/tag/politics/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 66,
+      "slug": "politics",
+      "name": "politics",
+      "postCount": 9,
+      "url": "https://dustinsview.com/tag/politics/"
+    },
+    {
+      "path": "/tag/politics/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag politics",
+      "url": "https://dustinsview.com/tag/politics/feed/"
+    },
+    {
+      "path": "/tag/poop/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 225,
+      "slug": "poop",
+      "name": "poop",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/poop/"
+    },
+    {
+      "path": "/tag/poop/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag poop",
+      "url": "https://dustinsview.com/tag/poop/feed/"
+    },
+    {
+      "path": "/tag/poverty/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 111,
+      "slug": "poverty",
+      "name": "poverty",
+      "postCount": 2,
+      "url": "https://dustinsview.com/tag/poverty/"
+    },
+    {
+      "path": "/tag/poverty/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag poverty",
+      "url": "https://dustinsview.com/tag/poverty/feed/"
+    },
+    {
+      "path": "/tag/president/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 128,
+      "slug": "president",
+      "name": "President",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/president/"
+    },
+    {
+      "path": "/tag/president/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag President",
+      "url": "https://dustinsview.com/tag/president/feed/"
+    },
+    {
+      "path": "/tag/privacy/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 235,
+      "slug": "privacy",
+      "name": "privacy",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/privacy/"
+    },
+    {
+      "path": "/tag/privacy/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag privacy",
+      "url": "https://dustinsview.com/tag/privacy/feed/"
+    },
+    {
+      "path": "/tag/privilege/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 121,
+      "slug": "privilege",
+      "name": "privilege",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/privilege/"
+    },
+    {
+      "path": "/tag/privilege/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag privilege",
+      "url": "https://dustinsview.com/tag/privilege/feed/"
+    },
+    {
+      "path": "/tag/products/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 110,
+      "slug": "products",
+      "name": "products",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/products/"
+    },
+    {
+      "path": "/tag/products/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag products",
+      "url": "https://dustinsview.com/tag/products/feed/"
+    },
+    {
+      "path": "/tag/programming/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 227,
+      "slug": "programming",
+      "name": "programming",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/programming/"
+    },
+    {
+      "path": "/tag/programming/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag programming",
+      "url": "https://dustinsview.com/tag/programming/feed/"
+    },
+    {
+      "path": "/tag/progressive/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 158,
+      "slug": "progressive",
+      "name": "progressive",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/progressive/"
+    },
+    {
+      "path": "/tag/progressive/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag progressive",
+      "url": "https://dustinsview.com/tag/progressive/feed/"
+    },
+    {
+      "path": "/tag/protest/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 255,
+      "slug": "protest",
+      "name": "protest",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/protest/"
+    },
+    {
+      "path": "/tag/protest/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag protest",
+      "url": "https://dustinsview.com/tag/protest/feed/"
+    },
+    {
+      "path": "/tag/pun/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 238,
+      "slug": "pun",
+      "name": "pun",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/pun/"
+    },
+    {
+      "path": "/tag/pun/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag pun",
+      "url": "https://dustinsview.com/tag/pun/feed/"
+    },
+    {
+      "path": "/tag/puns/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 262,
+      "slug": "puns",
+      "name": "puns",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/puns/"
+    },
+    {
+      "path": "/tag/puns/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag puns",
+      "url": "https://dustinsview.com/tag/puns/feed/"
+    },
+    {
+      "path": "/tag/python/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 252,
+      "slug": "python",
+      "name": "python",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/python/"
+    },
+    {
+      "path": "/tag/python/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag python",
+      "url": "https://dustinsview.com/tag/python/feed/"
+    },
+    {
+      "path": "/tag/quotes/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 53,
+      "slug": "quotes",
+      "name": "quotes",
+      "postCount": 3,
+      "url": "https://dustinsview.com/tag/quotes/"
+    },
+    {
+      "path": "/tag/quotes/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag quotes",
+      "url": "https://dustinsview.com/tag/quotes/feed/"
+    },
+    {
+      "path": "/tag/race/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 160,
+      "slug": "race",
+      "name": "race",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/race/"
+    },
+    {
+      "path": "/tag/race/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag race",
+      "url": "https://dustinsview.com/tag/race/feed/"
+    },
+    {
+      "path": "/tag/radical/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 141,
+      "slug": "radical",
+      "name": "radical",
+      "postCount": 2,
+      "url": "https://dustinsview.com/tag/radical/"
+    },
+    {
+      "path": "/tag/radical/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag radical",
+      "url": "https://dustinsview.com/tag/radical/feed/"
+    },
+    {
+      "path": "/tag/republican/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 214,
+      "slug": "republican",
+      "name": "republican",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/republican/"
+    },
+    {
+      "path": "/tag/republican/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag republican",
+      "url": "https://dustinsview.com/tag/republican/feed/"
+    },
+    {
+      "path": "/tag/research/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 185,
+      "slug": "research",
+      "name": "research",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/research/"
+    },
+    {
+      "path": "/tag/research/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag research",
+      "url": "https://dustinsview.com/tag/research/feed/"
+    },
+    {
+      "path": "/tag/review/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 54,
+      "slug": "review",
+      "name": "review",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/review/"
+    },
+    {
+      "path": "/tag/review/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag review",
+      "url": "https://dustinsview.com/tag/review/feed/"
+    },
+    {
+      "path": "/tag/revolution/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 140,
+      "slug": "revolution",
+      "name": "revolution",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/revolution/"
+    },
+    {
+      "path": "/tag/revolution/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag revolution",
+      "url": "https://dustinsview.com/tag/revolution/feed/"
+    },
+    {
+      "path": "/tag/science/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 67,
+      "slug": "science",
+      "name": "science",
+      "postCount": 4,
+      "url": "https://dustinsview.com/tag/science/"
+    },
+    {
+      "path": "/tag/science/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag science",
+      "url": "https://dustinsview.com/tag/science/feed/"
+    },
+    {
+      "path": "/tag/sciencetechnology/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 232,
+      "slug": "sciencetechnology",
+      "name": "science/technology",
+      "postCount": 6,
+      "url": "https://dustinsview.com/tag/sciencetechnology/"
+    },
+    {
+      "path": "/tag/sciencetechnology/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag science/technology",
+      "url": "https://dustinsview.com/tag/sciencetechnology/feed/"
+    },
+    {
+      "path": "/tag/scrapy/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 266,
+      "slug": "scrapy",
+      "name": "scrapy",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/scrapy/"
+    },
+    {
+      "path": "/tag/scrapy/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag scrapy",
+      "url": "https://dustinsview.com/tag/scrapy/feed/"
+    },
+    {
+      "path": "/tag/self-improvement/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 188,
+      "slug": "self-improvement",
+      "name": "self-improvement",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/self-improvement/"
+    },
+    {
+      "path": "/tag/self-improvement/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag self-improvement",
+      "url": "https://dustinsview.com/tag/self-improvement/feed/"
+    },
+    {
+      "path": "/tag/sex/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 115,
+      "slug": "sex",
+      "name": "sex",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/sex/"
+    },
+    {
+      "path": "/tag/sex/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag sex",
+      "url": "https://dustinsview.com/tag/sex/feed/"
+    },
+    {
+      "path": "/tag/sharing-economy/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 197,
+      "slug": "sharing-economy",
+      "name": "sharing economy",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/sharing-economy/"
+    },
+    {
+      "path": "/tag/sharing-economy/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag sharing economy",
+      "url": "https://dustinsview.com/tag/sharing-economy/feed/"
+    },
+    {
+      "path": "/tag/silly/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 79,
+      "slug": "silly",
+      "name": "silly",
+      "postCount": 9,
+      "url": "https://dustinsview.com/tag/silly/"
+    },
+    {
+      "path": "/tag/silly/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag silly",
+      "url": "https://dustinsview.com/tag/silly/feed/"
+    },
+    {
+      "path": "/tag/socialism/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 65,
+      "slug": "socialism",
+      "name": "socialism",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/socialism/"
+    },
+    {
+      "path": "/tag/socialism/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag socialism",
+      "url": "https://dustinsview.com/tag/socialism/feed/"
+    },
+    {
+      "path": "/tag/songs/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 208,
+      "slug": "songs",
+      "name": "songs",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/songs/"
+    },
+    {
+      "path": "/tag/songs/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag songs",
+      "url": "https://dustinsview.com/tag/songs/feed/"
+    },
+    {
+      "path": "/tag/south-america/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 94,
+      "slug": "south-america",
+      "name": "South America",
+      "postCount": 2,
+      "url": "https://dustinsview.com/tag/south-america/"
+    },
+    {
+      "path": "/tag/south-america/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag South America",
+      "url": "https://dustinsview.com/tag/south-america/feed/"
+    },
+    {
+      "path": "/tag/storytelling/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 247,
+      "slug": "storytelling",
+      "name": "storytelling",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/storytelling/"
+    },
+    {
+      "path": "/tag/storytelling/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag storytelling",
+      "url": "https://dustinsview.com/tag/storytelling/feed/"
+    },
+    {
+      "path": "/tag/student/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 119,
+      "slug": "student",
+      "name": "student",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/student/"
+    },
+    {
+      "path": "/tag/student/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag student",
+      "url": "https://dustinsview.com/tag/student/feed/"
+    },
+    {
+      "path": "/tag/sustainability/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 151,
+      "slug": "sustainability",
+      "name": "sustainability",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/sustainability/"
+    },
+    {
+      "path": "/tag/sustainability/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag sustainability",
+      "url": "https://dustinsview.com/tag/sustainability/feed/"
+    },
+    {
+      "path": "/tag/sweden/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 93,
+      "slug": "sweden",
+      "name": "sweden",
+      "postCount": 2,
+      "url": "https://dustinsview.com/tag/sweden/"
+    },
+    {
+      "path": "/tag/sweden/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag sweden",
+      "url": "https://dustinsview.com/tag/sweden/feed/"
+    },
+    {
+      "path": "/tag/technology/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 88,
+      "slug": "technology",
+      "name": "technology",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/technology/"
+    },
+    {
+      "path": "/tag/technology/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag technology",
+      "url": "https://dustinsview.com/tag/technology/feed/"
+    },
+    {
+      "path": "/tag/text-mining/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 251,
+      "slug": "text-mining",
+      "name": "text mining",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/text-mining/"
+    },
+    {
+      "path": "/tag/text-mining/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag text mining",
+      "url": "https://dustinsview.com/tag/text-mining/feed/"
+    },
+    {
+      "path": "/tag/toilet/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 190,
+      "slug": "toilet",
+      "name": "toilet",
+      "postCount": 2,
+      "url": "https://dustinsview.com/tag/toilet/"
+    },
+    {
+      "path": "/tag/toilet/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag toilet",
+      "url": "https://dustinsview.com/tag/toilet/feed/"
+    },
+    {
+      "path": "/tag/tolerance/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 168,
+      "slug": "tolerance",
+      "name": "tolerance",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/tolerance/"
+    },
+    {
+      "path": "/tag/tolerance/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag tolerance",
+      "url": "https://dustinsview.com/tag/tolerance/feed/"
+    },
+    {
+      "path": "/tag/travel/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 71,
+      "slug": "travel",
+      "name": "travel",
+      "postCount": 7,
+      "url": "https://dustinsview.com/tag/travel/"
+    },
+    {
+      "path": "/tag/travel/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag travel",
+      "url": "https://dustinsview.com/tag/travel/feed/"
+    },
+    {
+      "path": "/tag/trickle-down/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 149,
+      "slug": "trickle-down",
+      "name": "trickle-down",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/trickle-down/"
+    },
+    {
+      "path": "/tag/trickle-down/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag trickle-down",
+      "url": "https://dustinsview.com/tag/trickle-down/feed/"
+    },
+    {
+      "path": "/tag/trickle-on/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 150,
+      "slug": "trickle-on",
+      "name": "trickle-on",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/trickle-on/"
+    },
+    {
+      "path": "/tag/trickle-on/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag trickle-on",
+      "url": "https://dustinsview.com/tag/trickle-on/feed/"
+    },
+    {
+      "path": "/tag/trump/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 186,
+      "slug": "trump",
+      "name": "trump",
+      "postCount": 2,
+      "url": "https://dustinsview.com/tag/trump/"
+    },
+    {
+      "path": "/tag/trump/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag trump",
+      "url": "https://dustinsview.com/tag/trump/feed/"
+    },
+    {
+      "path": "/tag/tv/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 220,
+      "slug": "tv",
+      "name": "tv",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/tv/"
+    },
+    {
+      "path": "/tag/tv/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag tv",
+      "url": "https://dustinsview.com/tag/tv/feed/"
+    },
+    {
+      "path": "/tag/two-party-system/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 129,
+      "slug": "two-party-system",
+      "name": "two-party system",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/two-party-system/"
+    },
+    {
+      "path": "/tag/two-party-system/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag two-party system",
+      "url": "https://dustinsview.com/tag/two-party-system/feed/"
+    },
+    {
+      "path": "/tag/uk/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 181,
+      "slug": "uk",
+      "name": "UK",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/uk/"
+    },
+    {
+      "path": "/tag/uk/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag UK",
+      "url": "https://dustinsview.com/tag/uk/feed/"
+    },
+    {
+      "path": "/tag/ultimate/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 259,
+      "slug": "ultimate",
+      "name": "ultimate",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/ultimate/"
+    },
+    {
+      "path": "/tag/ultimate/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag ultimate",
+      "url": "https://dustinsview.com/tag/ultimate/feed/"
+    },
+    {
+      "path": "/tag/ultimate-frisbee/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 261,
+      "slug": "ultimate-frisbee",
+      "name": "ultimate frisbee",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/ultimate-frisbee/"
+    },
+    {
+      "path": "/tag/ultimate-frisbee/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag ultimate frisbee",
+      "url": "https://dustinsview.com/tag/ultimate-frisbee/feed/"
+    },
+    {
+      "path": "/tag/university/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 136,
+      "slug": "university",
+      "name": "university",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/university/"
+    },
+    {
+      "path": "/tag/university/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag university",
+      "url": "https://dustinsview.com/tag/university/feed/"
+    },
+    {
+      "path": "/tag/urban-studies/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 138,
+      "slug": "urban-studies",
+      "name": "urban studies",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/urban-studies/"
+    },
+    {
+      "path": "/tag/urban-studies/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag urban studies",
+      "url": "https://dustinsview.com/tag/urban-studies/feed/"
+    },
+    {
+      "path": "/tag/us-mexico-border/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 163,
+      "slug": "us-mexico-border",
+      "name": "US-Mexico border",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/us-mexico-border/"
+    },
+    {
+      "path": "/tag/us-mexico-border/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag US-Mexico border",
+      "url": "https://dustinsview.com/tag/us-mexico-border/feed/"
+    },
+    {
+      "path": "/tag/usa/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 123,
+      "slug": "usa",
+      "name": "USA",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/usa/"
+    },
+    {
+      "path": "/tag/usa/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag USA",
+      "url": "https://dustinsview.com/tag/usa/feed/"
+    },
+    {
+      "path": "/tag/vegeterianism/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 105,
+      "slug": "vegeterianism",
+      "name": "vegeterianism",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/vegeterianism/"
+    },
+    {
+      "path": "/tag/vegeterianism/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag vegeterianism",
+      "url": "https://dustinsview.com/tag/vegeterianism/feed/"
+    },
+    {
+      "path": "/tag/ven-diagram/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 263,
+      "slug": "ven-diagram",
+      "name": "ven diagram",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/ven-diagram/"
+    },
+    {
+      "path": "/tag/ven-diagram/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag ven diagram",
+      "url": "https://dustinsview.com/tag/ven-diagram/feed/"
+    },
+    {
+      "path": "/tag/video/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 84,
+      "slug": "video",
+      "name": "video",
+      "postCount": 2,
+      "url": "https://dustinsview.com/tag/video/"
+    },
+    {
+      "path": "/tag/video/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag video",
+      "url": "https://dustinsview.com/tag/video/feed/"
+    },
+    {
+      "path": "/tag/war/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 127,
+      "slug": "war",
+      "name": "war",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/war/"
+    },
+    {
+      "path": "/tag/war/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag war",
+      "url": "https://dustinsview.com/tag/war/feed/"
+    },
+    {
+      "path": "/tag/wealth/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 113,
+      "slug": "wealth",
+      "name": "wealth",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/wealth/"
+    },
+    {
+      "path": "/tag/wealth/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag wealth",
+      "url": "https://dustinsview.com/tag/wealth/feed/"
+    },
+    {
+      "path": "/tag/web-scraping/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 269,
+      "slug": "web-scraping",
+      "name": "web scraping",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/web-scraping/"
+    },
+    {
+      "path": "/tag/web-scraping/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag web scraping",
+      "url": "https://dustinsview.com/tag/web-scraping/feed/"
+    },
+    {
+      "path": "/tag/wordplay/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 233,
+      "slug": "wordplay",
+      "name": "wordplay",
+      "postCount": 0,
+      "url": "https://dustinsview.com/tag/wordplay/"
+    },
+    {
+      "path": "/tag/wordplay/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag wordplay",
+      "url": "https://dustinsview.com/tag/wordplay/feed/"
+    },
+    {
+      "path": "/tag/yes-magazine/",
+      "routeType": "tag",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "termId": 145,
+      "slug": "yes-magazine",
+      "name": "Yes! Magazine",
+      "postCount": 1,
+      "url": "https://dustinsview.com/tag/yes-magazine/"
+    },
+    {
+      "path": "/tag/yes-magazine/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for tag Yes! Magazine",
+      "url": "https://dustinsview.com/tag/yes-magazine/feed/"
+    },
+    {
+      "path": "/author/admin/",
+      "routeType": "author",
+      "statusCode": 200,
+      "source": "rest_api & sitemap",
+      "authorId": 1,
+      "name": "Dustin",
+      "slug": "admin",
+      "url": "https://dustinsview.com/author/admin/"
+    },
+    {
+      "path": "/author/admin/page/2/",
+      "routeType": "pagination",
+      "statusCode": 200,
+      "source": "crawl",
+      "notes": "Author paginated archive page 2",
+      "url": "https://dustinsview.com/author/admin/page/2/"
+    },
+    {
+      "path": "/author/admin/page/3/",
+      "routeType": "pagination",
+      "statusCode": 200,
+      "source": "crawl",
+      "notes": "Author paginated archive page 3",
+      "url": "https://dustinsview.com/author/admin/page/3/"
+    },
+    {
+      "path": "/author/admin/page/4/",
+      "routeType": "pagination",
+      "statusCode": 200,
+      "source": "crawl",
+      "notes": "Author paginated archive page 4",
+      "url": "https://dustinsview.com/author/admin/page/4/"
+    },
+    {
+      "path": "/author/admin/page/5/",
+      "routeType": "pagination",
+      "statusCode": 200,
+      "source": "crawl",
+      "notes": "Author paginated archive page 5",
+      "url": "https://dustinsview.com/author/admin/page/5/"
+    },
+    {
+      "path": "/author/admin/feed/",
+      "routeType": "feed",
+      "statusCode": 200,
+      "source": "standard_wp",
+      "notes": "RSS feed for author Dustin",
+      "url": "https://dustinsview.com/author/admin/feed/"
+    },
+    {
+      "path": "/2010/",
+      "routeType": "year_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "year": 2010,
+      "url": "https://dustinsview.com/2010/"
+    },
+    {
+      "path": "/2011/",
+      "routeType": "year_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "year": 2011,
+      "url": "https://dustinsview.com/2011/"
+    },
+    {
+      "path": "/2012/",
+      "routeType": "year_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "year": 2012,
+      "url": "https://dustinsview.com/2012/"
+    },
+    {
+      "path": "/2013/",
+      "routeType": "year_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "year": 2013,
+      "url": "https://dustinsview.com/2013/"
+    },
+    {
+      "path": "/2014/",
+      "routeType": "year_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "year": 2014,
+      "url": "https://dustinsview.com/2014/"
+    },
+    {
+      "path": "/2015/",
+      "routeType": "year_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "year": 2015,
+      "url": "https://dustinsview.com/2015/"
+    },
+    {
+      "path": "/2016/",
+      "routeType": "year_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "year": 2016,
+      "url": "https://dustinsview.com/2016/"
+    },
+    {
+      "path": "/2017/",
+      "routeType": "year_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "year": 2017,
+      "url": "https://dustinsview.com/2017/"
+    },
+    {
+      "path": "/2018/",
+      "routeType": "year_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "year": 2018,
+      "url": "https://dustinsview.com/2018/"
+    },
+    {
+      "path": "/2016/page/2/",
+      "routeType": "pagination",
+      "statusCode": 200,
+      "source": "crawl",
+      "year": 2016,
+      "notes": "2016 year archive page 2",
+      "url": "https://dustinsview.com/2016/page/2/"
+    },
+    {
+      "path": "/2010/07/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2010/07",
+      "url": "https://dustinsview.com/2010/07/"
+    },
+    {
+      "path": "/2010/08/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2010/08",
+      "url": "https://dustinsview.com/2010/08/"
+    },
+    {
+      "path": "/2010/10/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2010/10",
+      "url": "https://dustinsview.com/2010/10/"
+    },
+    {
+      "path": "/2011/03/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2011/03",
+      "url": "https://dustinsview.com/2011/03/"
+    },
+    {
+      "path": "/2011/04/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2011/04",
+      "url": "https://dustinsview.com/2011/04/"
+    },
+    {
+      "path": "/2011/05/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2011/05",
+      "url": "https://dustinsview.com/2011/05/"
+    },
+    {
+      "path": "/2011/06/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2011/06",
+      "url": "https://dustinsview.com/2011/06/"
+    },
+    {
+      "path": "/2011/08/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2011/08",
+      "url": "https://dustinsview.com/2011/08/"
+    },
+    {
+      "path": "/2012/01/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2012/01",
+      "url": "https://dustinsview.com/2012/01/"
+    },
+    {
+      "path": "/2012/06/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2012/06",
+      "url": "https://dustinsview.com/2012/06/"
+    },
+    {
+      "path": "/2012/10/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2012/10",
+      "url": "https://dustinsview.com/2012/10/"
+    },
+    {
+      "path": "/2013/01/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2013/01",
+      "url": "https://dustinsview.com/2013/01/"
+    },
+    {
+      "path": "/2013/03/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2013/03",
+      "url": "https://dustinsview.com/2013/03/"
+    },
+    {
+      "path": "/2013/04/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2013/04",
+      "url": "https://dustinsview.com/2013/04/"
+    },
+    {
+      "path": "/2013/06/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2013/06",
+      "url": "https://dustinsview.com/2013/06/"
+    },
+    {
+      "path": "/2014/01/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2014/01",
+      "url": "https://dustinsview.com/2014/01/"
+    },
+    {
+      "path": "/2014/04/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2014/04",
+      "url": "https://dustinsview.com/2014/04/"
+    },
+    {
+      "path": "/2014/06/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2014/06",
+      "url": "https://dustinsview.com/2014/06/"
+    },
+    {
+      "path": "/2015/11/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2015/11",
+      "url": "https://dustinsview.com/2015/11/"
+    },
+    {
+      "path": "/2016/01/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2016/01",
+      "url": "https://dustinsview.com/2016/01/"
+    },
+    {
+      "path": "/2016/03/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2016/03",
+      "url": "https://dustinsview.com/2016/03/"
+    },
+    {
+      "path": "/2016/04/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2016/04",
+      "url": "https://dustinsview.com/2016/04/"
+    },
+    {
+      "path": "/2016/06/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2016/06",
+      "url": "https://dustinsview.com/2016/06/"
+    },
+    {
+      "path": "/2016/07/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2016/07",
+      "url": "https://dustinsview.com/2016/07/"
+    },
+    {
+      "path": "/2016/08/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2016/08",
+      "url": "https://dustinsview.com/2016/08/"
+    },
+    {
+      "path": "/2016/09/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2016/09",
+      "url": "https://dustinsview.com/2016/09/"
+    },
+    {
+      "path": "/2016/11/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2016/11",
+      "url": "https://dustinsview.com/2016/11/"
+    },
+    {
+      "path": "/2017/01/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2017/01",
+      "url": "https://dustinsview.com/2017/01/"
+    },
+    {
+      "path": "/2017/03/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2017/03",
+      "url": "https://dustinsview.com/2017/03/"
+    },
+    {
+      "path": "/2017/06/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2017/06",
+      "url": "https://dustinsview.com/2017/06/"
+    },
+    {
+      "path": "/2018/04/",
+      "routeType": "month_archive",
+      "statusCode": 200,
+      "source": "crawl",
+      "yearMonth": "2018/04",
+      "url": "https://dustinsview.com/2018/04/"
+    },
+    {
+      "path": "/feed/",
+      "statusCode": 200,
+      "notes": "Main RSS2 feed",
+      "routeType": "feed",
+      "source": "crawl & standard_wp",
+      "url": "https://dustinsview.com/feed/"
+    },
+    {
+      "path": "/rss/",
+      "statusCode": 301,
+      "target": "/feed/",
+      "notes": "Legacy RSS feed redirect",
+      "routeType": "feed",
+      "source": "crawl & standard_wp",
+      "url": "https://dustinsview.com/rss/"
+    },
+    {
+      "path": "/atom/",
+      "statusCode": 301,
+      "target": "/feed/",
+      "notes": "Legacy Atom feed redirect",
+      "routeType": "feed",
+      "source": "crawl & standard_wp",
+      "url": "https://dustinsview.com/atom/"
+    },
+    {
+      "path": "/feed/rss/",
+      "statusCode": 301,
+      "target": "/feed/",
+      "notes": "RSS redirect",
+      "routeType": "feed",
+      "source": "crawl & standard_wp",
+      "url": "https://dustinsview.com/feed/rss/"
+    },
+    {
+      "path": "/feed/rss2/",
+      "statusCode": 301,
+      "target": "/feed/",
+      "notes": "RSS2 redirect",
+      "routeType": "feed",
+      "source": "crawl & standard_wp",
+      "url": "https://dustinsview.com/feed/rss2/"
+    },
+    {
+      "path": "/feed/atom/",
+      "statusCode": 200,
+      "notes": "Atom feed",
+      "routeType": "feed",
+      "source": "crawl & standard_wp",
+      "url": "https://dustinsview.com/feed/atom/"
+    },
+    {
+      "path": "/comments/feed/",
+      "statusCode": 200,
+      "notes": "Comments RSS feed",
+      "routeType": "feed",
+      "source": "crawl & standard_wp",
+      "url": "https://dustinsview.com/comments/feed/"
+    },
+    {
+      "path": "/all/biology-a-quick-lesson-on-cells-cartoon/attachment/img133/",
+      "target": "/2016/biology-a-quick-lesson-on-cells-cartoon/",
+      "routeType": "attachment",
+      "source": "crawl_content",
+      "url": "https://dustinsview.com/all/biology-a-quick-lesson-on-cells-cartoon/attachment/img133/"
+    },
+    {
+      "path": "/all/daily-camera-stop-propagating-climate-change-denial/attachment/earth/",
+      "target": "/2016/daily-camera-stop-propagating-climate-change-denial/",
+      "routeType": "attachment",
+      "source": "crawl_content",
+      "url": "https://dustinsview.com/all/daily-camera-stop-propagating-climate-change-denial/attachment/earth/"
+    },
+    {
+      "path": "/all/insult-absurdity-make-america-great/attachment/hat/",
+      "target": "/2017/insult-absurdity-make-america-great/",
+      "routeType": "attachment",
+      "source": "crawl_content",
+      "url": "https://dustinsview.com/all/insult-absurdity-make-america-great/attachment/hat/"
+    },
+    {
+      "path": "/all/made-bernie-things/attachment/11167804_464585873698267_1888080400337553208_n/",
+      "target": "/2016/made-bernie-things/",
+      "routeType": "attachment",
+      "source": "crawl_content",
+      "url": "https://dustinsview.com/all/made-bernie-things/attachment/11167804_464585873698267_1888080400337553208_n/"
+    },
+    {
+      "path": "/all/made-bernie-things/attachment/12657278_10205319627141313_2465876425985884890_o/",
+      "target": "/2016/made-bernie-things/",
+      "routeType": "attachment",
+      "source": "crawl_content",
+      "url": "https://dustinsview.com/all/made-bernie-things/attachment/12657278_10205319627141313_2465876425985884890_o/"
+    },
+    {
+      "path": "/all/made-bernie-things/attachment/the_future/",
+      "target": "/2016/made-bernie-things/",
+      "routeType": "attachment",
+      "source": "crawl_content",
+      "url": "https://dustinsview.com/all/made-bernie-things/attachment/the_future/"
+    },
+    {
+      "path": "/all/myth-conscientious-consumption/attachment/recycle/",
+      "target": "/2016/myth-conscientious-consumption/",
+      "routeType": "attachment",
+      "source": "crawl_content",
+      "url": "https://dustinsview.com/all/myth-conscientious-consumption/attachment/recycle/"
+    },
+    {
+      "path": "/all/pooping-with-java/attachment/java/",
+      "target": "/2015/pooping-with-java/",
+      "routeType": "attachment",
+      "source": "crawl_content",
+      "url": "https://dustinsview.com/all/pooping-with-java/attachment/java/"
+    },
+    {
+      "path": "/all/the-joy-of-cycling/attachment/sony-dsc/",
+      "target": "/2016/the-joy-of-cycling/",
+      "routeType": "attachment",
+      "source": "crawl_content",
+      "url": "https://dustinsview.com/all/the-joy-of-cycling/attachment/sony-dsc/"
+    },
+    {
+      "path": "/all/the-magnetic-house-of-cards/attachment/house_cards/",
+      "target": "/2016/the-magnetic-house-of-cards/",
+      "routeType": "attachment",
+      "source": "crawl_content",
+      "url": "https://dustinsview.com/all/the-magnetic-house-of-cards/attachment/house_cards/"
+    },
+    {
+      "path": "/eurotrip2016/little-differences-observations-europe/attachment/bike/",
+      "target": "/2016/little-differences-observations-europe/",
+      "routeType": "attachment",
+      "source": "crawl_content",
+      "url": "https://dustinsview.com/eurotrip2016/little-differences-observations-europe/attachment/bike/"
+    },
+    {
+      "path": "/eurotrip2016/little-differences-observations-europe/attachment/cream_tea_img/",
+      "target": "/2016/little-differences-observations-europe/",
+      "routeType": "attachment",
+      "source": "crawl_content",
+      "url": "https://dustinsview.com/eurotrip2016/little-differences-observations-europe/attachment/cream_tea_img/"
+    },
+    {
+      "path": "/eurotrip2016/little-differences-observations-europe/attachment/img_2599/",
+      "target": "/2016/little-differences-observations-europe/",
+      "routeType": "attachment",
+      "source": "crawl_content",
+      "url": "https://dustinsview.com/eurotrip2016/little-differences-observations-europe/attachment/img_2599/"
+    },
+    {
+      "path": "/eurotrip2016/little-differences-observations-europe/attachment/kalles_img/",
+      "target": "/2016/little-differences-observations-europe/",
+      "routeType": "attachment",
+      "source": "crawl_content",
+      "url": "https://dustinsview.com/eurotrip2016/little-differences-observations-europe/attachment/kalles_img/"
+    },
+    {
+      "path": "/eurotrip2016/little-differences-observations-europe/attachment/nutella/",
+      "target": "/2016/little-differences-observations-europe/",
+      "routeType": "attachment",
+      "source": "crawl_content",
+      "url": "https://dustinsview.com/eurotrip2016/little-differences-observations-europe/attachment/nutella/"
+    },
+    {
+      "path": "/eurotrip2016/little-differences-observations-europe/attachment/swedish_binder_img/",
+      "target": "/2016/little-differences-observations-europe/",
+      "routeType": "attachment",
+      "source": "crawl_content",
+      "url": "https://dustinsview.com/eurotrip2016/little-differences-observations-europe/attachment/swedish_binder_img/"
+    },
+    {
+      "path": "/perspective/songs-of-peaceful-resignation/attachment/%c2%80i/",
+      "target": "/2013/songs-of-peaceful-resignation/",
+      "routeType": "attachment",
+      "source": "crawl_content",
+      "url": "https://dustinsview.com/perspective/songs-of-peaceful-resignation/attachment/%c2%80i/"
+    },
+    {
+      "path": "/book-review/wit-and-wisdom-in-the-monkey-wrench-gang/",
+      "target": "/2014/wit-and-wisdom-in-the-monkey-wrench-gang/",
+      "routeType": "redirect",
+      "statusCode": 301,
+      "source": "crawl_content",
+      "url": "https://dustinsview.com/book-review/wit-and-wisdom-in-the-monkey-wrench-gang/"
+    },
+    {
+      "path": "/review/slaughterhouse-five-and-reflections-on-destiny/",
+      "target": "/2013/slaughterhouse-five-and-reflections-on-destiny/",
+      "routeType": "redirect",
+      "statusCode": 301,
+      "source": "crawl_content",
+      "url": "https://dustinsview.com/review/slaughterhouse-five-and-reflections-on-destiny/"
+    },
+    {
+      "path": "/wp-sitemap.xml",
+      "routeType": "sitemap",
+      "statusCode": 200,
+      "source": "sitemap",
+      "url": "https://dustinsview.com/wp-sitemap.xml"
+    },
+    {
+      "path": "/wp-sitemap-posts-post-1.xml",
+      "routeType": "sitemap",
+      "statusCode": 200,
+      "source": "sitemap",
+      "url": "https://dustinsview.com/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "path": "/wp-sitemap-posts-page-1.xml",
+      "routeType": "sitemap",
+      "statusCode": 200,
+      "source": "sitemap",
+      "url": "https://dustinsview.com/wp-sitemap-posts-page-1.xml"
+    },
+    {
+      "path": "/wp-sitemap-taxonomies-category-1.xml",
+      "routeType": "sitemap",
+      "statusCode": 200,
+      "source": "sitemap",
+      "url": "https://dustinsview.com/wp-sitemap-taxonomies-category-1.xml"
+    },
+    {
+      "path": "/wp-sitemap-taxonomies-post_tag-1.xml",
+      "routeType": "sitemap",
+      "statusCode": 200,
+      "source": "sitemap",
+      "url": "https://dustinsview.com/wp-sitemap-taxonomies-post_tag-1.xml"
+    },
+    {
+      "path": "/wp-sitemap-users-1.xml",
+      "routeType": "sitemap",
+      "statusCode": 200,
+      "source": "sitemap",
+      "url": "https://dustinsview.com/wp-sitemap-users-1.xml"
+    },
+    {
+      "path": "/wp-admin/",
+      "statusCode": 302,
+      "notes": "Admin login redirect",
+      "routeType": "admin_api",
+      "source": "wp_core",
+      "url": "https://dustinsview.com/wp-admin/"
+    },
+    {
+      "path": "/wp-login.php",
+      "statusCode": 200,
+      "notes": "Login page",
+      "routeType": "admin_api",
+      "source": "wp_core",
+      "url": "https://dustinsview.com/wp-login.php"
+    },
+    {
+      "path": "/wp-json/",
+      "statusCode": 200,
+      "notes": "REST API index",
+      "routeType": "admin_api",
+      "source": "wp_core",
+      "url": "https://dustinsview.com/wp-json/"
+    },
+    {
+      "path": "/xmlrpc.php",
+      "statusCode": 405,
+      "notes": "XML-RPC endpoint",
+      "routeType": "admin_api",
+      "source": "wp_core",
+      "url": "https://dustinsview.com/xmlrpc.php"
+    }
+  ]
+}

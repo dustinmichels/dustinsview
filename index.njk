@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+title: Home
+pagination:
+  data: collections.postsReverse
+  size: 10
+  alias: posts
+permalink: "{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber + 1 }}/{% else %}/{% endif %}"
+---
+
+<h1 class="screen-reader-text">Dustin's View &ndash; Static Blog Archive</h1>
+
+<section class="posts-section" aria-label="Blog Posts">
+  {% for post in posts %}
+    {% include "partials/post-card.njk" %}
+  {% endfor %}
+
+  {% if pagination.pages.length > 1 %}
+  <nav class="posts-navigation" aria-label="Pagination">
+    {% if pagination.href.next %}
+    <div class="nav-previous"><a href="{{ pagination.href.next }}" rel="next"><span class="meta-nav">Page {{ pagination.pageNumber + 2 }} of {{ pagination.pages.length }}</span>Older posts</a></div>
+    {% endif %}
+    {% if pagination.href.previous %}
+    <div class="nav-next"><a href="{{ pagination.href.previous }}" rel="prev"><span class="meta-nav">Page {{ pagination.pageNumber }} of {{ pagination.pages.length }}</span>Newer posts</a></div>
+    {% endif %}
+  </nav>
+  {% endif %}
+</section>

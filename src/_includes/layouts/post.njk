@@ -1,0 +1,48 @@
+---
+layout: layouts/base.njk
+bodyClass: singular
+---
+<article class="post hentry">
+  <header class="entry-header">
+    <h1 class="entry-title">{{ title }}</h1>
+    <div class="entry-meta">
+      <span class="posted-on">Posted on <time class="entry-date published" datetime="{{ date | isoDate }}">{{ date | readableDate }}</time></span>
+      {% if author %}<span class="byline"> by <a href="/about/">{{ author }}</a></span>{% endif %}
+      {% if updated and updated != date %}
+      <span class="updated-on">(Updated <time class="updated" datetime="{{ updated | isoDate }}">{{ updated | readableDate }}</time>)</span>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="entry-content">
+    {{ content | safe }}
+  </div>
+
+  <footer class="entry-footer">
+    {% if categorySlugs and categorySlugs.length > 0 %}
+    <span class="cat-links">Posted in {% for cat in categorySlugs %}<a href="/category/{{ cat }}/" rel="category tag">{{ cat | categoryName }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</span>
+    {% endif %}
+    {% if tagSlugs and tagSlugs.length > 0 %}
+    <span class="tags-links">Tagged {% for tag in tagSlugs %}<a href="/tag/{{ tag }}/" rel="tag">{{ tag | tagName }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</span>
+    {% endif %}
+  </footer>
+
+  {% set previousPost = collections.posts | getPreviousCollectionItem %}
+  {% set nextPost = collections.posts | getNextCollectionItem %}
+  {% if previousPost or nextPost %}
+  <nav class="post-navigation" aria-label="Post Navigation">
+    {% if previousPost %}
+    <div class="nav-previous">
+      <a href="{{ previousPost.url }}" rel="prev"><span class="meta-nav">Previous Post</span> {{ previousPost.data.title }}</a>
+    </div>
+    {% endif %}
+    {% if nextPost %}
+    <div class="nav-next">
+      <a href="{{ nextPost.url }}" rel="next"><span class="meta-nav">Next Post</span> {{ nextPost.data.title }}</a>
+    </div>
+    {% endif %}
+  </nav>
+  {% endif %}
+
+  {% include "partials/comments.njk" %}
+</article>

@@ -1,0 +1,30 @@
+<aside class="widget-area" aria-label="Sidebar">
+  <section class="widget widget_recent_entries">
+    <h2 class="widget-title">Latest</h2>
+    <ul>
+      {% for post in collections.postsReverse | head(5) %}
+      {% set postComments = comments[post.data.postSlug] %}
+      <li>
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+        <span class="post-date"><time datetime="{{ post.data.date | isoDate }}">{{ post.data.date | readableDate }}</time>{% if postComments %} &middot; <a href="{{ post.url }}#comments">{{ postComments.count }} {% if postComments.count == 1 %}Comment{% else %}Comments{% endif %}</a>{% endif %}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  <section class="widget widget_categories">
+    <h2 class="widget-title">Categories</h2>
+    <ul>
+      {% for cat in collections.categoryList %}
+      <li><a href="/category/{{ cat.slug }}/">{{ cat.name }}</a> <span class="post-count">{{ cat.posts.length }}</span></li>
+      {% endfor %}
+    </ul>
+  </section>
+  <section class="widget widget_archive">
+    <h2 class="widget-title">Archives</h2>
+    <ul>
+      {% for y in collections.yearList %}
+      <li><a href="/{{ y.year }}/">{{ y.year }}</a> <span class="post-count">{{ y.posts.length }}</span></li>
+      {% endfor %}
+    </ul>
+  </section>
+</aside>

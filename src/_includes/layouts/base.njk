@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title %}{{ title }} &middot; {{ site.title }}{% else %}{{ site.title }} &ndash; {{ site.description }}{% endif %}</title>
+  <meta name="description" content="{% if excerpt %}{{ excerpt | striptags | truncate(160) }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="icon" href="/favicon.ico">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{% if excerpt %}{{ excerpt | striptags | truncate(200) }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:type" content="{% if layout == 'layouts/post.njk' %}article{% else %}website{% endif %}">
+  {% if featuredMedia and featuredMedia.url %}
+  <meta property="og:image" content="{{ site.url }}{{ featuredMedia.url }}">
+  {% endif %}
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="{% if featuredMedia and featuredMedia.url %}summary_large_image{% else %}summary{% endif %}">
+  <meta name="twitter:title" content="{% if title %}{{ title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if excerpt %}{{ excerpt | striptags | truncate(200) }}{% else %}{{ site.description }}{% endif %}">
+  {% if featuredMedia and featuredMedia.url %}
+  <meta name="twitter:image" content="{{ site.url }}{{ featuredMedia.url }}">
+  {% endif %}
+  {% if site.author.twitter %}
+  <meta name="twitter:creator" content="@{{ site.author.twitter }}">
+  {% endif %}
+
+  <!-- Feed -->
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed.xml">
+
+  <!-- Self-hosted Libre Baskerville (SIL OFL 1.1, see /fonts/OFL.txt) -->
+  <link rel="preload" href="/fonts/libre-baskerville-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="{{ bodyClass or 'blog' }}">
+  <a href="#main" class="skip-link screen-reader-text">Skip to content</a>
+  <div class="site">
+    {% include "partials/header.njk" %}
+
+    <div class="site-content">
+      <main id="main" class="site-main">
+        {{ content | safe }}
+      </main>
+      {% if bodyClass == "singular" %}{% include "partials/sidebar.njk" %}{% endif %}
+    </div>
+
+    {% include "partials/footer.njk" %}
+  </div>
+</body>
+</html>

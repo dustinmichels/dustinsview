@@ -1,0 +1,39 @@
+{% macro renderComment(comment, depth, parent) %}
+<li class="comment-item{% if comment.isPostAuthor %} comment-by-author{% endif %}" id="comment-{{ comment.id }}">
+  <div class="comment-article">
+    <header class="comment-meta">
+      <span class="comment-author">
+        {% if comment.author_url %}<a href="{{ comment.author_url }}" rel="nofollow ugc noopener">{{ comment.author_name }}</a>{% else %}{{ comment.author_name }}{% endif %}
+        {% if comment.isPostAuthor %}<span class="comment-author-badge">Author</span>{% endif %}
+      </span>
+      <a class="comment-date" href="#comment-{{ comment.id }}"><time datetime="{{ comment.date }}">{{ comment.date | readableDate }}</time></a>
+    </header>
+    {% if parent %}
+    <p class="comment-reply-to">In reply to <a href="#comment-{{ parent.id }}">{{ parent.author_name }}</a></p>
+    {% elif comment.parentMissing %}
+    <p class="comment-reply-to">In reply to a comment that is no longer available</p>
+    {% endif %}
+    <div class="comment-body">
+      {{ comment.content | safe }}
+    </div>
+  </div>
+  {% if comment.children.length and depth < 3 %}
+  <ol class="comment-children">
+    {% for reply in comment.children %}{{ renderComment(reply, depth + 1, comment) }}{% endfor %}
+  </ol>
+  {% endif %}
+</li>
+{% if depth >= 3 %}{% for reply in comment.children %}{{ renderComment(reply, depth + 1, comment) }}{% endfor %}{% endif %}
+{% endmacro %}
+{% set postComments = comments[postSlug] if (comments and postSlug) else null %}
+<section class="comments-section" id="comments" aria-labelledby="comments-title">
+  <h2 class="comments-title" id="comments-title">Comments{% if postComments %} ({{ postComments.count }}){% endif %}</h2>
+  <p class="comments-closed-notice">Comments on this post are closed.{% if postComments %} The discussion below is preserved as originally posted.{% endif %}</p>
+  {% if postComments and postComments.comments.length %}
+  <ol class="comment-list">
+    {% for comment in postComments.comments %}{{ renderComment(comment, 0, null) }}{% endfor %}
+  </ol>
+  {% else %}
+  <p class="no-comments-note">No comments were posted on this article.</p>
+  {% endif %}
+</section>

@@ -1,0 +1,20 @@
+<header class="site-header">
+  <div class="site-branding">
+    <a href="/" class="site-title" rel="home"{% if page.url == "/" %} aria-current="page"{% endif %}>{{ site.title }}</a>
+    {% if site.description %}<p class="site-description">{{ site.description }}</p>{% endif %}
+  </div>
+  <nav class="main-navigation" aria-label="Main Navigation">
+    <ul class="menu">
+      <li class="menu-item-has-children">
+        <a href="/topics/"{% if page.url == "/topics/" %} aria-current="page"{% endif %}>Topics</a>
+        <ul class="sub-menu">
+          {% for item in site.topicsMenu %}
+          <li><a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+          {% endfor %}
+        </ul>
+      </li>
+      <li><a href="/about/"{% if page.url == "/about/" %} aria-current="page"{% endif %}>About</a></li>
+      <li><a href="/archives/"{% if page.url == "/archives/" %} aria-current="page"{% endif %}>Archives</a></li>
+    </ul>
+  </nav>
+</header>

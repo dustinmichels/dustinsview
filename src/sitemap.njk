@@ -1,0 +1,56 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{{ site.url }}/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/about/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/topics/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/archives/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  {% for post in collections.postsReverse %}
+  <url>
+    <loc>{{ site.url }}{{ post.url }}</loc>
+    <lastmod>{{ (post.data.updated or post.data.date) | isoDate }}</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
+  </url>
+  {% endfor %}
+  {% for y in collections.yearList %}
+  <url>
+    <loc>{{ site.url }}/{{ y.year }}/</loc>
+    <changefreq>never</changefreq>
+    <priority>0.5</priority>
+  </url>
+  {% endfor %}
+  {% for cat in collections.categoryList %}
+  <url>
+    <loc>{{ site.url }}/category/{{ cat.slug }}/</loc>
+    <changefreq>never</changefreq>
+    <priority>0.5</priority>
+  </url>
+  {% endfor %}
+  {% for tag in collections.tagList %}
+  <url>
+    <loc>{{ site.url }}/tag/{{ tag.slug }}/</loc>
+    <changefreq>never</changefreq>
+    <priority>0.4</priority>
+  </url>
+  {% endfor %}
+</urlset>

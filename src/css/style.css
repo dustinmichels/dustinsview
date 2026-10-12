@@ -1,0 +1,906 @@
+/* ==========================================================================
+   Dustin's View - Static Archive Stylesheet
+
+   Recreates the look of the original WordPress theme, "Libre" by Automattic
+   (GPLv2+), plus the site's own Additional CSS (link colors, blockquote size).
+   Zero JavaScript, self-hosted fonts, light/dark aware.
+   ========================================================================== */
+
+/* Libre Baskerville, SIL Open Font License 1.1 (see /fonts/OFL.txt).
+   The roman file is a variable font covering weights 400-700. */
+@font-face {
+  font-family: "Libre Baskerville";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/fonts/libre-baskerville-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Libre Baskerville";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/fonts/libre-baskerville-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Libre Baskerville";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/libre-baskerville-italic-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Libre Baskerville";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/libre-baskerville-italic-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+:root {
+  --font-serif: "Libre Baskerville", Libre, Georgia, Times, serif;
+  --font-mono: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+
+  --bg: #fff;
+  --text: #404040;
+  --link: #99004d;
+  --link-hover: #e60074;
+  --code-bg: #f4f4f4;
+  --mark-bg: #fff9c0;
+
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1c1c1c;
+    --text: #d4d4d4;
+    --link: #ff7ab6;
+    --link-hover: #ffa6d0;
+    --code-bg: #2a2a2a;
+    --mark-bg: #5c5300;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Base
+   -------------------------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  line-height: 1.75;
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  font-family: var(--font-serif);
+  font-weight: bold;
+  margin: 0 0 0.875em;
+}
+h1 { font-size: 1.8125rem; line-height: 1.3; }
+h2 { font-size: 1.4375rem; line-height: 1.3; }
+h3 { font-size: 1rem; }
+h4 { font-size: 0.875rem; }
+h5 { font-size: 0.8125rem; }
+h6 { font-size: 0.75rem; }
+
+p {
+  margin: 0 0 1.75em;
+}
+
+blockquote {
+  position: relative;
+  margin: 0 1.75em 1.75em 2.25em;
+  font-size: 1.0875rem;
+  quotes: "" "";
+}
+blockquote::before {
+  content: "\201c";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -0.6em;
+  font-size: 4rem;
+  line-height: 1;
+}
+blockquote blockquote {
+  margin-right: 0;
+}
+blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+pre {
+  max-width: 100%;
+  margin: 0 0 1.75em;
+  padding: 0.875em;
+  overflow: auto;
+  background: var(--code-bg);
+  line-height: 1.5;
+}
+code, kbd, tt, var, pre {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+  text-decoration: none;
+  cursor: help;
+}
+
+mark, ins {
+  background: var(--mark-bg);
+  color: inherit;
+  text-decoration: none;
+}
+
+hr {
+  height: 1px;
+  margin: 0 0 1.75em;
+  border: 0;
+  background-color: currentColor;
+}
+
+ul, ol {
+  margin: 0 0 1.75em;
+  padding-left: 1.75em;
+}
+li > ul, li > ol {
+  margin-bottom: 0;
+  margin-left: 0.4375em;
+}
+
+dt { font-weight: bold; }
+dd { margin: 0 1.75em 1.75em; }
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+embed, iframe, object, video {
+  max-width: 100%;
+}
+figure {
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  margin: 0 0 1.75em;
+  border-collapse: collapse;
+}
+td { padding: 3px; }
+caption {
+  padding: 0.4375em 0;
+  font-weight: bold;
+}
+
+/* --------------------------------------------------------------------------
+   Links
+   -------------------------------------------------------------------------- */
+a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:focus-visible {
+  outline: 1px dotted currentColor;
+  outline-offset: 2px;
+}
+
+/* Site Additional CSS: colored body links, no underline until hover. */
+.entry-content a,
+.comment-body a,
+.page-content a {
+  color: var(--link);
+}
+.entry-content a:hover,
+.entry-content a:focus,
+.comment-body a:hover,
+.comment-body a:focus,
+.page-content a:hover,
+.page-content a:focus {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+.entry-meta a:hover,
+.entry-footer a:hover,
+.widget a:hover,
+.site-info a:hover,
+.comment-meta a:hover,
+.archive-post-row a:hover,
+.taxonomies-cloud a:hover {
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
+   Accessibility
+   -------------------------------------------------------------------------- */
+.screen-reader-text {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+.screen-reader-text:focus {
+  top: 5px;
+  left: 5px;
+  z-index: 100000;
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 15px 1.4375rem 0.875rem;
+  clip: auto !important;
+  background: var(--bg);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: normal;
+}
+
+/* --------------------------------------------------------------------------
+   Layout
+   -------------------------------------------------------------------------- */
+.site {
+  margin-top: 3.5em;
+  padding: 0 1.75em;
+}
+
+/* Header */
+.site-header {
+  position: relative;
+  margin-bottom: 3.5em;
+  padding-top: 1.75em;
+}
+.site-branding {
+  margin-bottom: 1.75em;
+}
+.site-title {
+  display: inline-block;
+  margin: 0 0.4375em 0 0;
+  font-size: 1.8125rem;
+  font-weight: bold;
+  line-height: 1.2;
+  vertical-align: baseline;
+}
+.site-description {
+  display: inline;
+  margin: 0;
+  font-style: italic;
+  line-height: 1.3;
+}
+
+/* Navigation. The Topics submenu opens on hover/focus without JavaScript. */
+.main-navigation {
+  font-size: 0.875rem;
+}
+.main-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.main-navigation > .menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4375em 1.75em;
+  padding-bottom: 1.75em;
+  border-bottom: 2px solid;
+}
+.main-navigation li {
+  position: relative;
+}
+.main-navigation a {
+  border-bottom: 2px solid transparent;
+}
+.main-navigation a:hover,
+.main-navigation a:focus,
+.main-navigation a[aria-current="page"] {
+  border-bottom-color: currentColor;
+}
+.main-navigation .sub-menu {
+  display: none;
+}
+
+/* Posts and pages */
+.hentry {
+  margin-bottom: 3.5em;
+}
+.entry-title {
+  margin: 0 0 0.4375em;
+  font-size: 1.8125rem;
+}
+.page .entry-header {
+  margin-bottom: 1.75em;
+}
+.entry-meta,
+.entry-footer {
+  font-size: 0.875rem;
+  font-style: italic;
+}
+.entry-meta {
+  margin: 0 0 1.75em;
+}
+.entry-meta::after {
+  content: "";
+  display: block;
+  width: 25%;
+  margin-top: 0.875em;
+  border-top: 1px solid;
+}
+.singular .entry-meta {
+  margin-bottom: 3.5em;
+}
+.singular .entry-meta::after {
+  width: 12.5%;
+}
+.entry-meta > span {
+  display: block;
+  margin: 0 0 0.328125em;
+}
+.singular .entry-meta > span {
+  display: inline;
+  margin: 0;
+}
+.singular .entry-meta .updated-on {
+  display: block;
+}
+.entry-content {
+  margin: 0 0 3.5em;
+}
+.entry-footer {
+  margin: 0 0 3.5em;
+}
+.entry-footer span {
+  display: block;
+  margin: 0 0 0.328125em;
+}
+.more-link {
+  font-style: italic;
+}
+.post-thumbnail {
+  display: block;
+  margin-bottom: 1.75em;
+}
+.post-thumbnail img {
+  display: block;
+}
+
+/* Archive / taxonomy headers */
+.page-header {
+  margin: 0 0 3.5em;
+}
+.page-title {
+  margin-bottom: 0.4375em;
+  font-size: 1.8125rem;
+}
+.page-header .text-muted,
+.text-muted {
+  font-size: 0.875rem;
+  font-style: italic;
+}
+.page-header .text-muted::after {
+  content: "";
+  display: block;
+  width: 25%;
+  margin-top: 0.875em;
+  border-top: 1px solid;
+}
+
+/* Post and paging navigation */
+.post-navigation,
+.posts-navigation {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.875em;
+  margin: 0 0 3.5em;
+  padding: 0.875em 0;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  font-weight: bold;
+  line-height: 1.3;
+}
+.post-navigation {
+  font-size: 1.4375rem;
+}
+.meta-nav {
+  display: block;
+  margin: 0 0 0.4375em;
+  font-size: 0.875rem;
+  font-style: italic;
+  font-weight: normal;
+}
+.nav-next {
+  text-align: right;
+}
+
+/* Footer */
+.site-footer {
+  clear: both;
+  margin: 5.25em 0 3.5em;
+  padding-bottom: 1.75em;
+  font-size: 0.875rem;
+}
+.site-info {
+  font-style: italic;
+}
+.site-info p {
+  margin: 0 0 0.4375em;
+}
+.site-info .sep {
+  margin: 0 0.4375em;
+}
+
+/* --------------------------------------------------------------------------
+   Widgets (static sidebar)
+   -------------------------------------------------------------------------- */
+.widget {
+  margin: 0 0 3.5em;
+  font-size: 0.875rem;
+}
+.widget-title {
+  margin-bottom: 0.875em;
+  font-size: 1rem;
+}
+.widget ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.widget li {
+  padding-top: 0.4375em;
+}
+.widget_recent_entries li {
+  padding: 0.875em 0;
+  border-bottom: 1px solid;
+  border-bottom-color: color-mix(in srgb, currentColor 20%, transparent);
+  line-height: 1.6;
+}
+.widget_recent_entries .post-date {
+  display: block;
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+/* Dotted leaders between label and count (Libre's archive/category widgets). */
+.widget_categories li,
+.widget_archive li,
+.archive-post-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4375em;
+}
+.widget_categories li::after,
+.widget_archive li::after,
+.archive-post-row::after {
+  content: "";
+  flex: 1;
+  order: 1;
+  min-width: 1.75em;
+  border-bottom: 1px dotted;
+}
+.post-count,
+.archive-post-date {
+  order: 2;
+  letter-spacing: 1px;
+}
+
+/* --------------------------------------------------------------------------
+   Comments (static archive)
+   -------------------------------------------------------------------------- */
+.comments-section {
+  margin: 0 0 3.5em;
+}
+.comments-title {
+  margin-bottom: 0.4375em;
+}
+.comments-closed-notice,
+.no-comments-note {
+  margin: 0 0 1.75em;
+  font-size: 0.875rem;
+  font-style: italic;
+}
+.comment-list,
+.comment-children {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.comment-children {
+  padding-left: 1.75em;
+}
+.comment-item {
+  margin-top: 2.625em;
+}
+.comment-meta {
+  margin: 0 0 1.3125em;
+  font-size: 0.875rem;
+  font-style: italic;
+}
+.comment-meta::after {
+  content: "";
+  display: block;
+  width: 25%;
+  margin-top: 0.875em;
+  border-top: 1px solid;
+}
+.comment-author {
+  display: block;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: bold;
+}
+.comment-author-badge {
+  margin-left: 0.4375em;
+  font-size: 0.75rem;
+  font-style: italic;
+  font-weight: normal;
+}
+.comment-author-badge::before { content: "("; }
+.comment-author-badge::after { content: ")"; }
+.comment-reply-to {
+  margin: 0 0 0.875em;
+  font-size: 0.875rem;
+  font-style: italic;
+}
+.comment-body {
+  overflow-wrap: anywhere;
+}
+.comment-body > :last-child {
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Archive listings
+   -------------------------------------------------------------------------- */
+.archive-year-section {
+  margin-bottom: 3.5em;
+}
+.archive-year-heading small {
+  font-size: 0.875rem;
+  font-style: italic;
+  font-weight: normal;
+}
+.archive-posts-table {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.archive-post-row {
+  padding-top: 0.4375em;
+}
+.archive-post-date {
+  font-size: 0.875rem;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+.taxonomies-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4375em 1.3125em;
+  margin: 0 0 1.75em;
+  font-style: italic;
+}
+.taxonomies-cloud .badge-category {
+  border-bottom: 2px solid;
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* Topics page */
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13em, 1fr));
+  gap: 1.75em;
+  margin: 0 0 1.75em;
+}
+.topic-card h2 {
+  margin-bottom: 0.4375em;
+  font-size: 1.4375rem;
+}
+.topic-card .wp-caption {
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   WordPress content compatibility
+   .wp-caption must precede .align* so float gutters win (Phase 9.2 fix).
+   -------------------------------------------------------------------------- */
+.wp-caption {
+  max-width: 100%;
+  margin: 0 0 1.75em;
+  padding: 0;
+}
+.wp-caption img {
+  display: block;
+  margin: 0 auto;
+}
+.wp-caption-text,
+.wp-caption .wp-caption-text {
+  position: relative;
+  margin: 0.8075em 0;
+  font-size: 0.875rem;
+  font-style: italic;
+}
+.wp-caption-text::after {
+  content: "";
+  display: block;
+  clear: both;
+  width: 25%;
+  margin-top: 0.875em;
+  border-top: 1px solid;
+}
+
+.alignleft {
+  display: inline;
+  float: left;
+  margin: 0.875em 1.75em 0.875em 0;
+}
+.alignright {
+  display: inline;
+  float: right;
+  margin: 0.875em 0 0.875em 1.75em;
+}
+.aligncenter {
+  display: block;
+  clear: both;
+  margin: 0.875em auto;
+}
+.alignnone {
+  margin-bottom: 1.75em;
+}
+.entry-content::after,
+.comment-body::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Galleries */
+.gallery {
+  display: grid;
+  gap: 0.875em;
+  margin: 0 0 1.75em;
+}
+.gallery-columns-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.gallery-columns-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.gallery-columns-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.gallery-columns-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.gallery-columns-6 { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.gallery-item {
+  margin: 0;
+  text-align: center;
+}
+.gallery-icon img {
+  display: block;
+  width: 100%;
+}
+
+/* Embeds and archival notices */
+.video-embed {
+  margin: 0 0 0.875em;
+}
+.video-embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.video-fallback,
+.video-unavailable,
+.archival-notice {
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+/* Easy Footnotes */
+.easy-footnote {
+  font-size: 0.75em;
+  line-height: 0;
+  vertical-align: super;
+}
+.easy-footnote sup {
+  vertical-align: baseline;
+}
+.easy-footnotes-wrapper {
+  margin-top: 3.5em;
+  padding-top: 1.75em;
+  border-top: 1px solid;
+  font-size: 0.875rem;
+}
+.easy-footnote-to-top {
+  margin-left: 0.25em;
+}
+
+/* 404 */
+.page-404 h2 {
+  margin-top: 1.75em;
+}
+
+/* --------------------------------------------------------------------------
+   Breakpoints (from Libre: 45em, 55em, 70em, 80em)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 44.99em) {
+  .alignleft,
+  .alignright {
+    display: block;
+    float: none;
+    margin: 0.875em auto;
+  }
+  .gallery-columns-3,
+  .gallery-columns-4,
+  .gallery-columns-5,
+  .gallery-columns-6 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (min-width: 45em) {
+  .site { margin-top: 5.25em; }
+  .site-header { margin-bottom: 5.35em; }
+
+  h1, .singular .entry-title {
+    margin: 0 0 0.4375em;
+    font-size: 2.9375rem;
+  }
+  .blog .site-title { font-size: 2.9375rem; }
+  h2 { margin: 0 0 0.4375em; font-size: 1.8125rem; }
+  h3 { font-size: 1.4375rem; }
+  h4 { font-size: 1rem; }
+  h5 { font-size: 0.875rem; }
+  h6 { font-size: 0.8125rem; }
+  .comments-title { font-size: 1.8125rem; }
+  .widget-title { font-size: 1rem; }
+  .page-title { font-size: 1.8125rem; }
+
+  .main-navigation > .menu {
+    padding-bottom: 0;
+    border: 0;
+  }
+  .main-navigation .menu-item-has-children {
+    margin-right: 0.875em;
+  }
+  .main-navigation .menu-item-has-children > a::after {
+    content: "\203A";
+    position: absolute;
+    top: 14%;
+    right: -0.75em;
+    margin-top: -3px;
+    font-size: 1.4375rem;
+    line-height: 1;
+    transform: rotate(90deg);
+  }
+  .main-navigation .sub-menu {
+    position: absolute;
+    top: 1.75em;
+    left: -0.875em;
+    z-index: 99999;
+    display: block;
+    width: 180px;
+    padding: 0 0.875em;
+    background: var(--bg);
+    text-align: left;
+    visibility: hidden;
+  }
+  .main-navigation .sub-menu li {
+    padding: 0.21875em 0;
+    line-height: 1.5;
+  }
+  .main-navigation li:hover > .sub-menu,
+  .main-navigation li:focus-within > .sub-menu {
+    visibility: visible;
+  }
+
+  .entry-footer span {
+    display: inline;
+    margin: 0 1.75em 0 0;
+  }
+  .site-info {
+    text-align: right;
+  }
+
+  .post-navigation,
+  .posts-navigation {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .nav-next {
+    grid-column: 2;
+  }
+
+  blockquote {
+    margin-left: 3.5em;
+  }
+  blockquote::before {
+    font-size: 8.0625rem;
+  }
+}
+
+@media screen and (min-width: 55em) {
+  .site {
+    width: 50em;
+    margin: 7em auto 0;
+    padding: 0;
+  }
+
+  /* Singular: content 68%, sidebar 25%. */
+  .singular .site-content {
+    display: grid;
+    grid-template-columns: minmax(0, 68fr) minmax(0, 25fr);
+    column-gap: 7%;
+  }
+
+  /* Index and archives: title/meta column beside the summary. */
+  .post-card {
+    display: grid;
+    grid-template-columns: minmax(0, 25fr) minmax(0, 68fr);
+    column-gap: 7%;
+  }
+  .post-card .entry-content {
+    margin-bottom: 1.75em;
+  }
+  .post-card .entry-title {
+    font-size: 1.8125rem;
+  }
+}
+
+@media screen and (min-width: 70em) {
+  .site { width: 62em; }
+
+  .site-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1.75em;
+  }
+  .site-branding {
+    margin-bottom: 0;
+  }
+  .main-navigation > .menu {
+    justify-content: flex-end;
+  }
+
+  /* Libre's comment layout: meta column beside the comment text. */
+  .comment-article {
+    display: grid;
+    grid-template-columns: minmax(0, 25fr) minmax(0, 70fr);
+    column-gap: 5%;
+  }
+  .comment-meta {
+    grid-row: 1 / span 2;
+  }
+  .comment-meta::after {
+    width: 50%;
+  }
+  .comment-date {
+    display: block;
+  }
+  .comment-reply-to,
+  .comment-body {
+    grid-column: 2;
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .site { width: 68em; }
+}

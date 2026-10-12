@@ -1,0 +1,13 @@
+---
+layout: layouts/base.njk
+bodyClass: singular
+---
+<article class="page hentry">
+  <header class="entry-header">
+    <h1 class="entry-title">{{ title }}</h1>
+  </header>
+
+  <div class="entry-content">
+    {{ content | safe }}
+  </div>
+</article>

@@ -1,0 +1,17 @@
+---
+permalink: /author/admin/
+layout: layouts/base.njk
+title: Author - Dustin
+---
+<header class="page-header">
+  <h1 class="page-title">Author: Dustin</h1>
+  <p class="text-muted">All {{ collections.postsReverse.length }} posts on this blog were written by Dustin. Read more on the <a href="/about/">About page</a>.</p>
+</header>
+
+<section class="posts-section" aria-label="Posts by Dustin">
+  <div class="post-list">
+    {% for post in collections.postsReverse %}
+      {% include "partials/post-card.njk" %}
+    {% endfor %}
+  </div>
+</section>

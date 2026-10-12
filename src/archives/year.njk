@@ -1,0 +1,33 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.yearList
+  size: 1
+  alias: yearData
+permalink: "/{{ yearData.year }}/"
+eleventyComputed:
+  title: "Posts from {{ yearData.year }}"
+---
+
+<header class="page-header">
+  <h1 class="page-title">Posts from {{ yearData.year }}</h1>
+  <p class="text-muted">{{ yearData.posts.length }} {% if yearData.posts.length == 1 %}post{% else %}posts{% endif %} published in {{ yearData.year }}.</p>
+</header>
+
+<section class="posts-section" aria-label="Posts from {{ yearData.year }}">
+  <div class="post-list">
+    {% for post in yearData.posts %}
+      {% include "partials/post-card.njk" %}
+    {% endfor %}
+  </div>
+</section>
+
+<nav class="archives-nav" aria-label="Other Years">
+  <hr>
+  <h3>Browse by Year</h3>
+  <div class="taxonomies-cloud">
+    {% for y in collections.yearList %}
+    <a href="/{{ y.year }}/" class="badge {% if y.year == yearData.year %}badge-category{% endif %}">{{ y.year }} ({{ y.posts.length }})</a>
+    {% endfor %}
+  </div>
+</nav>

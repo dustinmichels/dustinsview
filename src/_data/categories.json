@@ -1,0 +1,50 @@
+[
+  {
+    "id": 68,
+    "name": "All",
+    "slug": "all",
+    "count": 35
+  },
+  {
+    "id": 97,
+    "name": "Audio",
+    "slug": "audio",
+    "count": 1
+  },
+  {
+    "id": 183,
+    "name": "Blurbs",
+    "slug": "blurbs",
+    "count": 1
+  },
+  {
+    "id": 249,
+    "name": "code",
+    "slug": "code",
+    "count": 0
+  },
+  {
+    "id": 165,
+    "name": "EuroTrip2016",
+    "slug": "eurotrip2016",
+    "count": 4
+  },
+  {
+    "id": 146,
+    "name": "Notes",
+    "slug": "notes",
+    "count": 0
+  },
+  {
+    "id": 175,
+    "name": "Poems",
+    "slug": "poems",
+    "count": 3
+  },
+  {
+    "id": 206,
+    "name": "Songs",
+    "slug": "songs",
+    "count": 4
+  }
+]

@@ -1,0 +1,846 @@
+{
+  "results": [
+    {
+      "url": "https://www.youtube.com/watch?v=uYSt8K8VP6k",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://bicycledutch.wordpress.com/2015/04/07/another-new-bicycle-street-in-utrecht/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Cream_tea",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.dutchnews.nl/news/archives/2011/12/what_do_dutch_expats_miss_most/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.flyingpig.nl/hostels/flyingpigbeach.php",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.uva.nl/en/education/other-programmes/summer-winter/programmes/uva-summer-school-programmes/uva-summer-school-programmes/content/folder/amsterdam-creative-city/programme-information/propramme-information.html",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "http://www.dutchamsterdam.nl/2290-how-many-bicycles-and-cars-end-up-in-amsterdams-canals",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=sEON08d76oE&feature=youtu.be&t=1m53s",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.theguardian.com/cities/2015/may/05/amsterdam-bicycle-capital-world-transport-cycling-kindermoord",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.usdebtclock.org/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.shmoop.com/slaughterhouse-five/the-tralfamadorians.html",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.amigoslink.org/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://joelipoo.hubpages.com/hub/Terer-A-Paraguayan-Custom",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "http://apps.carleton.edu/carletonian/?story_id=1381150&issue_id=1380968&section_id=344001",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/The_Emperor%27s_New_Clothes",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://pandora.com/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.blogger.com/goog_1775000824",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "http://gseis.ucla.edu/iclp/dmca1.htm",
+      "status": "ERROR",
+      "error": "getaddrinfo ENOTFOUND seis.ucla.eduiclp"
+    },
+    {
+      "url": "https://rutasurreal.wordpress.com/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=HtcRjI-jH7Q",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=2tRG-1kfjcg",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.world-of-lucid-dreaming.com/",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://www.amazon.com/Exploring-World-Dreaming-Stephen-Laberge/dp/034537410X",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://apps.carleton.edu/student/housing/housing_options/interest_houses/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://kristineleuze.com/",
+      "status": "ERROR",
+      "error": "getaddrinfo ENOTFOUND kristineleuze.com"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Freeganism",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Sea_Shepherd_Conservation_Society",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Occupy_Wall_Street",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.seashepherd.org/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Permaculture",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://michaelpollan.com/books/the-omnivores-dilemma/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Concentrated_Animal_Feeding_Operation",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://twitter.com/Dustin_Michels",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.newstoryfarm.com/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.youtube.com/watch?v=HgdxlhbwBPo",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.youtube.com/watch?v=3jOoDSSPltc",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.youtube.com/watch?v=Z0GFRcFm-aY",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.youtube.com/watch?v=nCYbRmSlW-M",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2016/nov/30/political-correctness-how-the-right-invented-phantom-enemy-donald-trump",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.vox.com/2016/4/8/11389556/thomas-jefferson-sally-hemings-book",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://indiancountrymedianetwork.com/history/events/thomas-jefferson-architect-of-indian-removal-policy/",
+      "status": "ERROR",
+      "error": "ERR_TLS_CERT_ALTNAME_INVALID fetching \"https://indiancountrymedianetwork.com/history/events/thomas-jefferson-architect-of-indian-removal-policy/\". For more information, pass `verbose: true` in the second argument to fetch()"
+    },
+    {
+      "url": "https://wwi.lib.byu.edu/index.php/Wilson%27s_War_Message_to_Congress",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://feminist.org/blog/index.php/2014/11/18/today-in-herstory-suffragist-alice-paul-kept-in-hospital-during-hunger-strike/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://kingencyclopedia.stanford.edu/encyclopedia/documentsentry/doc_beyond_vietnam/",
+      "status": "ERROR",
+      "error": "getaddrinfo ENOTFOUND kingencyclopedia.stanford.edu"
+    },
+    {
+      "url": "https://www.nytimes.com/2017/01/20/us/politics/trump-white-house-website.html",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "http://www.cnn.com/2017/01/12/opinions/vaccinations-under-attack-vox/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.complex.com/life/2017/01/donald-trump-white-house-website-appears-to-send-veiled-warning-to-black-lives-matter-protesters",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.prochoiceamerica.org/elections/2016/donald-trump-abortion.html?referrer=https://www.google.com/",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "http://www.cbsnews.com/news/moments-after-donald-trump-became-president-the-white-houses-lgbt-rights-page-disappeared/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2016-11-29/fbi-and-nsa-poised-to-gain-new-surveillance-powers-under-trump",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://www.whitehouse.gov/law-enforcement-community",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "https://www.whitehouse.gov/making-our-military-strong-again",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "https://www.whitehouse.gov/america-first-energy",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "http://www.nybooks.com/articles/2016/12/08/when-public-goes-private-as-trump-wants-what-happens/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.foxnews.com/opinion/2016/11/09/loud-cheer-for-silent-majority-that-lifted-trump-to-victory.html",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://twitter.com/search?q=%23notmypresident&src=tyah",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.yesmagazine.org/issues/climate-solutions/pete-seeger-how-can-i-keep-from-singing",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "http://www.biography.com/people/harriet-tubman-9511430#later-life",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.biography.com/people/sojourner-truth-9511284",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://blacklivesmatter.com/",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "http://www.thedailybeast.com/articles/2016/11/14/shot-in-the-back-at-standing-rock.html",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "http://news.bbc.co.uk/2/hi/europe/1271571.stm",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.ncbi.nlm.nih.gov/books/NBK236662/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.vox.com/2014/12/24/7446745/netherlands-black-pete-racist",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.nytimes.com/2014/12/06/opinion/why-i-changed-my-mind-about-black-pete.html?_r=0",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://www.dukeupress.edu/white-innocence",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://vrankrijk.org/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://swedishalgaefactory.com/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=AvSzMOY04S4",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://dustinmichels.com/lyrics/make_new_humans_chords.pdf",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "https://www.theplaymania.com/skidubai",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "http://gofossilfree.org/about-fossil-free/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Fossil_fuel_divestment#Groups_divesting_or_taking_official_steps_toward_divestment",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.carleton.edu/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.nytimes.com/2015/11/06/science/exxon-mobil-under-investigation-in-new-york-over-climate-statements.html?_r=1",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "http://www.newyorker.com/news/daily-comment/what-exxon-knew-about-climate-change",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.theguardian.com/environment/2015/mar/25/fossil-fuel-firms-are-still-bankrolling-climate-denial-lobby-groups",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.thenation.com/article/people-color-are-already-getting-hit-hardest-climate-change/",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Noam_Chomsky",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=AQJQU2GzV0w",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://gofossilfree.org/fossil-free-divestment-symbol-the-orange-square/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.bloomberg.com/news/articles/2016-01-14/renewables-drew-record-329-billion-in-year-oil-prices-crashed",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "http://www.huffingtonpost.com/bevis-longstreth/the-financial-case-for-di_b_4203910.html",
+      "status": 406,
+      "ok": false
+    },
+    {
+      "url": "https://apps.carleton.edu/sustainability/assets/11.06.13_CarletonClimateActionPlan.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://documents.wfp.org/stellent/groups/public/documents/newsroom/wfp229182.pdf",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Who_Killed_the_Electric_Car%3F",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Merchants_of_Doubt",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.huffingtonpost.com/joel-francis/desperate-fossil-fuel-interests-seek_b_7128234.html",
+      "status": 406,
+      "ok": false
+    },
+    {
+      "url": "http://snip.ly/6jWG#http://climatesolutions.org/article/1432250679-we-have-met-wrong-enemy",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://time.com/4317340/ted-cruz-drops-out-suspends-campaign-speech-transcript/",
+      "status": 406,
+      "ok": false
+    },
+    {
+      "url": "http://www.presidency.ucsb.edu/ws/?pid=46906",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=C6QEqoYgQxw",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://europe.newsweek.com/there-no-such-thing-race-283123?rm=eu",
+      "status": 406,
+      "ok": false
+    },
+    {
+      "url": "http://en.wikipedia.org/wiki/Columbine_High_School_massacre#Long-term_results",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://en.wikipedia.org/wiki/List_of_school_shootings_in_the_United_States#2010s",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://usnews.nbcnews.com/_news/2014/01/14/22302153-12-year-old-in-custody-after-2-students-shot-at-new-mexico-middle-school?lite",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.cracked.com/blog/7-reasons-tsa-sucks-a-security-experts-perspective/",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "http://fusion.net/story/219586/bernie-sanders-military-spending-defense-budget-congress-1992/",
+      "status": "ERROR",
+      "error": "getaddrinfo ENOTFOUND fusion.net"
+    },
+    {
+      "url": "http://www.vox.com/2016/2/26/11116412/bernie-sanders-mass-incarceration",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.vox.com/cards/crime-rate-drop/prison-reduce-crime",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.naacp.org/pages/criminal-justice-fact-sheet",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "http://www.sanders.senate.gov/video/flashback-rep-bernie-sanders-opposes-iraq-war",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "http://time.com/3850839/bernie-sanders-usa-patriot-act/",
+      "status": 406,
+      "ok": false
+    },
+    {
+      "url": "https://www.amazon.com/Speech-Corporate-Greed-Decline-Middle-ebook/dp/B016TX4EDA/ref=sr_1_2?ie=UTF8&qid=1465767412&sr=8-2&keywords=the+speech",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.ontheissues.org/2016/Bernie_Sanders_Drugs.htm",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "http://time.com/4231439/bernie-sanders-arrest-photo-civil-rights/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.sanders.senate.gov/newsroom/photos/peoples-climate-march",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "http://www.businessinsider.com/bernie-sanders-hugged-a-muslim-student-2015-10",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.npr.org/sections/thetwo-way/2016/03/26/471958688/bird-visits-bernie-sanders-rally-sparks-delight-on-twitter",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.democracynow.org/2016/5/31/meet_the_bernie_sanders_supporter_who",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.nytimes.com/2016/02/11/upshot/hillary-clintons-challenge-peddling-pragmatism.html?_r=0",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://www.facebook.com/fusionmedianetwork/videos/1441101432582497/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.commondreams.org/news/2016/05/24/sanders-endorses-down-ticket-democrats-running-bold-change",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.democracynow.org/2016/5/10/ralph_nader_sanders_should_stay_in",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.fairvote.org/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://alh.oxfordjournals.org/content/9/3/598.citation",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "https://www.rgs.org/NR/rdonlyres/6AFE1B7F-9141-472A-95C1-52AA291AA679/0/60sGlobalNorthSouthDivide.pdf",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "http://www.pbs.org/wgbh/nova/blogs/secretlife/blogposts/steven-pinkers-two-minute-case-for-optimism/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://usatoday30.usatoday.com/news/education/2010-02-24-millennials24_ST_N.htm",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.theguardian.com/books/2016/apr/15/neoliberalism-ideology-problem-george-monbiot",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.marxists.org/archive/marx/works/1847/communist-league/1850-ad1.htm",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.historic-uk.com/HistoryUK/HistoryofBritain/Great-Horse-Manure-Crisis-of-1894/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.rollingstone.com/politics/videos/jimmy-carter-u-s-is-an-oligarchy-with-unlimited-political-bribery-20150731",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.yesmagazine.org/issues/love-and-the-apocalypse/radical-is-the-new-normal",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "http://www.yesmagazine.org/about",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "url": "http://en.wikipedia.org/wiki/Woody_Allen",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://thetongueinthetypewriter.blogspot.com/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://cartodb.com/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://medhieval.com/hackinghumanities2015/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.mendhak.gpslogger",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "https://apps.carleton.edu/admissions/locations/farm_house/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://apps.carleton.edu/campus/library/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.villagevoice.com/news/a-bathroom-finding-app-gains-popularity-but-george-costanza-got-there-first-6712250",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "http://www.myuniquegiftidea.com/72-names-of-god-part-2",
+      "status": 525,
+      "ok": false
+    },
+    {
+      "url": "http://www.physics.carleton.ca/~watson/Physics/Astrophysics/galaxies/Milky_way.html",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Zza3GqEL5B0",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=xunP0LZ7g6A",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.commonapp.org/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://en.wikipedia.org/wiki/Perfect_game_(bowling)",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.dailycamera.com/guest-opinions/ci_25495890/daily-camera-stop-propagating-climate-change-denial",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=CewlOgsA-zM",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "http://www.guitarnoise.com/lessons/how-to-buy-a-used-acoustic-guitar/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://dustinmichels.com/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://angel.co/dustin-michels",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "https://twitter.com/dustin_michels",
+      "status": 200,
+      "ok": true
+    }
+  ],
+  "dead": [
+    {
+      "url": "http://www.uva.nl/en/education/other-programmes/summer-winter/programmes/uva-summer-school-programmes/uva-summer-school-programmes/content/folder/amsterdam-creative-city/programme-information/propramme-information.html",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "http://joelipoo.hubpages.com/hub/Terer-A-Paraguayan-Custom",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "http://www.blogger.com/goog_1775000824",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "http://gseis.ucla.edu/iclp/dmca1.htm",
+      "status": "ERROR",
+      "error": "getaddrinfo ENOTFOUND seis.ucla.eduiclp"
+    },
+    {
+      "url": "http://kristineleuze.com/",
+      "status": "ERROR",
+      "error": "getaddrinfo ENOTFOUND kristineleuze.com"
+    },
+    {
+      "url": "https://indiancountrymedianetwork.com/history/events/thomas-jefferson-architect-of-indian-removal-policy/",
+      "status": "ERROR",
+      "error": "ERR_TLS_CERT_ALTNAME_INVALID fetching \"https://indiancountrymedianetwork.com/history/events/thomas-jefferson-architect-of-indian-removal-policy/\". For more information, pass `verbose: true` in the second argument to fetch()"
+    },
+    {
+      "url": "http://kingencyclopedia.stanford.edu/encyclopedia/documentsentry/doc_beyond_vietnam/",
+      "status": "ERROR",
+      "error": "getaddrinfo ENOTFOUND kingencyclopedia.stanford.edu"
+    },
+    {
+      "url": "http://www.prochoiceamerica.org/elections/2016/donald-trump-abortion.html?referrer=https://www.google.com/",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "https://www.whitehouse.gov/law-enforcement-community",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "https://www.whitehouse.gov/making-our-military-strong-again",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "https://www.whitehouse.gov/america-first-energy",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "http://www.thedailybeast.com/articles/2016/11/14/shot-in-the-back-at-standing-rock.html",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "https://dustinmichels.com/lyrics/make_new_humans_chords.pdf",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "http://www.thenation.com/article/people-color-are-already-getting-hit-hardest-climate-change/",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "http://www.cracked.com/blog/7-reasons-tsa-sucks-a-security-experts-perspective/",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "http://fusion.net/story/219586/bernie-sanders-military-spending-defense-budget-congress-1992/",
+      "status": "ERROR",
+      "error": "getaddrinfo ENOTFOUND fusion.net"
+    },
+    {
+      "url": "http://www.naacp.org/pages/criminal-justice-fact-sheet",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "http://www.sanders.senate.gov/video/flashback-rep-bernie-sanders-opposes-iraq-war",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "http://www.sanders.senate.gov/newsroom/photos/peoples-climate-march",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "https://www.rgs.org/NR/rdonlyres/6AFE1B7F-9141-472A-95C1-52AA291AA679/0/60sGlobalNorthSouthDivide.pdf",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.mendhak.gpslogger",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "http://www.villagevoice.com/news/a-bathroom-finding-app-gains-popularity-but-george-costanza-got-there-first-6712250",
+      "status": 404,
+      "ok": false
+    },
+    {
+      "url": "https://angel.co/dustin-michels",
+      "status": 404,
+      "ok": false
+    }
+  ]
+}
