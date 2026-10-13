@@ -19,10 +19,18 @@ export default function (eleventyConfig) {
   eleventyConfig.ignores.add("backup/**");
   eleventyConfig.ignores.add("scripts/**");
 
+  // Clean output directory on build to prevent stale drafts or deleted files from persisting
+  eleventyConfig.on("eleventy.before", async ({ dir, runMode }) => {
+    if (runMode === "build" && dir?.output && fs.existsSync(dir.output)) {
+      fs.rmSync(dir.output, { recursive: true, force: true });
+    }
+  });
+
   // The first image in <main> is usually the LCP element: load it eagerly at high
   // priority instead of the lazy loading WordPress applied to every image.
   eleventyConfig.addTransform("eager-first-image", function (content) {
-    if (!this.page.outputPath?.endsWith(".html")) return content;
+    if (typeof this.page.outputPath !== "string" || !this.page.outputPath.endsWith(".html"))
+      return content;
     const mainAt = content.indexOf("<main");
     if (mainAt === -1) return content;
     const imgAt = content.indexOf("<img", mainAt);

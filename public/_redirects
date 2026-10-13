@@ -52,7 +52,6 @@
 
 # Empty category/tag archives -> topics
 /category/audio/  /topics/  301
-/category/blurbs/  /topics/  301
 /category/code/  /topics/  301
 /category/notes/  /topics/  301
 /tag/blacklivesmatter/  /topics/  301
@@ -498,3 +497,29 @@
 / attachment_id=63  /2012/biology-a-quick-lesson-on-cells-cartoon/  301!
 / attachment_id=53  /2013/slaughterhouse-five-and-reflections-on-destiny/  301!
 / attachment_id=52  /2013/slaughterhouse-five-and-reflections-on-destiny/  301!
+
+# Blurbs archive and legacy permalinks
+/blurbs/  /category/blurbs/  301
+/blurbs/a-note-about-blm/  /2016/a-note-about-blm/  301
+/blurbs/a-note-about-markets/  /2016/a-note-about-markets/  301
+/blurbs/spotted-in-stockholm/  /2016/spotted-in-stockholm/  301
+/blurbs/alacarte/  /2016/alacarte/  301
+/blurbs/stingy-socialists/  /2016/stingy-socialists/  301
+/blurbs/defeattrumps/  /2016/defeattrumps/  301
+/blurbs/a-research-question/  /2016/a-research-question/  301
+/blurbs/right-wrong-retribution/  /2016/right-wrong-retribution/  301
+/blurbs/without-hyperbole-blurb/  /2017/without-hyperbole-blurb/  301
+/blurbs/show-em/  /2017/show-em/  301
+/blurbs/retribution/attachment/*  /2016/right-wrong-retribution/  301
+
+# Blurbs query permalinks
+/ p=541  /2016/a-note-about-markets/  301!
+/ p=547  /2016/a-note-about-blm/  301!
+/ p=759  /2016/a-research-question/  301!
+/ p=763  /2016/defeattrumps/  301!
+/ p=766  /2016/stingy-socialists/  301!
+/ p=769  /2016/alacarte/  301!
+/ p=771  /2016/spotted-in-stockholm/  301!
+/ p=853  /2016/right-wrong-retribution/  301!
+/ p=1004  /2017/without-hyperbole-blurb/  301!
+/ p=1262  /2017/show-em/  301!

@@ -33,11 +33,29 @@ npm install
   ```
   Compiles static output into the `_site/` directory.
 
+### Draft Posts
+
+To mark a post as a draft, add `draft: true` to its front matter in `content/posts/<slug>.md`:
+
+```yaml
+---
+title: "My Draft Post"
+date: "2026-10-13"
+draft: true
+---
+```
+
+- **Local development (`npm start`):** Draft posts are excluded by default.
+- **Local development with drafts (`npm run start:drafts`):** Draft posts are included and rendered for local previewing.
+- **Production build (`npm run build`):** Draft posts are excluded from output files and all collections (homepage, archives, category/tag listings, RSS feed, and sitemap).
+- **Build with drafts enabled:** To force drafts into a static build, set `BUILD_DRAFTS=true` (e.g. `BUILD_DRAFTS=true npm run build`).
+
 ## Available Scripts
 
 | Command                  | Description                                                         |
 | ------------------------ | ------------------------------------------------------------------- |
 | `npm start`              | Run Eleventy dev server with hot reload (`eleventy --serve`)        |
+| `npm run start:drafts`   | Run Eleventy dev server with drafts enabled                         |
 | `npm run build`          | Build static files to `_site/`                                      |
 | `npm run import`         | Import and normalize posts/pages from WordPress raw snapshots       |
 | `npm run download:media` | Download and archive remote media assets locally to `public/media/` |

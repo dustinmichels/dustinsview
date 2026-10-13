@@ -8,6 +8,7 @@
   "scripts": {
     "build": "eleventy",
     "start": "eleventy --serve",
+    "start:drafts": "BUILD_DRAFTS=true eleventy --serve",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
     "import": "node scripts/import-wordpress.mjs",
