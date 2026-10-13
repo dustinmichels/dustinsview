@@ -487,6 +487,9 @@ for (const rule of redirectRules) {
     } else if (fromRaw.endsWith("/attachment/*")) {
       testPath = fromRaw.replace(/\/\*$/, "/notes/");
       expectedTarget = toRaw;
+    } else if (fromRaw === "/2013/songs-of-peaceful-resignation/*") {
+      testPath = "/2013/songs-of-peaceful-resignation/%c2%80i/";
+      expectedTarget = toRaw;
     }
     testCases.push({ rule: rule.line, testPath, statusExpected, expectedTarget });
   } else {

@@ -152,9 +152,21 @@ for (const r of inventory.filter(
 section("Legacy category-prefixed permalinks", legacy);
 
 // 10. Attachment pages from the media library.
+// Percent-encoded attachment slugs (e.g. %c2%80i on songs-of-peaceful-resignation) fail exact
+// matching on Netlify CDN; emit a scoped wildcard under the parent post instead.
 section(
   "Attachment pages -> parent post or media file",
-  media.map((m) => [pathOf(m.link), attachmentTarget(m), 301]).filter(([from, to]) => from !== to),
+  media
+    .map((m) => {
+      const from = pathOf(m.link);
+      const to = attachmentTarget(m);
+      if (from.includes("%")) {
+        const parentPrefix = to.endsWith("/") ? to : to + "/";
+        return [`${parentPrefix}*`, to, 301];
+      }
+      return [from, to, 301];
+    })
+    .filter(([from, to]) => from !== to),
 );
 
 // 11. Query-string permalinks (Netlify only; Cloudflare Pages ignores query matching).
