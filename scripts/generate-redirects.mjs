@@ -144,8 +144,10 @@ for (const r of inventory.filter(
   const postPath = postBySlug.get(postSegment) ?? (attachment && postById.get(attachment.post));
   if (!postPath) throw new Error(`Cannot resolve legacy route ${r.path}`);
   legacy.push([`/${prefix}/${postSegment}/`, postPath, 301]);
-  if (rest[0] === "attachment")
+  if (rest[0] === "attachment") {
     legacy.push([r.path, attachment ? attachmentTarget(attachment) : postPath, 301]);
+    legacy.push([`/${prefix}/${postSegment}/attachment/*`, postPath, 301]);
+  }
 }
 section("Legacy category-prefixed permalinks", legacy);
 

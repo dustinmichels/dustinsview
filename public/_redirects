@@ -165,24 +165,33 @@
 # Legacy category-prefixed permalinks
 /all/biology-a-quick-lesson-on-cells-cartoon/  /2012/biology-a-quick-lesson-on-cells-cartoon/  301
 /all/biology-a-quick-lesson-on-cells-cartoon/attachment/img133/  /2012/biology-a-quick-lesson-on-cells-cartoon/  301
+/all/biology-a-quick-lesson-on-cells-cartoon/attachment/*  /2012/biology-a-quick-lesson-on-cells-cartoon/  301
 /all/daily-camera-stop-propagating-climate-change-denial/  /2014/daily-camera-stop-propagating-climate-change-denial/  301
 /all/daily-camera-stop-propagating-climate-change-denial/attachment/earth/  /2014/daily-camera-stop-propagating-climate-change-denial/  301
+/all/daily-camera-stop-propagating-climate-change-denial/attachment/*  /2014/daily-camera-stop-propagating-climate-change-denial/  301
 /all/insult-absurdity-make-america-great/  /2017/insult-absurdity-make-america-great/  301
 /all/insult-absurdity-make-america-great/attachment/hat/  /2017/insult-absurdity-make-america-great/  301
+/all/insult-absurdity-make-america-great/attachment/*  /2017/insult-absurdity-make-america-great/  301
 /all/made-bernie-things/  /2016/bernie-things/  301
 /all/made-bernie-things/attachment/11167804_464585873698267_1888080400337553208_n/  /2016/bernie-things/  301
+/all/made-bernie-things/attachment/*  /2016/bernie-things/  301
 /all/made-bernie-things/attachment/12657278_10205319627141313_2465876425985884890_o/  /2016/bernie-things/  301
 /all/made-bernie-things/attachment/the_future/  /2016/bernie-things/  301
 /all/myth-conscientious-consumption/  /2016/myth-conscientious-consumption/  301
 /all/myth-conscientious-consumption/attachment/recycle/  /2016/myth-conscientious-consumption/  301
+/all/myth-conscientious-consumption/attachment/*  /2016/myth-conscientious-consumption/  301
 /all/pooping-with-java/  /2016/pooping-with-java/  301
 /all/pooping-with-java/attachment/java/  /2016/pooping-with-java/  301
+/all/pooping-with-java/attachment/*  /2016/pooping-with-java/  301
 /all/the-joy-of-cycling/  /2014/the-joy-of-cycling/  301
 /all/the-joy-of-cycling/attachment/sony-dsc/  /2014/the-joy-of-cycling/  301
+/all/the-joy-of-cycling/attachment/*  /2014/the-joy-of-cycling/  301
 /all/the-magnetic-house-of-cards/  /2010/the-magnetic-house-of-cards/  301
 /all/the-magnetic-house-of-cards/attachment/house_cards/  /2010/the-magnetic-house-of-cards/  301
+/all/the-magnetic-house-of-cards/attachment/*  /2010/the-magnetic-house-of-cards/  301
 /eurotrip2016/little-differences-observations-europe/  /2016/little-differences-observations-europe/  301
 /eurotrip2016/little-differences-observations-europe/attachment/bike/  /2016/little-differences-observations-europe/  301
+/eurotrip2016/little-differences-observations-europe/attachment/*  /2016/little-differences-observations-europe/  301
 /eurotrip2016/little-differences-observations-europe/attachment/cream_tea_img/  /2016/little-differences-observations-europe/  301
 /eurotrip2016/little-differences-observations-europe/attachment/img_2599/  /2016/little-differences-observations-europe/  301
 /eurotrip2016/little-differences-observations-europe/attachment/kalles_img/  /2016/little-differences-observations-europe/  301
@@ -190,6 +199,7 @@
 /eurotrip2016/little-differences-observations-europe/attachment/swedish_binder_img/  /2016/little-differences-observations-europe/  301
 /perspective/songs-of-peaceful-resignation/  /2013/songs-of-peaceful-resignation/  301
 /perspective/songs-of-peaceful-resignation/attachment/%c2%80i/  /2013/songs-of-peaceful-resignation/  301
+/perspective/songs-of-peaceful-resignation/attachment/*  /2013/songs-of-peaceful-resignation/  301
 /book-review/wit-and-wisdom-in-the-monkey-wrench-gang/  /2014/wit-and-wisdom-in-the-monkey-wrench-gang/  301
 /review/slaughterhouse-five-and-reflections-on-destiny/  /2013/slaughterhouse-five-and-reflections-on-destiny/  301
 
