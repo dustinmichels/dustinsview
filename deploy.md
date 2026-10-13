@@ -3,15 +3,15 @@
 ## Phase 10: Preview Deployment & Cutover
 
 - [ ] **10.1 Preview Environment Setup**
-  - [ ] Choose static host (Netlify, Cloudflare Pages, or GitHub Pages).
+  - [x] Choose static host (Netlify, Cloudflare Pages, or GitHub Pages). - Netlify configured.
   - [ ] Connect repository to hosting provider.
-  - [ ] Configure build settings (`npm run build`, publish directory: `_site`).
-  - [ ] Deploy preview build to staging URL (e.g. `preview.dustinsview.pages.dev`).
+  - [x] Configure build settings (`npm run build`, publish directory: `_site`). - Set in `netlify.toml`.
+  - [x] Deploy preview build to staging URL (e.g. `preview.dustinsview.pages.dev`). - Live at `https://dustinsview.netlify.app/`.
   - [ ] Crawl preview site to verify all routes, media, and redirects function in production environment.
 
 - [ ] **10.2 DNS & Cutover Preparation**
   - [ ] Lower DNS TTL on domain registrar/nameserver to 300 seconds (5 minutes) ahead of cutover.
-  - [ ] Verify SSL/TLS certificate provisioning on new static hosting provider.
+  - [x] Verify SSL/TLS certificate provisioning on new static hosting provider. - Valid TLS active (`*.netlify.app` DigiCert / Netlify cert).
   - [ ] Configure apex (`dustinsview.com`) and `www` redirect rules.
 
 - [ ] **10.3 Domain Cutover**
