@@ -17,7 +17,8 @@
     "export:wxr": "node scripts/export-wxr.mjs",
     "download:media": "node scripts/download-media.mjs",
     "redirects": "node scripts/generate-redirects.mjs",
-    "import:comments": "node scripts/import-comments.mjs"
+    "import:comments": "node scripts/import-comments.mjs",
+    "crawl:preview": "node scripts/crawl-preview.mjs"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
